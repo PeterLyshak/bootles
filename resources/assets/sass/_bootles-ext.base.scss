@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+#content,
+div[data-reactroot] {
+    display: inline;
+}
+
+
+//
+// Resize Helpers
+//-----------------------------------------------------------------------------------------------------
+
+.fill-x {
+    width: 100%;
+}
+
+.fill-y {
+    height: 100%;
+}
+
+.fill-xy {
+    height: 100%;
+    width: 100%;
+}

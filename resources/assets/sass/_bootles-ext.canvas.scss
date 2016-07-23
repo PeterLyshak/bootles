@@ -1,0 +1,208 @@
+/*
+|------------------------------------------------------------------------------------------------------
+| Canvas Base
+|------------------------------------------------------------------------------------------------------
+|
+|
+*/
+
+.canvas {
+    min-height: 100%;
+    position: relative;
+    
+    @media (min-width: $viewport-sm-min) {
+        .container {
+            width: auto;
+        }
+    }
+    
+    @media (min-width: $viewport-md-min) {
+        .container {
+            width: auto;
+        }
+    }
+
+    @media (min-width: $viewport-lg-min) {
+        .container {
+            width: 980px;
+        }
+    }
+}
+
+.visible-canvas-open {
+    display: none !important;
+}
+
+.canvas-open {
+
+    .hidden-canvas-open {
+        display: none !important;
+    }
+    
+    .visible-canvas-open {
+        display: block !important;
+    }
+    
+}
+
+/*
+|------------------------------------------------------------------------------------------------------
+| Canvas Body
+|------------------------------------------------------------------------------------------------------
+|
+|
+*/
+
+.canvas-body {
+
+    & {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        height: 100%;
+        min-height: 100%;
+        padding: 0;
+    }
+    
+    & .navbar {
+        
+        & table {
+            width: 100%;
+        }
+    }
+    
+    & .navbar-toggle {
+        margin: 8px 10px;
+    }
+    
+    /* Mobile only */
+    @media (max-width: $viewport-xs-max) {
+    
+        & .navbar .row > [class^='col-'],
+        & .navbar .row > [class*='col-'] {
+            padding: 0;
+            min-height: 0;
+        }
+        
+    }
+}
+
+.canvas-right {
+
+    & > .canvas-body {
+        
+        & {
+            padding-right: 50px;
+        }
+        
+        & .navbar-fixed-top {
+            right: 50px;
+        }
+    }
+    
+    .canvas-open & > .canvas-body {
+        
+        & {
+            padding-right: 200px;
+        }
+        
+        /* Mobile only */
+        @media (max-width: $viewport-xs-max) {
+            & {
+                left: -200px;
+                padding-right: 0;
+            }
+        }
+        
+        & .navbar-fixed-top {
+            right: 200px;
+        }
+    }
+    
+}
+
+
+/*
+|------------------------------------------------------------------------------------------------------
+| Canvas Side
+|------------------------------------------------------------------------------------------------------
+|
+|
+*/
+
+.canvas-side-right,
+.canvas-side-left {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    min-height: 100%;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+.canvas-side-left {
+    
+    .canvas-left & {
+        display: block;
+    }
+}
+
+.canvas-side-right {
+    
+    & {
+        position: absolute;
+        left: auto;
+        right: 0;
+    }
+    
+    .canvas-right & {
+        display: block;
+    }
+}
+
+/*
+|------------------------------------------------------------------------------------------------------
+| Canvas Sidebar
+|------------------------------------------------------------------------------------------------------
+|
+|
+*/
+
+.canvas-sidebar {
+
+    & {
+        width: 51px;
+    }
+    
+    .canvas-open & {
+        width: 201px;
+    }
+    
+    & .navbar-nav {
+        
+        & {
+            margin: 0;
+        }
+        
+        &.navbar-left {
+            float: left;
+        }
+        
+        &.navbar-right {
+            float: right;
+        }
+        
+        & > li {
+            float: left;
+            
+            & > a {
+                padding: 15px 10px;
+            }
+        }
+    }
+    
+}
+
+
