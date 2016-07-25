@@ -44,6 +44,8 @@ elixir(function(mix) {
         // Standalone / Vanilla
         '../../../vendor/json2/json2.js', // JSON2
         '../../../vendor/modernizr/Modernizr-2.8.3/modernizr.js', // JSON2
+        '../../../vendor/moment/moment-2.14.1/min/moment.min.js', // Moment
+        '../../../vendor/moment-range/moment-range-2.2.0/dist/moment-range.js', // Moment Range
         '../../../vendor/wow/wow-1.1.2/dist/wow.js', // WOW
         
         // jQuery Core
