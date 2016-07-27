@@ -204,11 +204,15 @@
         $scope.errors = {};
         $scope.messages = {};
         
-        var component = document.getElementById($scope.component);
+        $scope.$on('$includeContentLoaded', function () {
+            var component = document.getElementById($scope.component);
             
-        if (typeof(component) != 'undefined' && component != null) {
-            var offsets = component.getBoundingClientRect();
-            document.body.scrollTop = offsets.top;
-        }
+            if (typeof(component) != 'undefined' && component != null) {
+                var offsets = component.getBoundingClientRect();
+                
+                console.log(offsets);
+                document.body.scrollTop = offsets.top;
+            }
+        });
     }
 })();
