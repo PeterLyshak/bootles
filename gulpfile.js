@@ -70,7 +70,7 @@ elixir(function(mix) {
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.lazyload.js', // Lazyload
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.scrollstop.js', // Lazyload Scrollstop
         '../../../vendor/swiper/Swiper-3.3.1/dist/js/swiper.jquery.js', // Swiper Carousel
-        '../../../vendor/jquery-sticky-kit/sticky-kit-1.1.2/jquery.sticky-kit.js', // Sticky Kit
+        '../../../vendor/jquery-fixto/fixto-0.5.0/dist/fixto.js', // Sticky Kit
         
         // jQuery Forms
         '../../../vendor/jquery-spinner/jquery.spinner-0.2.1/dist/js/jquery.spinner.js', // Spinner
