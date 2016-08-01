@@ -21,7 +21,7 @@ if (elixir.config.production == true) {
 elixir(function(mix) {
     
     mix.styles([
-		'../../../vendor/bootstrap/bootstrap-3.3.6/css/bootstrap.css',
+		'../../../vendor/bootstrap/bootstrap-3.3.7/css/bootstrap.css',
 		'../../../vendor/bootstrap-social/bootstrap-social-5.0.0/bootstrap-social.css',
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/css/ripples.css',
         '../../../vendor/bootstrap-slider/bootstrap-slider-7.1.1/dist/css/bootstrap-slider.css',
@@ -61,7 +61,7 @@ elixir(function(mix) {
         '../../../vendor/handlebars/handlebars-4.0.5/handlebars-v4.0.5.js', // Handlebars
         
         // Bootstrap
-		'../../../vendor/bootstrap/bootstrap-3.3.6/js/bootstrap.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/bootstrap.js', // Bootstrap Core
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/material.js', // Bootstrap Material
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/ripples.js', // Bootstrap Material Ripples
         '../../../vendor/bootstrap-slider/bootstrap-slider-7.1.1/dist/bootstrap-slider.js', // Bootstrap Slider
