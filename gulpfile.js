@@ -32,6 +32,7 @@ elixir(function(mix) {
 		'../../../vendor/swiper/Swiper-3.3.1/dist/css/swiper.css',
 		'../../../vendor/jquery-raty/raty-2.7.0/lib/jquery.raty.css',
 		'../../../vendor/jquery-select2/select2-3.5.4/select2.css',
+		'../../../vendor/jquery-select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css',
 		'../../../vendor/datatables/DataTables-1.10.12/media/css/jquery.dataTables.min.css',
 	], 'dist/css/bootles.min.css');
     
