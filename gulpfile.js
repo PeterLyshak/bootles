@@ -55,6 +55,7 @@ elixir(function(mix) {
         '../../../vendor/jquery-ui/jquery-ui-1.12.0.custom/jquery-ui.js', // jQuery UI
         '../../../vendor/jquery-file-upload/jQuery-File-Upload-9.12.5/js/vendor/jquery.ui.widget.js', // jQuery UI Widget
         '../../../vendor/jquery-ui-touch-punch/jquery-ui-touch-punch-0.2.3/jquery.ui.touch-punch.js', // jQuery UI Touch Punch
+        '../../../vendor/jquery-pp/jquerypp-2.0.2/dist/global/jquerypp.js', // jQuery PP
         
         // jQuery Utilities
         '../../../vendor/jquery-whenLive/whenLive-3.1.0/jquery.whenlive.custom.js', // WhenLive
