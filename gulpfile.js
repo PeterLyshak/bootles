@@ -43,6 +43,7 @@ elixir(function(mix) {
     // Mix jQuery core and plugins
     mix.scripts([
         // Standalone / Vanilla
+        '../../../vendor/lodash/lodash-4.14.1/dist/lodash.js', // Lo-Dash
         '../../../vendor/json2/json2.js', // JSON2
         '../../../vendor/modernizr/Modernizr-2.8.3/modernizr.js', // JSON2
         '../../../vendor/moment/moment-2.14.1/min/moment.min.js', // Moment
