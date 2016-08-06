@@ -38,6 +38,7 @@ elixir(function(mix) {
     
     mix.sass([
         'bootles-ext.scss',
+        'bootles-theme-cobalt.scss',
     ], 'dist/css/bootles-ext.min.css');
     
     // Mix jQuery core and plugins
