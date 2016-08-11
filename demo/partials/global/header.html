@@ -22,10 +22,34 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="{{ (pageName == 'bootstrap') ? 'active' : ''}}"><a href="#/bootstrap">Bootstrap</a></li>
-                    <li class="{{ (pageName == 'components') ? 'active' : ''}}"><a href="#/components">Components</a></li>
-                    <li class="{{ (pageName == 'css') ? 'active' : ''}}"><a href="#/css">CSS</a></li>
-                    <li class="{{ (pageName == 'form') ? 'active' : ''}}"><a href="#/form">Form</a></li>
+                    <li class="{{ (pageName == 'bootstrap') ? 'active' : ''}}">
+                        <a href="#/bootstrap">Bootstrap</a>
+                    </li>
+                    <li class="{{ (pageName == 'components') ? 'active' : ''}}">
+                        <a href="#/components">Components</a>
+                    </li>
+                    <li class="dropdown {{ (pageName == 'plugins') ? 'active' : ''}}">
+                        <a href
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true
+                            " aria-expanded="false">
+                            Plugins
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/plugins/bootstrap-slider">Bootstrap Slider</a></li>
+                            <li><a href="#/plugins/swiper">Swiper</a></li>
+                            <li><a href="#/plugins/fixto">FixTo</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/plugins/jquery-spinner">jQuery Spinner</a></li>
+                            <li><a href="#/plugins/raty">Raty</a></li>
+                            <li><a href="#/plugins/select2">Select2</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/plugins/datatables">Datatables</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 
                 <ul class="nav navbar-nav navbar-right" ng-switch on="pageName">
