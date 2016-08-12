@@ -31,6 +31,17 @@
         $scope.errors = {};
         $scope.messages = {};
         
+        // make code pretty
+        window.prettyPrint && prettyPrint()
+    
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 0
+        });
+        
         /*
         $scope.$on('$includeContentLoaded', function () {
             var plugin = document.getElementById($scope.plugin);
