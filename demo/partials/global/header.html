@@ -28,7 +28,7 @@
                     <li class="{{ (pageName == 'components') ? 'active' : ''}}">
                         <a href="#/components">Components</a>
                     </li>
-                    <li class="dropdown {{ (pageName == 'plugins') ? 'active' : ''}}">
+                    <li class="dropdown {{ (pageModule == 'plugins') ? 'active' : ''}}">
                         <a href
                             class="dropdown-toggle"
                             data-toggle="dropdown"
@@ -39,15 +39,33 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#/plugins/bootstrap-slider">Bootstrap Slider</a></li>
-                            <li><a href="#/plugins/swiper">Swiper</a></li>
-                            <li><a href="#/plugins/fixto">FixTo</a></li>
+                            <li class="{{ (pageName == 'bootstrap-slider') ? 'active' : ''}}">
+                                <a href="#/plugins/bootstrap-slider">Bootstrap Slider</a>
+                            </li>
+                            <li class="{{ (pageName == 'swiper') ? 'active' : ''}}">
+                                <a href="#/plugins/swiper">Swiper</a>
+                            </li>
+                            <li class="{{ (pageName == 'fixto') ? 'active' : ''}}">
+                                <a href="#/plugins/fixto">FixTo</a>
+                            </li>
+                            
                             <li role="separator" class="divider"></li>
-                            <li><a href="#/plugins/jquery-spinner">jQuery Spinner</a></li>
-                            <li><a href="#/plugins/raty">Raty</a></li>
-                            <li><a href="#/plugins/select2">Select2</a></li>
+                            
+                            <li class="{{ (pageName == 'jquery-spinner') ? 'active' : ''}}">
+                                <a href="#/plugins/jquery-spinner">jQuery Spinner</a>
+                            </li>
+                            <li class="{{ (pageName == 'raty') ? 'active' : ''}}">
+                                <a href="#/plugins/raty">Raty</a>
+                            </li>
+                            <li class="{{ (pageName == 'select2') ? 'active' : ''}}">
+                                <a href="#/plugins/select2">Select2</a>
+                            </li>
+                            
                             <li role="separator" class="divider"></li>
-                            <li><a href="#/plugins/datatables">Datatables</a></li>
+                            
+                            <li class="{{ (pageName == 'datatables') ? 'active' : ''}}">
+                                <a href="#/plugins/datatables">Datatables</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

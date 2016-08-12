@@ -1,0 +1,19 @@
+<ng-include src="'demo/partials/global/header.html'"></ng-include>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb" ng-include src="'demo/partials/global/breadcrumb.html'" ng-switch on="pageName"></ul>
+        
+        <div class="page-header">
+            <h1 class="animated pulse">Plugins</h1>
+        </div>
+    </div>
+    
+    <div class="container">
+    
+        <!--
+        =============================================== -->
+        <ng-include src="'demo/partials/errors/404.html'"></ng-include>
+        
+    </div>
+</main>
