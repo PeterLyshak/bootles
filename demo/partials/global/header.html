@@ -22,7 +22,7 @@
                     <li class="{{ (pageName == 'bootstrap') ? 'active' : ''}}">
                         <a href="#/bootstrap">Bootstrap</a>
                     </li>
-
+                    
                     <li class="dropdown {{ (pageModule == 'plugins') ? 'active' : ''}}">
                         <a href
                             class="dropdown-toggle"
@@ -61,6 +61,45 @@
                             
                             <li class="{{ (pageName == 'datatables') ? 'active' : ''}}">
                                 <a href="#/plugins/datatables">Datatables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown {{ (pageModule == 'templates') ? 'active' : ''}}">
+                        <a href
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Templates
+                            <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="{{ (pageName == 'starter') ? 'active' : ''}}">
+                                <a href="#/templates/starter">Starter</a>
+                            </li>
+                            <li class="{{ (pageName == 'jumbotron') ? 'active' : ''}}">
+                                <a href="#/templates/jumbotron">Jumbotron</a>
+                            </li>
+                            <li class="{{ (pageName == 'cover') ? 'active' : ''}}">
+                                <a href="#/templates/cover">Cover</a>
+                            </li>
+                            <li class="{{ (pageName == 'carousel') ? 'active' : ''}}">
+                                <a href="#/templates/carousel">Carousel</a>
+                            </li>
+                            <li class="{{ (pageName == 'marketing') ? 'active' : ''}}">
+                                <a href="#/templates/marketing">Marketing</a>
+                            </li>
+                            <li class="{{ (pageName == 'blog') ? 'active' : ''}}">
+                                <a href="#/templates/blog">Blog</a>
+                            </li>
+                            <li class="{{ (pageName == 'dashboard') ? 'active' : ''}}">
+                                <a href="#/templates/dashboard">Dashboard</a>
+                            </li>
+                            <li class="{{ (pageName == 'login') ? 'active' : ''}}">
+                                <a href="#/templates/login">Login</a>
                             </li>
                         </ul>
                     </li>

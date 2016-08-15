@@ -1,0 +1,43 @@
+.form-control {
+    & {
+        box-shadow: inset 0px -1px 0px 0px #cccccc, inset 0 1px 1px rgba(0,0,0,0.075);
+    }
+    
+    &:focus {
+        box-shadow: inset 0px -1px 0px 0px #cccccc, inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,0.6);
+    }
+    
+    .has-warning & {
+        border-color: #8a6d3b;
+        box-shadow: inset 0px -1px 0px 0px #8a6d3b, inset 0 1px 1px rgba(0,0,0,.075);
+        
+        &:focus {
+            border-color: #66512c;
+            box-shadow: inset 0px -1px 0px 0px #66512c, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c0a16b;
+        }
+    }
+
+    .has-error & {
+        border-color: #a94442;
+        box-shadow: inset 0px -1px 0px 0px #a94442, inset 0 1px 1px rgba(0,0,0,0.075);
+        
+        &:focus {
+            border-color: #843534;
+            box-shadow: inset 0px -1px 0px 0px #843534, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+        }
+    }
+    
+    .has-success & {
+        border-color: #3c763d;
+        box-shadow: inset 0px -1px 0px 0px #3c763d, inset 0 1px 1px rgba(0,0,0,.075);
+
+        &:focus {
+            border-color: #2b542c;
+            box-shadow: inset 0px -1px 0px 0px #2b542c, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #67b168;
+        }
+    }
+}
+
+.input-group-addon {
+    box-shadow: inset 0px -1px 0px 0px #cccccc;
+}

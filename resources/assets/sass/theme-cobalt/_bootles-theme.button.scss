@@ -2,9 +2,6 @@
     & {
         background-color: #fff;
         border-color: #cccccc;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #cccccc, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
-        -moz-box-shadow: inset 0px -1px 0px 0px #cccccc, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
         box-shadow: inset 0px -1px 0px 0px #cccccc, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
     }
     
@@ -35,9 +32,6 @@
     & {
         background-color: #468fc5;
         border-color: #126fae;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #126fae, inset 0px 0px 8px 2px rgba(129,198,244,1);
-        -moz-box-shadow: inset 0px -1px 0px 0px #126fae, inset 0px 0px 8px 2px rgba(129,198,244,1);
         box-shadow: inset 0px -1px 0px 0px #126fae, inset 0px 0px 8px 2px rgba(129,198,244,1);
     }
     
@@ -68,9 +62,6 @@
     & {
         background-color: #1abb88;
         border-color: #0c9536;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #0c9536, inset 0px 0px 8px 2px rgba(120,248,215,0.7);
-        -moz-box-shadow: inset 0px -1px 0px 0px #0c9536, inset 0px 0px 8px 2px rgba(120,248,215,0.7);
         box-shadow: inset 0px -1px 0px 0px #0c9536, inset 0px 0px 8px 2px rgba(120,248,215,0.7);
     }
     
@@ -99,20 +90,17 @@
 
 .btn-info {
     & {
-        background-color: #5bc0de;
-        border-color: #46b8da;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #46b8da, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
-        -moz-box-shadow: inset 0px -1px 0px 0px #46b8da, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
-        box-shadow: inset 0px -1px 0px 0px #46b8da, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
+        background-color: #26cec8;
+        border-color: #10a09b;
+        box-shadow: inset 0px -1px 0px 0px #10a09b, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
     }
     
     &.active,
     &:active,
     &:hover,
     .open > &.dropdown-toggle {
-        background-color: #31b0d5;
-        border-color: #46b8da;
+        background-color: #16beb8;
+        border-color: #10a09b;
     }
     
     &.active.focus,
@@ -124,8 +112,8 @@
     .open > &.dropdown-toggle.focus,
     .open > &.dropdown-toggle:focus,
     .open > &.dropdown-toggle:hover {
-        background-color: #31b0d5;
-        border-color: #46b8da;
+        background-color: #16beb8;
+        border-color: #10a09b;
         color: #fff;
     }
 }
@@ -134,9 +122,6 @@
     & {
         background-color: #f0ad4e;
         border-color: #eea236;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #eea236, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
-        -moz-box-shadow: inset 0px -1px 0px 0px #eea236, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
         box-shadow: inset 0px -1px 0px 0px #eea236, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
     }
     
@@ -167,9 +152,6 @@
     & {
         background-color: #d9534f;
         border-color: #d43f3a;
-    
-        -webkit-box-shadow: inset 0px -1px 0px 0px #d43f3a, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
-        -moz-box-shadow: inset 0px -1px 0px 0px #d43f3a, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
         box-shadow: inset 0px -1px 0px 0px #d43f3a, inset 0px 0px 8px 2px rgba(255,255,255,0.3);
     }
     
