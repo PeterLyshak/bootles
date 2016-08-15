@@ -1,0 +1,18 @@
+.navbar-default {
+    background-color: #fff;
+    border-color: #ccd3d8;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #f1f1f1;
+    color: #5a6368;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #f1f1f1;
+    color: #5a6368;
+}
