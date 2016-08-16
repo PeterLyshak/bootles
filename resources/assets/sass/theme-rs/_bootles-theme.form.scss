@@ -8,22 +8,22 @@
     }
     
     .has-warning & {
-        border-color: #8a6d3b;
-        box-shadow: inset 0px -1px 0px 0px #8a6d3b, inset 0 1px 1px rgba(0,0,0,.075);
+        border-color: #eea236;
+        box-shadow: inset 0px -1px 0px 0px #eea236, inset 0 1px 1px rgba(0,0,0,.075);
         
         &:focus {
-            border-color: #66512c;
-            box-shadow: inset 0px -1px 0px 0px #66512c, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #c0a16b;
+            border-color: #de9226;
+            box-shadow: inset 0px -1px 0px 0px #eea236, inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #c0a16b;
         }
     }
 
     .has-error & {
-        border-color: #a94442;
-        box-shadow: inset 0px -1px 0px 0px #a94442, inset 0 1px 1px rgba(0,0,0,0.075);
+        border-color: #d9534f;
+        box-shadow: inset 0px -1px 0px 0px #d9534f, inset 0 1px 1px rgba(0,0,0,0.075);
         
         &:focus {
-            border-color: #843534;
-            box-shadow: inset 0px -1px 0px 0px #843534, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+            border-color: #c9433f;
+            box-shadow: inset 0px -1px 0px 0px #d9534f, inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
         }
     }
     
@@ -39,7 +39,6 @@
 }
 
 .has-success {
-    
     & .checkbox,
     & .checkbox-inline,
     &.checkbox-inline label,
@@ -53,6 +52,37 @@
         color: #1abb88;
     }
 }
+
+.has-warning {
+    & .checkbox,
+    & .checkbox-inline,
+    &.checkbox-inline label,
+    &.checkbox label,
+    & .control-label,
+    & .help-block,
+    & .radio,
+    & .radio-inline,
+    &.radio-inline label,
+    &.radio label {
+        color: #eea236;
+    }
+}
+
+.has-error {
+    & .checkbox,
+    & .checkbox-inline,
+    &.checkbox-inline label,
+    &.checkbox label,
+    & .control-label,
+    & .help-block,
+    & .radio,
+    & .radio-inline,
+    &.radio-inline label,
+    &.radio label {
+        color: #d9534f;
+    }
+}
+
 
 .input-group-addon {
     box-shadow: inset 0px -1px 0px 0px #cccccc;
