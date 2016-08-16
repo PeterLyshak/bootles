@@ -38,8 +38,13 @@ elixir(function(mix) {
     
     mix.sass([
         'bootles-ext.scss',
+    ], 'dist/css/bootles-ext.min.css')
+    .sass([
         'bootles-theme-rs.scss',
-    ], 'dist/css/bootles-ext.min.css');
+    ], 'dist/css/bootles-theme-rs.min.css')
+    .sass([
+        'bootles-theme-adtaco.scss',
+    ], 'dist/css/bootles-theme-adtaco.min.css');
     
     // Mix jQuery core and plugins
     mix.scripts([
