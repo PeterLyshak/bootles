@@ -44,7 +44,10 @@ elixir(function(mix) {
     ], 'dist/css/bootles-theme-rs.min.css')
     .sass([
         'bootles-theme-adtaco.scss',
-    ], 'dist/css/bootles-theme-adtaco.min.css');
+    ], 'dist/css/bootles-theme-adtaco.min.css')
+    .sass([
+        'bootles-theme-flat.scss',
+    ], 'dist/css/bootles-theme-flat.min.css');
     
     // Mix jQuery core and plugins
     mix.scripts([

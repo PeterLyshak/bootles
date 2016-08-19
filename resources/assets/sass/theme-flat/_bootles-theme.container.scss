@@ -1,0 +1,115 @@
+.panel {
+    background-color: #ecf0f1;
+}
+
+.panel-default {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #333;
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.panel-primary {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #fff;
+        background-color: #1abc9c;
+        border-color: #1abc9c;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.panel-info {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #fff;
+        background-color: #3498DB;
+        border-color: #3498DB;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.panel-success {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #fff;
+        background-color: #2ECC71;
+        border-color: #2ECC71;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.panel-warning {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #fff;
+        background-color: #F1C40F;
+        border-color: #F1C40F;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.panel-danger {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+    
+    & > .panel-heading {
+        color: #fff;
+        background-color: #E74C3C;
+        border-color: #E74C3C;
+    }
+    
+    & > .panel-footer {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+    }
+}
+
+.well {
+    background-color: #eff0f2;
+    border-color: #eff0f2;
+}
+
+.dropdown-menu {
+    background-color: #f3f4f5;
+    border: 2px solid #BDC3C7;
+    
+    & > li > a:focus,
+    & > li > a:hover {
+        color: #55606c;
+        background-color: #dce0e1;
+    }
+}

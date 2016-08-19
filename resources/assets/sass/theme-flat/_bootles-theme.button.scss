@@ -1,0 +1,206 @@
+.btn-default {
+    & {
+        background-color: #bdc3c7;
+        border-color: #bdc3c7;
+        color: #fff;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #a1a6a9;
+        border-color: #a1a6a9;
+        color: #fff;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #a1a6a9;
+        border-color: #a1a6a9;
+        color: #fff;
+    }
+}
+
+.btn-muted {
+    & {
+        background-color: #aaa;
+        border-color: #aaa;
+        color: #fff;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #999;
+        border-color: #999;
+        color: #fff;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #999;
+        border-color: #999;
+        color: #fff;
+    }
+}
+
+.btn-primary {
+    & {
+        background-color: #1abc9c;
+        border-color: #1abc9c;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #16a085;
+        border-color: #16a085;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #16a085;
+        border-color: #16a085;
+        color: #fff;
+    }
+}
+
+.btn-success {
+    & {
+        background-color: #2ecc71;
+        border-color: #2ecc71;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #27ad60;
+        border-color: #27ad60;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #27ad60;
+        border-color: #27ad60;
+        color: #fff;
+    }
+}
+
+.btn-info {
+    & {
+        background-color: #3498db;
+        border-color: #3498db;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #2c81ba;
+        border-color: #2c81ba;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #2c81ba;
+        border-color: #2c81ba;
+        color: #fff;
+    }
+}
+
+.btn-warning {
+    & {
+        background-color: #f1c40f;
+        border-color: #f1c40f;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #cda70d;
+        border-color: #cda70d;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #cda70d;
+        border-color: #cda70d;
+        color: #fff;
+    }
+}
+
+.btn-danger {
+    & {
+        background-color: #e74c3c;
+        border-color: #e74c3c;
+    }
+    
+    &.active,
+    &:active,
+    &:hover,
+    .open > &.dropdown-toggle {
+        background-color: #c44133;
+        border-color: #c44133;
+    }
+    
+    &.active.focus,
+    &.active:focus,
+    &.active:hover,
+    &:active.focus,
+    &:active:focus,
+    &:active:hover,
+    .open > &.dropdown-toggle.focus,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+        background-color: #c44133;
+        border-color: #c44133;
+        color: #fff;
+    }
+}
