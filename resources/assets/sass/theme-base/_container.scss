@@ -3,18 +3,18 @@
 }
 
 .panel-default {
-    background-color: #ecf0f1;
-    border-color: #ecf0f1;
+    background-color: #fff;
+    border-color: #bdc6cf;
     
     & > .panel-heading {
         color: #333;
-        background-color: #bdc3c7;
-        border-color: #bdc3c7;
+        background-color: #e3e9f0;
+        border-color: #bdc6cf;
     }
     
     & > .panel-footer {
-        background-color: #bdc3c7;
-        border-color: #bdc3c7;
+        background-color: #e7ecf2;
+        border-color: #bdc6cf;
     }
 }
 
