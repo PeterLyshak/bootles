@@ -1,0 +1,19 @@
+.list-group-item {
+    &.active {
+        background-color: #4da3ff;
+        border: 1px solid #3d81ff;
+        color: #fff;
+            
+        &:hover {
+            background-color: #4da3ff;
+            border: 1px solid #3d81ff;
+            color: #fff;
+        }
+        
+        &:focus {
+            background-color: #4da3ff;
+            border: 1px solid #3d81ff;
+            color: #fff;
+        }
+    }
+}
