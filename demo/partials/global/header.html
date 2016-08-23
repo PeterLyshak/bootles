@@ -19,7 +19,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="{{ (pageName == 'bootstrap') ? 'active' : ''}}">
+                    <li class="hidden-xs {{ (pageModule == 'bootstrap') ? 'active' : ''}}">
                         <a href="#/bootstrap">Bootstrap</a>
                     </li>
                     
@@ -118,7 +118,7 @@
                     </li>
                 </ul>
                 
-                <ul class="nav navbar-nav navbar-right hidden-xs" ng-switch on="pageName">
+                <ul class="nav navbar-nav navbar-right" ng-switch on="pageModule">
                     <li class="dropdown" ng-switch-when="components" >
                         <a href tabindex="0"
                             class="dropdown-toggle"
@@ -146,18 +146,55 @@
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li><a href="#/bootstrap/buttons">Buttons</a></li>
-                            <li><a href="#/bootstrap/typography">Typography</a></li>
-                            <li><a href="#/bootstrap/table">Table</a></li>
-                            <li><a href="#/bootstrap/form">Form</a></li>
+                            <li class="{{ (pageName == 'buttons') ? 'active' : ''}}">
+                                <a href="#/bootstrap/buttons">Buttons</a>
+                            </li>
                             
-                            <li><a href="#/bootstrap/navbar">Navbar</a></li>
-                            <li><a href="#/bootstrap/nav">Navs</a></li>
-                            <li><a href="#/bootstrap/indicators">Indicators</a></li>
-                            <li><a href="#/bootstrap/progress">Progress Bars</a></li>
-                            <li><a href="#/bootstrap/containers">Containers</a></li>
-                            <li><a href="#/bootstrap/media">Media</a></li>
-                            <li><a href="#/bootstrap/dialog">Dialogs</a></li>
+                            <li class="{{ (pageName == 'typography') ? 'active' : ''}}">
+                                <a href="#/bootstrap/typography">Typography</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'table') ? 'active' : ''}}">
+                                <a href="#/bootstrap/table">Table</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'form') ? 'active' : ''}}">
+                                <a href="#/bootstrap/form">Form</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'containers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/containers">Containers</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'helpers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/helpers">Helpers</a>
+                            </li>
+                            
+                            <li class="divider"></li>
+                            
+                            <li class="{{ (pageName == 'navbar') ? 'active' : ''}}">
+                                <a href="#/bootstrap/navbar">Navbar</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'nav') ? 'active' : ''}}">
+                                <a href="#/bootstrap/nav">Navs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'indicators') ? 'active' : ''}}">
+                                <a href="#/bootstrap/indicators">Indicators</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'progress') ? 'active' : ''}}">
+                                <a href="#/bootstrap/progress">Progress Bars</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'media') ? 'active' : ''}}">
+                                <a href="#/bootstrap/media">Media</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'dialog') ? 'active' : ''}}">
+                                <a href="#/bootstrap/dialog">Dialogs</a>
+                            </li>
                         </ul>
                     </li>
                     

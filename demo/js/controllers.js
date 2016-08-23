@@ -1,3 +1,31 @@
+/**
+|------------------------------------------------------------------------------------
+| Global Controller
+|------------------------------------------------------------------------------------
+|
+*/
+
+(function() {
+    'use strict'
+    
+    angular
+        .module('myApp')
+        .controller('globalController', globalController);
+        
+    globalController.$inject = [
+        '$scope',
+        '$location',
+        '$route',
+        '$routeParams',
+        '$templateCache',
+        '$http',
+    ];
+    
+    function globalController($scope, $location, $route, $routeParams, $templateCache, $http) {
+        console.log("Global Controller Init");
+    }
+})();
+
 
 /**
 |------------------------------------------------------------------------------------
@@ -118,12 +146,14 @@
         $scope.$route = $route;
         $scope.$location = $location;
         $scope.$routeParams = $routeParams;
-        $scope.pageName = "bootstrap";
-        $scope.pageModule = 'bootstrap';
         $scope.component = $routeParams.component;
+        $scope.pageModule = 'bootstrap';
+        $scope.pageName = $scope.component ? $scope.component : "buttons";
         $scope.errors = {};
         $scope.messages = {};
         
+        /*
+        Autoscroll on target div upon page init
         $scope.$on('$includeContentLoaded', function () {
             var component = document.getElementById($scope.component);
             
@@ -133,6 +163,7 @@
                 document.body.scrollTop = offsets.top;
             }
         });
+        */
     }
 })();
 

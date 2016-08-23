@@ -10,54 +10,83 @@
     </div>
     
     <div class="container">
-    
-        <!-- Buttons
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/buttons.html'"></ng-include>
-        
-        <!-- Typography
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/typography.html'"></ng-include>
-        
-        <!-- Tables
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/table.html'"></ng-include>
-        
-        <!-- Forms
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/form.html'"></ng-include>
-        
-        <!-- Helper Classes
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/helpers.html'"></ng-include>
-        
-        <!-- Navbar
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/navbar.html'"></ng-include>
-        
-        <!-- Navs
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/nav.html'"></ng-include>
-        
-        <!-- Indicators
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/indicators.html'"></ng-include>
-        
-        <!-- Progress bars
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/progress.html'"></ng-include>
-        
-        <!-- Containers
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/containers.html'"></ng-include>
-        
-        <!-- Media
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/media.html'"></ng-include>
-        
-        <!-- Dialogs
-        =============================================== -->
-        <ng-include src="'demo/partials/bootstrap/dialogs.html'"></ng-include>
+        <div ng-switch on="pageName">
+            <!-- Buttons
+            =============================================== -->
+            <div ng-switch-when="buttons">
+                <ng-include src="'demo/partials/bootstrap/buttons.html'"></ng-include>
+            </div>
+            
+            <!-- Typography
+            =============================================== -->
+            <div ng-switch-when="typography">
+                <ng-include src="'demo/partials/bootstrap/typography.html'"></ng-include>
+            </div>
+            
+            <!-- Table
+            =============================================== -->
+            <div ng-switch-when="table">
+                <ng-include src="'demo/partials/bootstrap/table.html'"></ng-include>
+            </div>
+            
+            <!-- Forms
+            =============================================== -->
+            <div ng-switch-when="form">
+                <ng-include src="'demo/partials/bootstrap/form.html'"></ng-include>
+            </div>
+            
+            <!-- Helpers
+            =============================================== -->
+            <div ng-switch-when="helpers">
+                <ng-include src="'demo/partials/bootstrap/helpers.html'"></ng-include>
+            </div>
+            
+            <!-- Navbar
+            =============================================== -->
+            <div ng-switch-when="navbar">
+                <ng-include src="'demo/partials/bootstrap/navbar.html'"></ng-include>
+            </div>
+            
+            <!-- Navs
+            =============================================== -->
+            <div ng-switch-when="nav">
+                <ng-include src="'demo/partials/bootstrap/nav.html'"></ng-include>
+            </div>
+            
+            <!-- Indicators
+            =============================================== -->
+            <div ng-switch-when="indicators">
+                <ng-include src="'demo/partials/bootstrap/indicators.html'"></ng-include>
+            </div>
+            
+            <!-- Progress bars
+            =============================================== -->
+            <div ng-switch-when="progress">
+                <ng-include src="'demo/partials/bootstrap/progress.html'"></ng-include>
+            </div>
+            
+            <!-- Containers
+            =============================================== -->
+            <div ng-switch-when="containers">
+                <ng-include src="'demo/partials/bootstrap/containers.html'"></ng-include>
+            </div>
+            
+            <!-- Media
+            =============================================== -->
+            <div ng-switch-when="media">
+                <ng-include src="'demo/partials/bootstrap/media.html'"></ng-include>
+            </div>
+            
+            <!-- Dialogs
+            =============================================== -->
+            <div ng-switch-when="dialogs">
+                <ng-include src="'demo/partials/bootstrap/dialogs.html'"></ng-include>
+            </div>
+            
+            <div ng-switch-default>
+                <ng-include src="'demo/partials/errors/404.html'"></ng-include>
+            </div>
+        </div>
         
         <div id="source-modal" class="modal fade">
             <div class="modal-dialog modal-lg">
@@ -83,4 +112,6 @@
         </div>
         
     </div>
+    
+    <ng-include src="'demo/partials/global/footer.html'"></ng-include>
 </main>

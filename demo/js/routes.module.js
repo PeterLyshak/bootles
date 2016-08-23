@@ -29,10 +29,6 @@
                 templateUrl: 'demo/partials/css.html',
                 controller: 'cssController'
             }).
-            when('/plugins/swiper', {
-                templateUrl: 'demo/partials/plugins/swiper.html',
-                controller: 'pluginSwiperController'
-            }).
             when('/plugins/:plugin', {
                 templateUrl: 'demo/partials/plugins.html',
                 controller: 'pluginsController'

@@ -10,10 +10,16 @@
     </div>
     
     <div class="container">
-    
-        <!--
-        =============================================== -->
-        <ng-include src="'demo/partials/errors/404.html'"></ng-include>
-        
+        <div ng-switch on="pageName">
+            <!-- Buttons
+            =============================================== -->
+            <div ng-switch-when="swiper">
+                <ng-include src="'demo/partials/plugins/swiper.html'"></ng-include>
+            </div>
+            
+            <div ng-switch-default>
+                <ng-include src="'demo/partials/errors/404.html'"></ng-include>
+            </div>
+        </div>
     </div>
 </main>
