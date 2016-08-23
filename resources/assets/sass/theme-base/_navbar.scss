@@ -53,4 +53,92 @@
             }
         }
     }
+    
+    & .navbar-toggle {
+        border-color: $navbar-default-border;
+        
+        &:focus,
+        &:hover {
+            background-color: #f4f6f7;
+        }
+        
+        & .icon-bar {
+            background-color: $navbar-default-link-color;
+        }
+    }
+}
+
+.navbar-muted {
+    background-color: $navbar-muted-bg;
+    border-color: $navbar-muted-border;
+    
+    & .navbar-brand {
+        color: $navbar-muted-link-color;
+        
+        &:hover {
+            color: $navbar-muted-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-muted-link-hover-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-muted-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-muted-link-color;
+            
+            &:hover {
+                color: $navbar-muted-link-hover-color;
+            }
+            
+            &:focus {
+                color: $navbar-muted-link-hover-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-muted-link-active-bg;
+            color: $navbar-muted-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-muted-link-active-bg;
+                color: $navbar-muted-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-muted-link-active-bg;
+            color: $navbar-muted-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-muted-link-active-bg;
+                color: $navbar-muted-link-active-color;
+            }
+        }
+    }
+    
+    & .navbar-collapse,
+    & .navbar-form {
+        border-color: $navbar-muted-border;
+    }
+
+    & .navbar-toggle {
+        border-color: $navbar-muted-border;
+        
+        &:focus,
+        &:hover {
+            background-color: #f4f6f7;
+        }
+        
+        & .icon-bar {
+            background-color: $navbar-muted-link-color;
+        }
+    }
 }

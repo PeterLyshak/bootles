@@ -369,9 +369,9 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #7991ad !default;
-$navbar-default-bg:                #e7ecf2 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:             #bdc6cf !default;
+$navbar-default-bg:                #fff !default;
+$navbar-default-border:           #cfd5dc; //darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                #7991ad !default;
@@ -393,7 +393,32 @@ $navbar-default-toggle-icon-bar-bg:        #888 !default;
 $navbar-default-toggle-border-color:       #ddd !default;
 
 
-//=== Inverted navbar
+//=== Muted Navbar
+$navbar-muted-color:             #7991ad !default;
+$navbar-muted-bg:                #e7ecf2 !default;
+$navbar-muted-border:            darken($navbar-muted-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-muted-link-color:                #7991ad !default;
+$navbar-muted-link-hover-color:          #7991ad !default;
+$navbar-muted-link-hover-bg:             transparent !default;
+$navbar-muted-link-active-color:         #fff !default;
+$navbar-muted-link-active-bg:            #52a9ff !default;
+$navbar-muted-link-disabled-color:       #bbb !default;
+$navbar-muted-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-muted-brand-color:               $navbar-muted-link-color !default;
+$navbar-muted-brand-hover-color:         darken($navbar-muted-brand-color, 10%) !default;
+$navbar-muted-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-muted-toggle-hover-bg:           #ddd !default;
+$navbar-muted-toggle-icon-bar-bg:        #888 !default;
+$navbar-muted-toggle-border-color:       #ddd !default;
+
+
+//=== Inverted Navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      lighten($gray-light, 15%) !default;
 $navbar-inverse-bg:                         #222 !default;

@@ -99,17 +99,35 @@
 }
 
 .well {
-    background-color: #eff0f2;
-    border-color: #eff0f2;
+    background-color: #f4f6f7;
+    border-color: #bdc6cf;
 }
 
 .dropdown-menu {
-    background-color: #f3f4f5;
-    border: 2px solid #BDC3C7;
+    background-color: #fff;
+    border-color: #bdc6cf;
     
-    & > li > a:focus,
-    & > li > a:hover {
-        color: #55606c;
-        background-color: #dce0e1;
+    & > li {
+        & > a:hover,
+        & > a:focus {
+            background-color: #4da3ff;
+            color: #fff;
+        }
+        
+        &.active > a,
+        &.active > a:focus,
+        &.active > a:hover {
+            background-color: #4da3ff;
+            border: 1px solid #3d81ff;
+            color: #fff;
+        }
+    }
+    
+    & .divider {
+        background-color: #bdc6cf;
     }
 }
+
+
+
+

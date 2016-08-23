@@ -1,6 +1,10 @@
+.bg-muted {
+    background-color: #e7ecf2;
+}
+
 .bg-primary {
-    background-color: #52a9ff;
-    color: #fff;
+    background-color: #d9edff;
+    color: $text-color;
 }
 
 .bg-success {
@@ -8,7 +12,7 @@
 }
 
 .bg-info {
-    background-color: #d9edff;
+    background-color: #ffd9ff;
 }
 
 .bg-warning {

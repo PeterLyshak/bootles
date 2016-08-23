@@ -120,18 +120,18 @@
 
 .btn-info {
     & {
-        background-color: #cfe9ff;
-        border-color: #6eb9ff;
-        color: #31708f;
+        background-color: #ff52ff;
+        border-color: #bf3aff;
+        color: #fff;
     }
     
     &.active,
     &:active,
     &:hover,
     .open > &.dropdown-toggle {
-        background-color: #c9e3f9;
-        border-color: #6eb9ff;
-        color: #31708f;
+        background-color: #f94cf9;
+        border-color: #bf3aff;
+        color: #fff;
     }
     
     &.active.focus,
@@ -143,9 +143,9 @@
     .open > &.dropdown-toggle.focus,
     .open > &.dropdown-toggle:focus,
     .open > &.dropdown-toggle:hover {
-        background-color: #c9e3f9;
-        border-color: #6eb9ff;
-        color: #31708f;
+        background-color: #f94cf9;
+        border-color: #bf3aff;
+        color: #fff;
     }
 }
 
