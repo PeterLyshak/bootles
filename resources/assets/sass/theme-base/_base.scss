@@ -3,6 +3,15 @@ body {
     color: $text-color;
 }
 
+a {
+    color: $link-color;
+    
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+    }
+}
+
 hr {
     border-color: #bdc6cf;
 }
