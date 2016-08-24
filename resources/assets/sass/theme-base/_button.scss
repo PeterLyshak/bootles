@@ -2,7 +2,7 @@
     & {
         background-color: #fff;
         border-color: #bdc6cf;
-        color: #7991ad;
+        color: #61676a;
     }
     
     &.active,
@@ -11,7 +11,7 @@
     .open > &.dropdown-toggle {
         background-color: #eee;
         border-color: #bdc6cf;
-        color: #7991ad;
+        color: #61676a;
     }
     
     &.active.focus,
@@ -25,7 +25,7 @@
     .open > &.dropdown-toggle:hover {
         background-color: #eee;
         border-color: #bdc6cf;
-        color: #7991ad;
+        color: #61676a;
     }
 }
 
