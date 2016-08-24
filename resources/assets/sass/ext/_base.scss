@@ -27,3 +27,24 @@ div[data-reactroot] {
     height: 100%;
     width: 100%;
 }
+
+
+//
+// Position Helpers
+//-----------------------------------------------------------------------------------------------------
+
+.psn-static {
+    position: static;
+}
+
+.psn-relative {
+    position: relative;
+}
+
+.psn-absolute {
+    position: absolute;
+}
+
+.psn-fixed {
+    position: fixed;
+}
