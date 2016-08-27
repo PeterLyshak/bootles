@@ -6,7 +6,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -35,7 +35,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -92,7 +92,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -127,7 +127,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -176,7 +176,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -205,7 +205,7 @@
         $scope.$on('$includeContentLoaded', function () {
             var plugin = document.getElementById($scope.plugin);
             
-            if (typeof(plugin) != 'undefined' && plugin != null) {
+            if (typeof(plugin) !== 'undefined' && plugin !== null) {
                 var offsets = plugin.getBoundingClientRect();
                 
                 document.body.scrollTop = offsets.top;

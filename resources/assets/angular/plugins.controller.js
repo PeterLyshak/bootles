@@ -6,7 +6,7 @@
 */
 
 (function() {
-    'use strict'
+    'use strict';
     
     angular
         .module('myApp')
@@ -32,14 +32,16 @@
         $scope.messages = {};
         
         // make code pretty
-        window.prettyPrint && prettyPrint()
+        if (window.prettyPrint) {
+            prettyPrint();
+        }
     
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
-            spaceBetween: 0
+            spaceBetween: 0,
         });
         
         /*

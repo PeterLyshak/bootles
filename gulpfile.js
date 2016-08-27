@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-angularjs');
+
 elixir.config.production == true;
 elixir.config.sourcemaps = true;
 
@@ -17,6 +19,10 @@ if (elixir.config.production == true) {
 | file for our application, as well as publishing vendor resources.
 |
 */
+
+elixir(function(mix) {
+    mix.angular("resources/assets/angular/", "demo/js/", "app.ng.js");
+}
 
 elixir(function(mix) {
     
@@ -103,5 +109,4 @@ elixir(function(mix) {
         '../../../vendor/datatables/DataTables-1.10.12/media/js/jquery.dataTables.js', // Datatables Core
         '../../../vendor/datatables/DataTables-1.10.12/media/js/dataTables.bootstrap.js', // Datatables Bootstrap
 	], 'dist/js/bootles.min.js');
-
 });

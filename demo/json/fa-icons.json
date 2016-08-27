@@ -1,0 +1,10 @@
+[
+    { name: 'Adjust', class: 'fa-adjust', category: { 'web-application-icons' }, aliases: {} },
+    { name: 'American Sign Language Interpreting', class: 'fa-american-sign-language-interpreting', category: { 'web-application-icons', 'accessibility-icons' }, aliases: { 'fa-asl-interpreting' } },
+    { name: 'Anchor', class: 'fa-anchor', category: { 'web-application-icons' }, aliases: {} },
+    { name: 'Archive', class: 'fa-archive', category: { 'web-application-icons' }, aliases: {} },
+    { name: 'Area Chart', class: 'fa-area-chart', category: { 'web-application-icons', 'chart-icons' }, aliases: {} },
+    { name: 'Arrows', class: 'fa-arrows', category: { 'web-application-icons', 'directional-icons' }, aliases: {} },
+    { name: 'Arrows Horizontal', class: 'fa-arrows-h', category: { 'web-application-icons', 'directional-icons' }, aliases: {} },
+    { name: 'Arrows Vertical', class: 'fa-arrows-v', category: { 'web-application-icons', 'directional-icons' }, aliases: {} }
+]
