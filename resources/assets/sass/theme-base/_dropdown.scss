@@ -1,0 +1,24 @@
+.dropdown-menu {
+    background-color: #fff;
+    border-color: #bdc6cf;
+    
+    & > li {
+        & > a:hover,
+        & > a:focus {
+            background-color: #e3f2ff;
+            color: #2c92ff;
+        }
+        
+        &.active > a,
+        &.active > a:focus,
+        &.active > a:hover {
+            background-color: #e3f2ff;
+            // border: 1px solid #3d81ff;
+            color: #2c92ff;
+        }
+    }
+    
+    & .divider {
+        background-color: #bdc6cf;
+    }
+}

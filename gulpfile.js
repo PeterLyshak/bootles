@@ -1,7 +1,5 @@
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-angularjs');
-
 elixir.config.production == true;
 elixir.config.sourcemaps = true;
 
@@ -21,10 +19,14 @@ if (elixir.config.production == true) {
 */
 
 elixir(function(mix) {
-    mix.angular("resources/assets/angular/", "demo/js/", "app.ng.js");
-}
-
-elixir(function(mix) {
+    
+    // Mix ReactJS via Browserify
+    mix.browserify([
+        '../angular/app.module.js',
+        '../angular/routes.module.js',
+        '../angular/controllers.js',
+        '../angular/plugins.controller.js',
+    ], 'demo/js/app.ng.js');
     
     mix.styles([
 		'../../../vendor/bootstrap/bootstrap-3.3.7/css/bootstrap.css',

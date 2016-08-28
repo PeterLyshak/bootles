@@ -1,6 +1,13 @@
+// Jumbotron
+//-----------------------------------------------------------------------------------------------------
+
 .jumbotron {
     background-color: #e7ecf2;
 }
+
+
+// Panels
+//-----------------------------------------------------------------------------------------------------
 
 .panel {
     background-color: #ecf0f1;
@@ -124,32 +131,10 @@
 }
 
 
+// Wells
+//-----------------------------------------------------------------------------------------------------
+
 .well {
     background-color: #f4f6f7;
     border-color: #bdc6cf;
-}
-
-.dropdown-menu {
-    background-color: #fff;
-    border-color: #bdc6cf;
-    
-    & > li {
-        & > a:hover,
-        & > a:focus {
-            background-color: #4da3ff;
-            color: #fff;
-        }
-        
-        &.active > a,
-        &.active > a:focus,
-        &.active > a:hover {
-            background-color: #4da3ff;
-            border: 1px solid #3d81ff;
-            color: #fff;
-        }
-    }
-    
-    & .divider {
-        background-color: #bdc6cf;
-    }
 }
