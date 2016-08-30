@@ -54,8 +54,9 @@ elixir(function(mix) {
     /*
     mix.sass([
         'bootles-theme-rs.scss',
-    ], 'dist/css/bootles-theme-rs.min.css')
-    .sass([
+    ], 'dist/css/bootles-theme-rs.min.css');
+    
+    mix.sass([
         'bootles-theme-adtaco.scss',
     ], 'dist/css/bootles-theme-adtaco.min.css');
     */
