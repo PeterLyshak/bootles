@@ -399,17 +399,17 @@ $navbar-default-toggle-border-color:       #ddd !default;
 
 // Navbar Smoke
 //=================================================================
-$navbar-smoke-color:             #7991ad !default;
-$navbar-smoke-bg:                #e7ecf2 !default;
+$navbar-smoke-color:             #666666 !default;
+$navbar-smoke-bg:                #f1f1f1 !default;
 $navbar-smoke-border:            darken($navbar-smoke-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-smoke-link-color:                #7991ad !default;
-$navbar-smoke-link-hover-color:          #7991ad !default;
+$navbar-smoke-link-color:                #666666 !default;
+$navbar-smoke-link-hover-color:          #212121 !default;
 $navbar-smoke-link-hover-bg:             transparent !default;
-$navbar-smoke-link-active-color:         #7991ad !default;
-$navbar-smoke-link-active-bg:            #fff !default;
-$navbar-smoke-link-disabled-color:       #bbb !default;
+$navbar-smoke-link-active-color:         #212121 !default;
+$navbar-smoke-link-active-bg:            #dddddd !default;
+$navbar-smoke-link-disabled-color:       #bbbbbb !default;
 $navbar-smoke-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
@@ -503,12 +503,12 @@ $navbar-secondary-toggle-border-color:       #ddd !default;
 
 // Navbar Info
 //=================================================================
-$navbar-info-color:             #fff !default;
+$navbar-info-color:             #f4f4f4 !default;
 $navbar-info-bg:                #1CC8CA !default;
 $navbar-info-border:            darken($navbar-info-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-info-link-color:                #fff !default;
+$navbar-info-link-color:                #f4f4f4 !default;
 $navbar-info-link-hover-color:          #fff !default;
 $navbar-info-link-hover-bg:             transparent !default;
 $navbar-info-link-active-color:         #fff !default;

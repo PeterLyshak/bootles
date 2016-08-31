@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Asap:400,700';
+@import 'https://fonts.googleapis.com/css?family=Grand+Hotel';
 
 html, body {
     font-family: 'Asap', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -10,6 +11,13 @@ div[data-reactroot] {
     display: inline;
 }
 
+//
+// Text Helpers
+//-----------------------------------------------------------------------------------------------------
+
+.text-cursive {
+    font-family: 'Grand Hotel', cursive;
+}
 
 //
 // Resize Helpers
