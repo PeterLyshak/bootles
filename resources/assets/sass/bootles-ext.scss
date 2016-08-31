@@ -1,5 +1,14 @@
 // Core variables and mixins
+
+// Initialization
 @import "ext/variables";
 @import "ext/base";
+
+// Layout
 @import "ext/canvas";
+
+// Basic Elements
 @import "ext/form";
+
+// Components (dependent with Basic Elements)
+@import "ext/navbar";

@@ -6,6 +6,11 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-color: $body-bg;
+    color: $text-color;
+}
+
 #react-content,
 div[data-reactroot] {
     display: inline;

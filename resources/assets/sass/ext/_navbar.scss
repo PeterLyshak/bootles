@@ -1,0 +1,924 @@
+.navbar-default {
+    background-color: $navbar-default-bg;
+    border-color: $navbar-default-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-default-link-color;
+        
+        &:hover {
+            color: $navbar-default-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-default-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-default-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-default-link-color;
+            
+            &:hover {
+                background-color: $navbar-default-link-hover-bg;
+                color: $navbar-default-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-default-link-active-bg;
+            color: $navbar-default-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-default-link-active-bg;
+            color: $navbar-default-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-smoke {
+    background-color: $navbar-smoke-bg;
+    border-color: $navbar-smoke-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-smoke-link-color;
+        
+        &:hover {
+            color: $navbar-smoke-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-smoke-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-smoke-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-smoke-link-color;
+            
+            &:hover {
+                background-color: $navbar-smoke-link-hover-bg;
+                color: $navbar-smoke-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-smoke-link-active-bg;
+                color: $navbar-smoke-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-smoke-link-active-bg;
+            color: $navbar-smoke-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-smoke-link-active-bg;
+                color: $navbar-smoke-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-smoke-link-active-bg;
+            color: $navbar-smoke-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-smoke-link-active-bg;
+                color: $navbar-smoke-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-muted {
+    background-color: $navbar-muted-bg;
+    border-color: $navbar-muted-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-muted-link-color;
+        
+        &:hover {
+            color: $navbar-muted-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-muted-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-muted-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-muted-link-color;
+            
+            &:hover {
+                background-color: $navbar-muted-link-hover-bg;
+                color: $navbar-muted-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-muted-link-active-bg;
+                color: $navbar-muted-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-muted-link-active-bg;
+            color: $navbar-muted-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-muted-link-active-bg;
+                color: $navbar-muted-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-muted-link-active-bg;
+            color: $navbar-muted-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-muted-link-active-bg;
+                color: $navbar-muted-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-primary {
+    background-color: $navbar-primary-bg;
+    border-color: $navbar-primary-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-primary-link-color;
+        
+        &:hover {
+            color: $navbar-primary-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-primary-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-primary-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-primary-link-color;
+            
+            &:hover {
+                background-color: $navbar-primary-link-hover-bg;
+                color: $navbar-primary-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-primary-link-active-bg;
+                color: $navbar-primary-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-primary-link-active-bg;
+            color: $navbar-primary-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-primary-link-active-bg;
+                color: $navbar-primary-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-primary-link-active-bg;
+            color: $navbar-primary-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-primary-link-active-bg;
+                color: $navbar-primary-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-secondary {
+    background-color: $navbar-secondary-bg;
+    border-color: $navbar-secondary-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-secondary-link-color;
+        
+        &:hover {
+            color: $navbar-secondary-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-secondary-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-secondary-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-secondary-link-color;
+            
+            &:hover {
+                background-color: $navbar-secondary-link-hover-bg;
+                color: $navbar-secondary-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-secondary-link-active-bg;
+                color: $navbar-secondary-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-secondary-link-active-bg;
+            color: $navbar-secondary-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-secondary-link-active-bg;
+                color: $navbar-secondary-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-secondary-link-active-bg;
+            color: $navbar-secondary-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-secondary-link-active-bg;
+                color: $navbar-secondary-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-accent {
+    background-color: $navbar-default-bg;
+    border-color: $navbar-default-border;
+    
+    & .navbar-brand {
+        color: $navbar-default-link-color;
+        
+        &:hover {
+            color: $navbar-default-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-default-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-default-link-active-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-default-link-active-color;
+            
+            &:hover {
+                color: $navbar-default-link-hover-color;
+            }
+            
+            &:focus {
+                color: $navbar-default-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-default-link-active-bg;
+            color: $navbar-default-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-default-link-active-bg;
+            color: $navbar-default-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-default-link-active-bg;
+                color: $navbar-default-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-info {
+    background-color: $navbar-info-bg;
+    border-color: $navbar-info-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-info-link-color;
+        
+        &:hover {
+            color: $navbar-info-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-info-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-info-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-info-link-color;
+            
+            &:hover {
+                background-color: $navbar-info-link-hover-bg;
+                color: $navbar-info-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-info-link-active-bg;
+                color: $navbar-info-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-info-link-active-bg;
+            color: $navbar-info-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-info-link-active-bg;
+                color: $navbar-info-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-info-link-active-bg;
+            color: $navbar-info-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-info-link-active-bg;
+                color: $navbar-info-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-success {
+    background-color: $navbar-success-bg;
+    border-color: $navbar-success-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-success-link-color;
+        
+        &:hover {
+            color: $navbar-success-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-success-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-success-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-success-link-color;
+            
+            &:hover {
+                background-color: $navbar-success-link-hover-bg;
+                color: $navbar-success-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-success-link-active-bg;
+                color: $navbar-success-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-success-link-active-bg;
+            color: $navbar-success-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-success-link-active-bg;
+                color: $navbar-success-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-success-link-active-bg;
+            color: $navbar-success-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-success-link-active-bg;
+                color: $navbar-success-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-warning {
+    background-color: $navbar-warning-bg;
+    border-color: $navbar-warning-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-warning-link-color;
+        
+        &:hover {
+            color: $navbar-warning-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-warning-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-warning-link-active-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-warning-link-active-color;
+            
+            &:hover {
+                background-color: $navbar-warning-link-hover-bg;
+                color: $navbar-warning-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-warning-link-active-bg;
+                color: $navbar-warning-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-warning-link-active-bg;
+            color: $navbar-warning-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-warning-link-active-bg;
+                color: $navbar-warning-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-warning-link-active-bg;
+            color: $navbar-warning-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-warning-link-active-bg;
+                color: $navbar-warning-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-danger {
+    background-color: $navbar-danger-bg;
+    border-color: $navbar-danger-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-danger-link-color;
+        
+        &:hover {
+            color: $navbar-danger-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-danger-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-danger-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-danger-link-color;
+            
+            &:hover {
+                background-color: $navbar-danger-link-hover-bg;
+                color: $navbar-danger-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-danger-link-active-bg;
+                color: $navbar-danger-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-danger-link-active-bg;
+            color: $navbar-danger-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-danger-link-active-bg;
+                color: $navbar-danger-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-danger-link-active-bg;
+            color: $navbar-danger-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-danger-link-active-bg;
+                color: $navbar-danger-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-mason {
+    background-color: $navbar-mason-bg;
+    border-color: $navbar-mason-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-mason-link-color;
+        
+        &:hover {
+            color: $navbar-mason-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-mason-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-mason-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-mason-link-color;
+            
+            &:hover {
+                background-color: $navbar-mason-link-hover-bg;
+                color: $navbar-mason-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-mason-link-active-bg;
+                color: $navbar-mason-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-mason-link-active-bg;
+            color: $navbar-mason-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-mason-link-active-bg;
+                color: $navbar-mason-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-mason-link-active-bg;
+            color: $navbar-mason-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-mason-link-active-bg;
+                color: $navbar-mason-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-instinct {
+    background-color: $navbar-instinct-bg;
+    border-color: $navbar-instinct-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-instinct-link-color;
+        
+        &:hover {
+            color: $navbar-instinct-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-instinct-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-instinct-link-active-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-instinct-link-active-color;
+            
+            &:hover {
+                background-color: $navbar-instinct-link-hover-bg;
+                color: $navbar-instinct-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-instinct-link-active-bg;
+                color: $navbar-instinct-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-instinct-link-active-bg;
+            color: $navbar-instinct-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-instinct-link-active-bg;
+                color: $navbar-instinct-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-instinct-link-active-bg;
+            color: $navbar-instinct-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-instinct-link-active-bg;
+                color: $navbar-instinct-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-mystic {
+    background-color: $navbar-mystic-bg;
+    border-color: $navbar-mystic-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-mystic-link-color;
+        
+        &:hover {
+            color: $navbar-mystic-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-mystic-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-mystic-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-mystic-link-color;
+            
+            &:hover {
+                background-color: $navbar-mystic-link-hover-bg;
+                color: $navbar-mystic-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-mystic-link-active-bg;
+                color: $navbar-mystic-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-mystic-link-active-bg;
+            color: $navbar-mystic-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-mystic-link-active-bg;
+                color: $navbar-mystic-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-mystic-link-active-bg;
+            color: $navbar-mystic-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-mystic-link-active-bg;
+                color: $navbar-mystic-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-valor {
+    background-color: $navbar-valor-bg;
+    border-color: $navbar-valor-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-valor-link-color;
+        
+        &:hover {
+            color: $navbar-valor-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-valor-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-valor-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-valor-link-color;
+            
+            &:hover {
+                background-color: $navbar-valor-link-hover-bg;
+                color: $navbar-valor-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-valor-link-active-bg;
+                color: $navbar-valor-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-valor-link-active-bg;
+            color: $navbar-valor-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-valor-link-active-bg;
+                color: $navbar-valor-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-valor-link-active-bg;
+            color: $navbar-valor-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-valor-link-active-bg;
+                color: $navbar-valor-link-active-color;
+            }
+        }
+    }
+}
+
+.navbar-grass {
+    background-color: $navbar-grass-bg;
+    border-color: $navbar-grass-border;
+    
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    
+    & .navbar-brand {
+        color: $navbar-grass-link-color;
+        
+        &:hover {
+            color: $navbar-grass-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-grass-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-grass-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-grass-link-color;
+            
+            &:hover {
+                background-color: $navbar-grass-link-hover-bg;
+                color: $navbar-grass-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-grass-link-active-bg;
+                color: $navbar-grass-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-grass-link-active-bg;
+            color: $navbar-grass-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-grass-link-active-bg;
+                color: $navbar-grass-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-grass-link-active-bg;
+            color: $navbar-grass-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-grass-link-active-bg;
+                color: $navbar-grass-link-active-color;
+            }
+        }
+    }
+}

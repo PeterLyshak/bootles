@@ -10,19 +10,19 @@
     min-height: 100%;
     position: relative;
     
-    @media (min-width: $viewport-sm-min) {
+    @media (min-width: $screen-sm-min) {
         .container {
             width: auto;
         }
     }
     
-    @media (min-width: $viewport-md-min) {
+    @media (min-width: $screen-md-min) {
         .container {
             width: auto;
         }
     }
 
-    @media (min-width: $viewport-lg-min) {
+    @media (min-width: $screen-lg-min) {
         .container {
             max-width: 1170px;
             // width: 980px;
@@ -36,7 +36,6 @@
 }
 
 .canvas-open {
-
     .hidden-canvas-open {
         display: none !important;
     }
@@ -44,7 +43,6 @@
     .visible-canvas-open {
         display: block !important;
     }
-    
 }
 
 /*
@@ -56,7 +54,6 @@
 */
 
 .canvas-body {
-
     & {
         position: relative;
         z-index: 1;
@@ -77,8 +74,7 @@
     }
     
     /* Mobile only */
-    @media (max-width: $viewport-xs-max) {
-    
+    @media (max-width: $screen-xs-max) {
         & .navbar .row > [class^='col-'],
         & .navbar .row > [class*='col-'] {
             padding: 0;
@@ -89,9 +85,7 @@
 }
 
 .canvas-right {
-
     & > .canvas-body {
-        
         & {
             padding-right: 50px;
         }
@@ -102,13 +96,12 @@
     }
     
     .canvas-open & > .canvas-body {
-        
         & {
             padding-right: 200px;
         }
         
         /* Mobile only */
-        @media (max-width: $viewport-xs-max) {
+        @media (max-width: $screen-xs-max) {
             & {
                 left: -200px;
                 padding-right: 0;
@@ -119,7 +112,6 @@
             right: 200px;
         }
     }
-    
 }
 
 
@@ -144,14 +136,12 @@
 }
 
 .canvas-side-left {
-    
     .canvas-left & {
         display: block;
     }
 }
 
 .canvas-side-right {
-    
     & {
         position: absolute;
         left: auto;
@@ -172,7 +162,6 @@
 */
 
 .canvas-sidebar {
-
     & {
         width: 51px;
     }
@@ -182,7 +171,6 @@
     }
     
     & .navbar-nav {
-        
         & {
             margin: 0;
         }
@@ -203,7 +191,4 @@
             }
         }
     }
-    
 }
-
-
