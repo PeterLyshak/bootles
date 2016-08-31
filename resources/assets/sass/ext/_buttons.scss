@@ -55,6 +55,83 @@
 }
 
 
+// Button Glow
+// --------------------------------------------------
+
+.btn-glow {
+    &.btn-default {
+        $shadow: inset 0px -1px 0px 0px $btn-default-border, inset 0px 0px 8px 2px rgba(0,0,0,0.1);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-smoke {
+        $shadow: inset 0px -1px 0px 0px $btn-smoke-border, inset 0px 0px 8px 2px rgba(0,0,0,0.1);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-muted {
+        $shadow: inset 0px -1px 0px 0px $btn-muted-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-primary {
+        $shadow: inset 0px -1px 0px 0px $btn-primary-border, inset 0px 0px 8px 2px rgba(129,198,244,1);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-secondary {
+        $shadow: inset 0px -1px 0px 0px $btn-secondary-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-accent {
+        $shadow: inset 0px -1px 0px 0px $btn-accent-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-info {
+        $shadow: inset 0px -1px 0px 0px $btn-info-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-success {
+        // $shadow: inset 0px -1px 0px 0px $btn-success-border, inset 0px 0px 8px 2px rgba(120,248,215,0.7);
+        $shadow: inset 0px -1px 0px 0px $btn-success-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-warning {
+        $shadow: inset 0px -1px 0px 0px $btn-warning-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-danger {
+        $shadow: inset 0px -1px 0px 0px $btn-danger-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-mason {
+        $shadow: inset 0px -1px 0px 0px $btn-mason-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-instinct {
+        $shadow: inset 0px -1px 0px 0px $btn-instinct-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-mystic {
+        $shadow: inset 0px -1px 0px 0px $btn-mystic-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-valor {
+        $shadow: inset 0px -1px 0px 0px $btn-valor-border, inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+}
+
+
 // Button Sizes
 // --------------------------------------------------
 

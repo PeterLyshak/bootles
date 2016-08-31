@@ -1,0 +1,51 @@
+.input-group-btn {
+    & > select.btn {
+        height: 34px;
+    }
+}
+
+.input-group-sm {
+    .input-group-btn {
+        & > select.btn {
+            height: 30px;
+        }
+    }
+}
+
+.input-group-lg {
+    .input-group-btn {
+        & > select.btn {
+            height: 46px;
+        }
+    }
+}
+
+.input-glow {
+    &.form-control {
+        & {
+            $shadow: inset 0px -1px 0px 0px $input-border, inset 0 1px 1px rgba(0,0,0,0.075);
+            @include box-shadow($shadow);
+        }
+        
+        &:focus {
+            $shadow: inset 0px -1px 0px 0px $input-border, inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+            @include box-shadow($shadow);
+        }
+    }
+    
+    &.input-group-addon {
+        $shadow: inset 0px -1px 0px 0px $input-border;
+        @include box-shadow($shadow);
+    }
+}
+
+// Feedback states
+.has-success {
+  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+}
+.has-warning {
+  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+}
+.has-error {
+  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+}
