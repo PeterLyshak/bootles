@@ -46,12 +46,13 @@ elixir(function(mix) {
     
     mix.sass([
         'bootles-ext.scss',
-    ], 'dist/css/bootles-ext.min.css')
-    .sass([
+    ], 'dist/css/bootles-ext.min.css');
+    
+    /*
+    mix.sass([
         'bootles-theme-base.scss',
     ], 'dist/css/bootles-theme-base.min.css');
     
-    /*
     mix.sass([
         'bootles-theme-rs.scss',
     ], 'dist/css/bootles-theme-rs.min.css');
