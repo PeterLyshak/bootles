@@ -2,8 +2,8 @@
     background-color: $navbar-default-bg;
     border-color: $navbar-default-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-default-link-color;
@@ -147,8 +147,8 @@
     background-color: $navbar-smoke-bg;
     border-color: $navbar-smoke-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-smoke-link-color;
@@ -292,8 +292,8 @@
     background-color: $navbar-muted-bg;
     border-color: $navbar-muted-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-muted-link-color;
@@ -437,8 +437,8 @@
     background-color: $navbar-primary-bg;
     border-color: $navbar-primary-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-primary-link-color;
@@ -582,9 +582,9 @@
     background-color: $navbar-secondary-bg;
     border-color: $navbar-secondary-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
+
     & .navbar-brand {
         color: $navbar-secondary-link-color;
         
@@ -727,8 +727,8 @@
     background-color: $navbar-accent-bg;
     border-color: $navbar-accent-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-accent-link-color;
@@ -872,8 +872,8 @@
     background-color: $navbar-info-bg;
     border-color: $navbar-info-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-info-link-color;
@@ -1017,8 +1017,8 @@
     background-color: $navbar-success-bg;
     border-color: $navbar-success-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-success-link-color;
@@ -1162,8 +1162,8 @@
     background-color: $navbar-warning-bg;
     border-color: $navbar-warning-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-warning-link-color;
@@ -1307,8 +1307,8 @@
     background-color: $navbar-danger-bg;
     border-color: $navbar-danger-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-danger-link-color;
@@ -1452,8 +1452,8 @@
     background-color: $navbar-mason-bg;
     border-color: $navbar-mason-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-mason-link-color;
@@ -1597,8 +1597,8 @@
     background-color: $navbar-instinct-bg;
     border-color: $navbar-instinct-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-instinct-link-color;
@@ -1742,8 +1742,8 @@
     background-color: $navbar-mystic-bg;
     border-color: $navbar-mystic-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-mystic-link-color;
@@ -1887,8 +1887,8 @@
     background-color: $navbar-valor-bg;
     border-color: $navbar-valor-border;
     
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
     
     & .navbar-brand {
         color: $navbar-valor-link-color;
@@ -2025,5 +2025,150 @@
     & .navbar-collapse,
     & .navbar-form {
         border-color: $navbar-valor-border;
+    }
+}
+
+.navbar-indigo {
+    background-color: $navbar-indigo-bg;
+    border-color: $navbar-indigo-border;
+    
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
+    
+    & .navbar-brand {
+        color: $navbar-indigo-link-color;
+        
+        &:hover {
+            color: $navbar-indigo-link-hover-color;
+        }
+        
+        &:focus {
+            color: $navbar-indigo-link-active-color;
+        }
+    }
+    
+    & .navbar-text {
+        color: $navbar-indigo-link-color;
+    }
+    
+    & .navbar-nav > li {
+        & > a {
+            color: $navbar-indigo-link-color;
+            
+            &:hover {
+                background-color: $navbar-indigo-link-hover-bg;
+                color: $navbar-indigo-link-hover-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-indigo-link-active-bg;
+                color: $navbar-indigo-link-active-color;
+            }
+        }
+        
+        &.active > a {
+            background-color: $navbar-indigo-link-active-bg;
+            color: $navbar-indigo-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-indigo-link-active-bg;
+                color: $navbar-indigo-link-active-color;
+            }
+        }
+        
+        &.open > a {
+            background-color: $navbar-indigo-link-active-bg;
+            color: $navbar-indigo-link-active-color;
+            
+            &:hover,
+            &:focus {
+                background-color: $navbar-indigo-link-active-bg;
+                color: $navbar-indigo-link-active-color;
+            }
+        }
+        
+        &.disabled > a {
+            background-color: $navbar-indigo-link-disabled-bg;
+            color: $navbar-indigo-link-disabled-color;
+            
+            &:hover {
+                background-color: $navbar-indigo-link-disabled-bg;
+                color: $navbar-indigo-link-disabled-color;
+            }
+            
+            &:focus {
+                background-color: $navbar-indigo-link-disabled-bg;
+                color: $navbar-indigo-link-disabled-color;
+            }
+        }
+        
+        @media (max-width: $screen-xs-max) {
+            /* Mobile only */
+            
+            &.open .dropdown-menu > li {
+                & > a {
+                    color: $navbar-indigo-link-color;
+                    
+                    &:hover {
+                        background-color: $navbar-indigo-link-hover-bg;
+                        color: $navbar-indigo-link-hover-color;
+                    }
+                    
+                    &:focus {
+                        background-color: $navbar-indigo-link-hover-bg;
+                        color: $navbar-indigo-link-hover-color;
+                    }
+                }
+                
+                &.active > a {
+                    background-color: $navbar-indigo-link-active-bg;
+                    color: $navbar-indigo-link-active-color;
+                    
+                    &:hover {
+                        background-color: $navbar-indigo-link-active-bg;
+                        color: $navbar-indigo-link-active-color;
+                    }
+                    
+                    &:focus {
+                        background-color: $navbar-indigo-link-active-bg;
+                        color: $navbar-indigo-link-active-color;
+                    }
+                }
+            }
+            
+            &.open .dropdown-menu .divider {
+                background-color: $navbar-indigo-border;
+            }
+        }
+    }
+    
+    & .navbar-toggle {
+        border-color: $navbar-indigo-toggle-border-color;
+        
+        & .icon-bar {
+            background-color: $navbar-indigo-toggle-icon-bar-bg;
+        }
+        
+        &:hover {
+            background-color: $navbar-indigo-toggle-hover-bg;
+            
+            & .icon-bar {
+                background-color: $navbar-indigo-toggle-icon-bar-hover-bg;
+            }
+        }
+        
+        &:focus {
+            background-color: $navbar-indigo-toggle-hover-bg;
+            
+            & .icon-bar {
+                background-color: $navbar-indigo-toggle-icon-bar-active-bg;
+            }
+        }
+    }
+    
+    & .navbar-collapse,
+    & .navbar-form {
+        border-color: $navbar-indigo-border;
     }
 }
