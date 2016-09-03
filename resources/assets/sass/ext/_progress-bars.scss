@@ -1,0 +1,77 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Bar itself
+// -------------------------
+
+// Bar of progress
+.progress-bar {
+  color: $progress-bar-color;
+  background-color: $progress-bar-bg;
+  
+  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
+  @include transition(width .6s ease);
+}
+
+// Variations
+// -------------------------
+
+.progress-bar-muted {
+    @include progress-bar-variant($progress-bar-muted-bg);
+}
+
+.progress-bar-secondary {
+    @include progress-bar-variant($progress-bar-secondary-bg);
+}
+
+.progress-bar-accent {
+    @include progress-bar-variant($progress-bar-accent-bg);
+}
+
+.progress-bar-info {
+    @include progress-bar-variant($progress-bar-info-bg);
+}
+
+.progress-bar-success {
+    @include progress-bar-variant($progress-bar-success-bg);
+}
+
+.progress-bar-warning {
+    @include progress-bar-variant($progress-bar-warning-bg);
+}
+
+.progress-bar-danger {
+    @include progress-bar-variant($progress-bar-danger-bg);
+}
+
+.progress-bar-mason {
+    @include progress-bar-variant($progress-bar-mason-bg);
+}
+
+.progress-bar-instinct {
+    @include progress-bar-variant($progress-bar-instinct-bg);
+}
+
+.progress-bar-mystic {
+    @include progress-bar-variant($progress-bar-mystic-bg);
+}
+
+.progress-bar-valor {
+    @include progress-bar-variant($progress-bar-valor-bg);
+}
+
+.progress-bar-dark {
+    @include progress-bar-variant($progress-bar-dark-bg);
+}
+
+// Sizing
+// -------------------------
+
+.progress-sm {
+    height: 10px;
+}
+
+.progress-xs {
+    height: 4px;
+}

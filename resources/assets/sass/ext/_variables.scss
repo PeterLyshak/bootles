@@ -1118,23 +1118,38 @@ $alert-danger-border:         $state-danger-border !default;
 //##
 
 //** Background color of the whole progress component
-$progress-bg:                 #f5f5f5 !default;
+$progress-bg:                          #f5f5f5 !default;
 //** Progress bar text color
-$progress-bar-color:          #fff !default;
+$progress-bar-color:                 #fff !default;
 //** Variable for setting rounded corners on progress bar.
-$progress-border-radius:      $border-radius-base !default;
+$progress-border-radius:           $border-radius-base !default;
 
 //** Default progress bar color
-$progress-bar-bg:             $brand-primary !default;
+$progress-bar-bg:                   $scheme-primary !default;
 //** Success progress bar color
-$progress-bar-success-bg:     $brand-success !default;
+$progress-bar-success-bg:       $scheme-success !default;
 //** Warning progress bar color
-$progress-bar-warning-bg:     $brand-warning !default;
+$progress-bar-warning-bg:       $scheme-warning !default;
 //** Danger progress bar color
-$progress-bar-danger-bg:      $brand-danger !default;
+$progress-bar-danger-bg:        $scheme-danger !default;
 //** Info progress bar color
-$progress-bar-info-bg:        $brand-info !default;
-
+$progress-bar-info-bg:            $scheme-info !default;
+//** Muted progress bar color
+$progress-bar-muted-bg:        $scheme-muted !default;
+//** Secondary progress bar color
+$progress-bar-secondary-bg:   $scheme-secondary !default;
+//** Accent progress bar color
+$progress-bar-accent-bg:       $scheme-accent !default;
+//** Mason progress bar color
+$progress-bar-mason-bg:        $scheme-mason !default;
+//** Instinct progress bar color
+$progress-bar-instinct-bg:      $scheme-instinct !default;
+//** Mystic progress bar color
+$progress-bar-mystic-bg:       $scheme-mystic !default;
+//** Valor progress bar color
+$progress-bar-valor-bg:         $scheme-valor !default;
+//** Dark progress bar color
+$progress-bar-dark-bg:          $scheme-dark !default;
 
 //== List group
 //
