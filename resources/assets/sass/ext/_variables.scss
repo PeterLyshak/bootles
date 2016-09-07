@@ -26,8 +26,8 @@ $scheme-smoke:           #f1f1f1 !default; // #e6ebf1
 $scheme-muted:           #607d8b !default;
 $scheme-primary:         #2196f3 !default;
 $scheme-secondary:     #9933cc !default;
-$scheme-accent:          #e91e63 !default; // #009688
-$scheme-info:              #1cc8ca !default;
+$scheme-accent:          #e91e63 !default;
+$scheme-info:              #00bcd4 !default; // 009688
 $scheme-success:        #4caf50 !default;
 $scheme-warning:        #ff5722 !default;
 $scheme-danger:         #f44336 !default;
@@ -36,6 +36,8 @@ $scheme-instinct:         #ff8800 !default;
 $scheme-mystic:          #0275d8 !default;
 $scheme-valor:            #e51c23 !default;
 $scheme-indigo:           #2856b6 !default;
+$scheme-velvet:           #b20241 !default;
+$scheme-sky:               #03A9F4 !default;
 $scheme-dark:             #222222 !default;
 
 
@@ -225,6 +227,14 @@ $btn-valor-border:             darken($btn-valor-bg, 4.5%) !default;
 $btn-indigo-color:              #fff !default;
 $btn-indigo-bg:                 $scheme-indigo !default;
 $btn-indigo-border:             darken($btn-indigo-bg, 4.5%) !default;
+
+$btn-velvet-color:               #fff !default;
+$btn-velvet-bg:                  $scheme-velvet !default;
+$btn-velvet-border:             darken($btn-velvet-bg, 4.5%) !default;
+
+$btn-sky-color:               #fff !default;
+$btn-sky-bg:                  $scheme-sky !default;
+$btn-sky-border:             darken($btn-sky-bg, 4.5%) !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -499,7 +509,7 @@ $navbar-muted-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-muted-brand-color:                  $navbar-muted-link-color !default;
-$navbar-muted-brand-hover-color:         darken($navbar-muted-brand-color, 10%) !default;
+$navbar-muted-brand-hover-color:         #fff !default;
 $navbar-muted-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -528,7 +538,7 @@ $navbar-primary-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-primary-brand-color:                  $navbar-primary-link-color !default;
-$navbar-primary-brand-hover-color:         darken($navbar-primary-brand-color, 10%) !default;
+$navbar-primary-brand-hover-color:         #fff !default;
 $navbar-primary-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -556,8 +566,8 @@ $navbar-secondary-link-disabled-color:       lighten($navbar-secondary-bg, 12.5%
 $navbar-secondary-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-secondary-brand-color:               $navbar-secondary-link-color !default;
-$navbar-secondary-brand-hover-color:         darken($navbar-secondary-brand-color, 10%) !default;
+$navbar-secondary-brand-color:                  $navbar-secondary-link-color !default;
+$navbar-secondary-brand-hover-color:         #fff !default;
 $navbar-secondary-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -586,7 +596,7 @@ $navbar-accent-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-accent-brand-color:                  $navbar-accent-link-color !default;
-$navbar-accent-brand-hover-color:         darken($navbar-accent-brand-color, 10%) !default;
+$navbar-accent-brand-hover-color:         #fff !default;
 $navbar-accent-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -615,7 +625,7 @@ $navbar-info-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-info-brand-color:                  $navbar-info-link-color !default;
-$navbar-info-brand-hover-color:         darken($navbar-info-brand-color, 10%) !default;
+$navbar-info-brand-hover-color:         #fff !default;
 $navbar-info-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -644,7 +654,7 @@ $navbar-success-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-success-brand-color:                  $navbar-success-link-color !default;
-$navbar-success-brand-hover-color:         darken($navbar-success-brand-color, 10%) !default;
+$navbar-success-brand-hover-color:         #fff !default;
 $navbar-success-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -673,7 +683,7 @@ $navbar-warning-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-warning-brand-color:                  $navbar-warning-link-color !default;
-$navbar-warning-brand-hover-color:         darken($navbar-warning-brand-color, 10%) !default;
+$navbar-warning-brand-hover-color:         #fff !default;
 $navbar-warning-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -702,7 +712,7 @@ $navbar-danger-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-danger-brand-color:                  $navbar-danger-link-color !default;
-$navbar-danger-brand-hover-color:         darken($navbar-danger-brand-color, 10%) !default;
+$navbar-danger-brand-hover-color:         #fff !default;
 $navbar-danger-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -731,7 +741,7 @@ $navbar-mason-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-mason-brand-color:                  $navbar-mason-link-color !default;
-$navbar-mason-brand-hover-color:         darken($navbar-mason-brand-color, 10%) !default;
+$navbar-mason-brand-hover-color:         #fff !default;
 $navbar-mason-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -760,7 +770,7 @@ $navbar-instinct-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-instinct-brand-color:                  $navbar-instinct-link-color !default;
-$navbar-instinct-brand-hover-color:         darken($navbar-instinct-brand-color, 10%) !default;
+$navbar-instinct-brand-hover-color:         #fff !default;
 $navbar-instinct-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -789,7 +799,7 @@ $navbar-mystic-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-mystic-brand-color:                 $navbar-mystic-link-color !default;
-$navbar-mystic-brand-hover-color:         darken($navbar-mystic-brand-color, 10%) !default;
+$navbar-mystic-brand-hover-color:         #fff !default;
 $navbar-mystic-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -818,7 +828,7 @@ $navbar-valor-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-valor-brand-color:                  $navbar-valor-link-color !default;
-$navbar-valor-brand-hover-color:         darken($navbar-valor-brand-color, 10%) !default;
+$navbar-valor-brand-hover-color:         #fff !default;
 $navbar-valor-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -847,7 +857,7 @@ $navbar-indigo-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-indigo-brand-color:               $navbar-indigo-link-color !default;
-$navbar-indigo-brand-hover-color:      darken($navbar-indigo-brand-color, 10%) !default;
+$navbar-indigo-brand-hover-color:      #fff !default;
 $navbar-indigo-brand-hover-bg:         transparent !default;
 
 // Navbar toggle
@@ -857,6 +867,64 @@ $navbar-indigo-toggle-icon-bar-bg:                 #f4f4f4 !default;
 $navbar-indigo-toggle-icon-bar-hover-bg:        #fff !default;
 $navbar-indigo-toggle-icon-bar-active-bg:        #fff !default;
 $navbar-indigo-toggle-border-color:                 transparent !default;
+
+
+// Navbar Velvet
+//=================================================================
+$navbar-velvet-color:              #fff !default;
+$navbar-velvet-bg:                 $scheme-velvet !default;
+$navbar-velvet-border:            darken($navbar-velvet-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-velvet-link-color:                   lighten($navbar-velvet-bg, 40%) !default;
+$navbar-velvet-link-hover-color:          #fff !default;
+$navbar-velvet-link-hover-bg:             transparent !default;
+$navbar-velvet-link-active-color:         #fff !default;
+$navbar-velvet-link-active-bg:            lighten($navbar-velvet-bg, 4%) !default;
+$navbar-velvet-link-disabled-color:       lighten($navbar-velvet-bg, 12.5%) !default;
+$navbar-velvet-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-velvet-brand-color:                  $navbar-velvet-link-color !default;
+$navbar-velvet-brand-hover-color:         #fff !default;
+$navbar-velvet-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-velvet-toggle-hover-bg:                     transparent !default;
+$navbar-velvet-toggle-active-bg:                    transparent !default;
+$navbar-velvet-toggle-icon-bar-bg:                 #f4f4f4 !default;
+$navbar-velvet-toggle-icon-bar-hover-bg:        #fff !default;
+$navbar-velvet-toggle-icon-bar-active-bg:        #fff !default;
+$navbar-velvet-toggle-border-color:                 transparent !default;
+
+
+// Navbar Sky
+//=================================================================
+$navbar-sky-color:              #fff !default;
+$navbar-sky-bg:                 $scheme-sky !default;
+$navbar-sky-border:            darken($navbar-sky-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-sky-link-color:                   lighten($navbar-sky-bg, 40%) !default;
+$navbar-sky-link-hover-color:          #fff !default;
+$navbar-sky-link-hover-bg:             transparent !default;
+$navbar-sky-link-active-color:         #fff !default;
+$navbar-sky-link-active-bg:            lighten($navbar-sky-bg, 4%) !default;
+$navbar-sky-link-disabled-color:       lighten($navbar-sky-bg, 12.5%) !default;
+$navbar-sky-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-sky-brand-color:                  $navbar-sky-link-color !default;
+$navbar-sky-brand-hover-color:         #fff !default;
+$navbar-sky-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-sky-toggle-hover-bg:                     transparent !default;
+$navbar-sky-toggle-active-bg:                    transparent !default;
+$navbar-sky-toggle-icon-bar-bg:                 #f4f4f4 !default;
+$navbar-sky-toggle-icon-bar-hover-bg:        #fff !default;
+$navbar-sky-toggle-icon-bar-active-bg:        #fff !default;
+$navbar-sky-toggle-border-color:                 transparent !default;
 
 
 // Navbar Inverse
