@@ -978,10 +978,69 @@ $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Pills
-$nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
+$nav-pills-border-radius:                      $border-radius-base !default;
+$nav-pills-active-link-hover-bg:            $scheme-primary !default;
 $nav-pills-active-link-hover-color:         $component-active-color !default;
 
+// Muted Pills
+$nav-pills-muted-active-link-hover-bg:            $scheme-muted !default;
+$nav-pills-muted-active-link-hover-color:         $component-active-color !default;
+
+// Secondary Pills
+$nav-pills-secondary-active-link-hover-bg:            $scheme-secondary !default;
+$nav-pills-secondary-active-link-hover-color:         $component-active-color !default;
+
+// Accent Pills
+$nav-pills-accent-active-link-hover-bg:            $scheme-accent !default;
+$nav-pills-accent-active-link-hover-color:         $component-active-color !default;
+
+// Info Pills
+$nav-pills-info-active-link-hover-bg:            $scheme-info !default;
+$nav-pills-info-active-link-hover-color:         $component-active-color !default;
+
+// Success Pills
+$nav-pills-success-active-link-hover-bg:            $scheme-success !default;
+$nav-pills-success-active-link-hover-color:         $component-active-color !default;
+
+// Warning Pills
+$nav-pills-warning-active-link-hover-bg:            $scheme-warning !default;
+$nav-pills-warning-active-link-hover-color:         $component-active-color !default;
+
+// Danger Pills
+$nav-pills-danger-active-link-hover-bg:            $scheme-danger !default;
+$nav-pills-danger-active-link-hover-color:         $component-active-color !default;
+
+// Mason Pills
+$nav-pills-mason-active-link-hover-bg:            $scheme-mason !default;
+$nav-pills-mason-active-link-hover-color:         $component-active-color !default;
+
+// Instinct Pills
+$nav-pills-instinct-active-link-hover-bg:            $scheme-instinct !default;
+$nav-pills-instinct-active-link-hover-color:         $component-active-color !default;
+
+// Mystic Pills
+$nav-pills-mystic-active-link-hover-bg:            $scheme-mystic !default;
+$nav-pills-mystic-active-link-hover-color:         $component-active-color !default;
+
+// Valor Pills
+$nav-pills-valor-active-link-hover-bg:            $scheme-valor !default;
+$nav-pills-valor-active-link-hover-color:         $component-active-color !default;
+
+// Indigo Pills
+$nav-pills-indigo-active-link-hover-bg:            $scheme-indigo !default;
+$nav-pills-indigo-active-link-hover-color:         $component-active-color !default;
+
+// Velvet Pills
+$nav-pills-velvet-active-link-hover-bg:            $scheme-velvet !default;
+$nav-pills-velvet-active-link-hover-color:         $component-active-color !default;
+
+// Sky Pills
+$nav-pills-sky-active-link-hover-bg:            $scheme-sky !default;
+$nav-pills-sky-active-link-hover-color:         $component-active-color !default;
+
+// Dark Pills
+$nav-pills-dark-active-link-hover-bg:            $scheme-dark !default;
+$nav-pills-dark-active-link-hover-color:         $component-active-color !default;
 
 //== Pagination
 //
@@ -1003,6 +1062,81 @@ $pagination-active-border:            $scheme-primary !default;
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               #fff !default;
 $pagination-disabled-border:          #ddd !default;
+
+// Pagination Muted
+$pagination-muted-active-color:              #fff !default;
+$pagination-muted-active-bg:                 $scheme-muted !default;
+$pagination-muted-active-border:            $scheme-muted !default;
+
+// Pagination Secondary
+$pagination-secondary-active-color:              #fff !default;
+$pagination-secondary-active-bg:                 $scheme-secondary !default;
+$pagination-secondary-active-border:            $scheme-secondary !default;
+
+// Pagination Accent
+$pagination-accent-active-color:              #fff !default;
+$pagination-accent-active-bg:                 $scheme-accent !default;
+$pagination-accent-active-border:            $scheme-accent !default;
+
+// Pagination Info
+$pagination-info-active-color:              #fff !default;
+$pagination-info-active-bg:                 $scheme-info !default;
+$pagination-info-active-border:            $scheme-info !default;
+
+// Pagination Success
+$pagination-success-active-color:              #fff !default;
+$pagination-success-active-bg:                 $scheme-success !default;
+$pagination-success-active-border:            $scheme-success !default;
+
+// Pagination Warning
+$pagination-warning-active-color:              #fff !default;
+$pagination-warning-active-bg:                 $scheme-warning !default;
+$pagination-warning-active-border:            $scheme-warning !default;
+
+// Pagination Danger
+$pagination-danger-active-color:              #fff !default;
+$pagination-danger-active-bg:                 $scheme-danger !default;
+$pagination-danger-active-border:            $scheme-danger !default;
+
+// Pagination Mason
+$pagination-mason-active-color:              #fff !default;
+$pagination-mason-active-bg:                 $scheme-mason !default;
+$pagination-mason-active-border:            $scheme-mason !default;
+
+// Pagination Instinct
+$pagination-instinct-active-color:              #fff !default;
+$pagination-instinct-active-bg:                 $scheme-instinct !default;
+$pagination-instinct-active-border:            $scheme-instinct !default;
+
+// Pagination Mystic
+$pagination-mystic-active-color:              #fff !default;
+$pagination-mystic-active-bg:                 $scheme-mystic !default;
+$pagination-mystic-active-border:            $scheme-mystic !default;
+
+// Pagination Valor
+$pagination-valor-active-color:              #fff !default;
+$pagination-valor-active-bg:                 $scheme-valor !default;
+$pagination-valor-active-border:            $scheme-valor !default;
+
+// Pagination Indigo
+$pagination-indigo-active-color:              #fff !default;
+$pagination-indigo-active-bg:                 $scheme-indigo !default;
+$pagination-indigo-active-border:            $scheme-indigo !default;
+
+// Pagination Velvet
+$pagination-velvet-active-color:              #fff !default;
+$pagination-velvet-active-bg:                 $scheme-velvet !default;
+$pagination-velvet-active-border:            $scheme-velvet !default;
+
+// Pagination Sky
+$pagination-sky-active-color:              #fff !default;
+$pagination-sky-active-bg:                 $scheme-sky !default;
+$pagination-sky-active-border:            $scheme-sky !default;
+
+// Pagination Dark
+$pagination-dark-active-color:              #fff !default;
+$pagination-dark-active-bg:                 $scheme-dark !default;
+$pagination-dark-active-border:            $scheme-dark !default;
 
 
 //== Pager
@@ -1217,6 +1351,12 @@ $progress-bar-instinct-bg:      $scheme-instinct !default;
 $progress-bar-mystic-bg:       $scheme-mystic !default;
 //** Valor progress bar color
 $progress-bar-valor-bg:         $scheme-valor !default;
+//** Indigo progress bar color
+$progress-bar-indigo-bg:         $scheme-indigo !default;
+//** Velvet progress bar color
+$progress-bar-velvet-bg:         $scheme-velvet !default;
+//** Sky progress bar color
+$progress-bar-sky-bg:         $scheme-sky !default;
 //** Dark progress bar color
 $progress-bar-dark-bg:          $scheme-dark !default;
 

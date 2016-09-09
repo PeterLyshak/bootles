@@ -22,3 +22,31 @@
     }
   }
 }
+
+@mixin pagination-variant($color, $background, $border) {
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: $color;
+      background-color: $background;
+      border-color: $border;
+    }
+    
+    & {
+        $shadow: 0 2px 2px 0 rgba($background, 0.14),
+                  0 3px 1px -2px rgba($background, 0.2),
+                  0 1px 5px 0 rgba($background, 0.12);
+        @include box-shadow($shadow);
+    }
+    
+    &:hover,
+    &focus {
+        $shadow: 0 14px 26px -12px rgba($background, 0.42),
+                      0 4px 23px 0px rgba(#000, 0.12),
+                      0 8px 10px -5px rgba($background, 0.2);
+        @include box-shadow($shadow);
+    }
+  }
+}

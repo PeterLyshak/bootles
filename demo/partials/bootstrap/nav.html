@@ -1,46 +1,143 @@
-<div id="nav" class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Navs</h3>
+<div id="nav">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Navs</h3>
+        </div>
+        
+        <div class="panel-body">
+            <div class="subsection">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 id="nav-basic">Basic Nav</h2>
+                        
+                        <div>
+                            <ul class="nav nav-basic">
+                                <li class="active">
+                                    <a href>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-home" aria-hidden="true"></i>
+                                            </div>
+                                            
+                                            <div class="media-body">
+                                                Home
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-users" aria-hidden="true"></i>
+                                            </div>
+                                            
+                                            <div class="media-body">
+                                                Profile
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="disabled">
+                                    <a href>Disabled</a>
+                                </li>
+                                <li class="dropdown">
+                                  <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                    Dropdown <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href>Action</a></li>
+                                    <li><a href>Another action</a></li>
+                                    <li><a href>Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href>Separated link</a></li>
+                                  </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h2 id="nav-tabs">Tabs</h2>
+                        
+                        <div class="bs-component">
+                          <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                            <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                            <li class="disabled"><a>Disabled</a></li>
+                            <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade active in" id="home">
+                              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile">
+                              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown1">
+                              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                            </div>
+                            <div class="tab-pane fade" id="dropdown2">
+                              <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 id="nav-breadcrumbs">
+                            Breadcrumbs
+                        </h2>
+                        
+                        <div class="bs-component">
+                            <ul class="breadcrumb">
+                                <li class="active">Home</li>
+                            </ul>
+
+                            <ul class="breadcrumb">
+                                <li><a >Home</a></li>
+                                <li class="active">Library</li>
+                            </ul>
+
+                            <ul class="breadcrumb">
+                                <li><a >Home</a></li>
+                                <li><a >Library</a></li>
+                                <li class="active">Data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="panel-body">
-        <div class="subsection">
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 id="nav-basic">Basic Nav</h2>
-                    
-                    <div>
-                        <ul class="nav nav-basic">
-                            <li class="active">
-                                <a href>
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <i class="fa fa-home" aria-hidden="true"></i>
-                                        </div>
-                                        
-                                        <div class="media-body">
-                                            Home
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href>
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <i class="fa fa-users" aria-hidden="true"></i>
-                                        </div>
-                                        
-                                        <div class="media-body">
-                                            Profile
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="disabled">
-                                <a href>Disabled</a>
-                            </li>
+    <div id="nav-pills" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Navs</h3>
+        </div>
+        
+        <div class="panel-body">
+            <div class="subsection">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Pills</h2>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-muted">
+                            <li class="active"><a href>Muted</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
                             <li class="dropdown">
                               <a href class="dropdown-toggle" data-toggle="dropdown" >
                                 Dropdown <span class="caret"></span>
@@ -53,114 +150,449 @@
                                 <li><a href>Separated link</a></li>
                               </ul>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <h2 id="nav-tabs">Tabs</h2>
-                    
-                    <div class="bs-component">
-                      <ul class="nav nav-tabs">
-                        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                        <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                        <li class="disabled"><a>Disabled</a></li>
-                        <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown" >
-                            Dropdown <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
                           </ul>
-                        </li>
-                      </ul>
-                      <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade active in" id="home">
-                          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                          
+                          <br />
                         </div>
-                        <div class="tab-pane fade" id="profile">
-                          <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                        
+                        <div>
+                          <ul class="nav nav-pills">
+                            <li class="active"><a href>Primary</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
                         </div>
-                        <div class="tab-pane fade" id="dropdown1">
-                          <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-secondary">
+                            <li class="active"><a href>Secondary</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
                         </div>
-                        <div class="tab-pane fade" id="dropdown2">
-                          <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-accent">
+                            <li class="active"><a href>Accent</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
                         </div>
-                      </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-info">
+                            <li class="active"><a href>Info</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-success">
+                            <li class="active"><a href>Success</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-warning">
+                            <li class="active"><a href>Warning</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-danger">
+                            <li class="active"><a href>Danger</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-mason">
+                            <li class="active"><a href>Mason</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-instinct">
+                            <li class="active"><a href>Instinct</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-mystic">
+                            <li class="active"><a href>Mystic</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-valor">
+                            <li class="active"><a href>Valor</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-indigo">
+                            <li class="active"><a href>Indigo</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-velvet">
+                            <li class="active"><a href>Velvet</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-sky">
+                            <li class="active"><a href>Sky</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
+                        
+                        <div>
+                          <ul class="nav nav-pills nav-dark">
+                            <li class="active"><a href>Dark</a></li>
+                            <li><a href>Profile</a></li>
+                            <li class="disabled"><a href>Disabled</a></li>
+                            <li class="dropdown">
+                              <a href class="dropdown-toggle" data-toggle="dropdown" >
+                                Dropdown <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href>Action</a></li>
+                                <li><a href>Another action</a></li>
+                                <li><a href>Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href>Separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <br />
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div id="nav-pills-stacked" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Nav Pills Stacked</h3>
+        </div>
         
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 id="nav-pills">Pills</h2>
-                    
-                    <div class="bs-component">
-                      <ul class="nav nav-pills">
-                        <li class="active"><a >Home</a></li>
-                        <li><a >Profile</a></li>
-                        <li class="disabled"><a >Disabled</a></li>
-                        <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown" >
-                            Dropdown <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a >Action</a></li>
-                            <li><a >Another action</a></li>
-                            <li><a >Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a >Separated link</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <br />
-                    
-                    <div class="bs-component">
-                      <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a >Home</a></li>
-                        <li><a >Profile</a></li>
-                        <li class="disabled"><a >Disabled</a></li>
-                        <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown" >
-                            Dropdown <span class="caret"></span>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a >Action</a></li>
-                            <li><a >Another action</a></li>
-                            <li><a >Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a >Separated link</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <h2 id="nav-breadcrumbs">
-                        Breadcrumbs
-                    </h2>
-                    
-                    <div class="bs-component">
-                        <ul class="breadcrumb">
-                            <li class="active">Home</li>
-                        </ul>
-
-                        <ul class="breadcrumb">
-                            <li><a >Home</a></li>
-                            <li class="active">Library</li>
-                        </ul>
-
-                        <ul class="breadcrumb">
-                            <li><a >Home</a></li>
-                            <li><a >Library</a></li>
-                            <li class="active">Data</li>
-                        </ul>
+        <div class="panel-body">
+            <div class="subsection">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Pills</h2>
+                        
+                        <div>
+                            <div>
+                              <ul class="nav nav-pills">
+                                <li class="active"><a >Primary</a></li>
+                                <li><a >Profile</a></li>
+                                <li class="disabled"><a >Disabled</a></li>
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" >
+                                    Dropdown <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a >Action</a></li>
+                                    <li><a >Another action</a></li>
+                                    <li><a >Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a >Separated link</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <br />
+                            
+                            <div>
+                              <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a >Primary</a></li>
+                                <li><a >Profile</a></li>
+                                <li class="disabled"><a >Disabled</a></li>
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" >
+                                    Dropdown <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a >Action</a></li>
+                                    <li><a >Another action</a></li>
+                                    <li><a >Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a >Separated link</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <hr />
+                        </div>
+                        
+                        <div id="nav-pills-secondary">
+                            <div>
+                              <ul class="nav nav-pills">
+                                <li class="active"><a href>Secondary</a></li>
+                                <li><a >Profile</a></li>
+                                <li class="disabled"><a >Disabled</a></li>
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" >
+                                    Dropdown <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a >Action</a></li>
+                                    <li><a >Another action</a></li>
+                                    <li><a >Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a >Separated link</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <br />
+                            
+                            <div>
+                              <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href>Secondary</a></li>
+                                <li><a >Profile</a></li>
+                                <li class="disabled"><a >Disabled</a></li>
+                                <li class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" >
+                                    Dropdown <span class="caret"></span>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a >Action</a></li>
+                                    <li><a >Another action</a></li>
+                                    <li><a >Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a >Separated link</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <hr />
+                        </div>
+                        
                     </div>
                 </div>
             </div>

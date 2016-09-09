@@ -1,0 +1,230 @@
+//
+// Navs
+// --------------------------------------------------
+
+// Pills
+// -------------------------
+.nav-pills {
+  > li {
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-active-link-hover-color;
+        background-color: $nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-muted {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-muted-active-link-hover-color;
+        background-color: $nav-pills-muted-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-secondary {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-secondary-active-link-hover-color;
+        background-color: $nav-pills-secondary-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-accent {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-accent-active-link-hover-color;
+        background-color: $nav-pills-accent-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-info {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-info-active-link-hover-color;
+        background-color: $nav-pills-info-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-success {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-success-active-link-hover-color;
+        background-color: $nav-pills-success-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-warning {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-warning-active-link-hover-color;
+        background-color: $nav-pills-warning-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-danger {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-danger-active-link-hover-color;
+        background-color: $nav-pills-danger-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-mason {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-mason-active-link-hover-color;
+        background-color: $nav-pills-mason-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-instinct {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-instinct-active-link-hover-color;
+        background-color: $nav-pills-instinct-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-mystic {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-mystic-active-link-hover-color;
+        background-color: $nav-pills-mystic-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-valor {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-valor-active-link-hover-color;
+        background-color: $nav-pills-valor-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-indigo {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-indigo-active-link-hover-color;
+        background-color: $nav-pills-indigo-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-velvet {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-velvet-active-link-hover-color;
+        background-color: $nav-pills-velvet-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-sky {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-sky-active-link-hover-color;
+        background-color: $nav-pills-sky-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+.nav-pills.nav-dark {
+  > li {
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-dark-active-link-hover-color;
+        background-color: $nav-pills-dark-active-link-hover-bg;
+      }
+    }
+  }
+}

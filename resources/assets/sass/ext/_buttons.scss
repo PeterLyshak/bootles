@@ -58,6 +58,13 @@
     @include button-variant($btn-indigo-color, $btn-indigo-bg, $btn-indigo-border);
 }
 
+.btn-velvet {
+    @include button-variant($btn-velvet-color, $btn-velvet-bg, $btn-velvet-border);
+}
+
+.btn-sky {
+    @include button-variant($btn-sky-color, $btn-sky-bg, $btn-sky-border);
+}
 
 // Button Glow
 // --------------------------------------------------

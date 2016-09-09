@@ -80,6 +80,86 @@
   }
 }
 
+
+// Contextual Alternatives
+// --------------------------------------------------
+
+// Muted Variant
+.pagination-muted {
+  @include pagination-variant($pagination-muted-active-color, $pagination-muted-active-bg, $pagination-muted-active-border);
+}
+
+// Secondary Variant
+.pagination-secondary {
+  @include pagination-variant($pagination-secondary-active-color, $pagination-secondary-active-bg, $pagination-secondary-active-border);
+}
+
+// Accent Variant
+.pagination-accent {
+  @include pagination-variant($pagination-accent-active-color, $pagination-accent-active-bg, $pagination-accent-active-border);
+}
+
+// Info Variant
+.pagination-info {
+  @include pagination-variant($pagination-info-active-color, $pagination-info-active-bg, $pagination-info-active-border);
+}
+
+// Success Variant
+.pagination-success {
+  @include pagination-variant($pagination-success-active-color, $pagination-success-active-bg, $pagination-success-active-border);
+}
+
+// Warning Variant
+.pagination-warning {
+  @include pagination-variant($pagination-warning-active-color, $pagination-warning-active-bg, $pagination-warning-active-border);
+}
+
+// Danger Variant
+.pagination-danger {
+  @include pagination-variant($pagination-danger-active-color, $pagination-danger-active-bg, $pagination-danger-active-border);
+}
+
+// Mason Variant
+.pagination-mason {
+  @include pagination-variant($pagination-mason-active-color, $pagination-mason-active-bg, $pagination-mason-active-border);
+}
+
+// Instinct Variant
+.pagination-instinct {
+  @include pagination-variant($pagination-instinct-active-color, $pagination-instinct-active-bg, $pagination-instinct-active-border);
+}
+
+// Mystic Variant
+.pagination-mystic {
+  @include pagination-variant($pagination-mystic-active-color, $pagination-mystic-active-bg, $pagination-mystic-active-border);
+}
+
+// Valor Variant
+.pagination-valor {
+  @include pagination-variant($pagination-valor-active-color, $pagination-valor-active-bg, $pagination-valor-active-border);
+}
+
+// Indigo Variant
+.pagination-indigo {
+  @include pagination-variant($pagination-indigo-active-color, $pagination-indigo-active-bg, $pagination-indigo-active-border);
+}
+
+// Velvet Variant
+.pagination-velvet {
+  @include pagination-variant($pagination-velvet-active-color, $pagination-velvet-active-bg, $pagination-velvet-active-border);
+}
+
+// Sky Variant
+.pagination-sky {
+  @include pagination-variant($pagination-sky-active-color, $pagination-sky-active-bg, $pagination-sky-active-border);
+}
+
+// Dark Variant
+.pagination-dark {
+  @include pagination-variant($pagination-dark-active-color, $pagination-dark-active-bg, $pagination-dark-active-border);
+}
+
+
 // Sizing
 // --------------------------------------------------
 
