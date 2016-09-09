@@ -11,13 +11,13 @@
     &:first-child {
       > a,
       > span {
-        @include border-left-radius($border-radius);
+        @include border-left-radius($pagination-border-radius);
       }
     }
     &:last-child {
       > a,
       > span {
-        @include border-right-radius($border-radius);
+        @include border-right-radius($pagination-border-radius);
       }
     }
   }
