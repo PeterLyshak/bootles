@@ -1,38 +1,10 @@
 // Core variables and mixins
 @import "ext/variables";
-@import "ext/mixins/alerts";
-@import "ext/mixins/background-variant";
-@import "ext/mixins/border-radius";
-@import "ext/mixins/buttons";
-@import "ext/mixins/center-block";
-@import "ext/mixins/clearfix";
-@import "ext/mixins/forms";
-@import "ext/mixins/gradients";
-@import "ext/mixins/grid";
-@import "ext/mixins/grid-framework";
-@import "ext/mixins/hide-text";
-@import "ext/mixins/image";
-@import "ext/mixins/labels";
-@import "ext/mixins/list-group";
-@import "ext/mixins/nav-divider";
-@import "ext/mixins/nav-vertical-align";
-@import "ext/mixins/opacity";
-@import "ext/mixins/pagination";
-@import "ext/mixins/panels";
-@import "ext/mixins/progress-bar";
-@import "ext/mixins/reset-filter";
-@import "ext/mixins/reset-text";
-@import "ext/mixins/resize";
-@import "ext/mixins/responsive-visibility";
-@import "ext/mixins/size";
-@import "ext/mixins/tab-focus";
-@import "ext/mixins/table-row";
-@import "ext/mixins/text-emphasis";
-@import "ext/mixins/text-overflow";
-@import "ext/mixins/vendor-prefixes";
+@import "ext/mixins";
 
 // Core CSS
 @import "ext/base";
+@import "ext/type";
 
 // Layout
 @import "ext/canvas";
