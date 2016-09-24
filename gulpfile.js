@@ -87,7 +87,7 @@ elixir(function(mix) {
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.lazyload.js', // Lazyload
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.scrollstop.js', // Lazyload Scrollstop
         '../../../vendor/swiper/Swiper-3.3.1/dist/js/swiper.jquery.js', // Swiper Carousel
-        '../../../vendor/jquery-fixto/fixto-0.5.0/dist/fixto.js', // Sticky Kit
+        '../../../vendor/jquery-stickr/Stickr.js-1.0.1/jquery.stickr.js', // Stickr
         
         // jQuery Forms
         '../../../vendor/jquery-spinner/jquery.spinner-0.2.1/dist/js/jquery.spinner.js', // Spinner
