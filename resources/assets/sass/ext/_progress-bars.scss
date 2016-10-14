@@ -45,20 +45,8 @@
     @include progress-bar-variant($progress-bar-danger-bg);
 }
 
-.progress-bar-mason {
-    @include progress-bar-variant($progress-bar-mason-bg);
-}
-
-.progress-bar-instinct {
-    @include progress-bar-variant($progress-bar-instinct-bg);
-}
-
-.progress-bar-mystic {
-    @include progress-bar-variant($progress-bar-mystic-bg);
-}
-
-.progress-bar-valor {
-    @include progress-bar-variant($progress-bar-valor-bg);
+.progress-bar-velvet {
+    @include progress-bar-variant($progress-bar-velvet-bg);
 }
 
 .progress-bar-dark {

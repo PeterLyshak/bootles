@@ -121,17 +121,17 @@ mark,
   // automatically.
   color: #fff;
 }
-@include bg-variant('.bg-primary', $scheme-primary);
+@include bg-variant('.bg-primary', $brand-primary);
 
-@include bg-variant('.bg-light', $scheme-light);
+@include bg-variant('.bg-light', $color-light);
 
-@include bg-variant('.bg-smoke', $scheme-smoke);
+@include bg-variant('.bg-smoke', $color-smoke);
 
-@include bg-variant('.bg-muted', $scheme-muted);
+@include bg-variant('.bg-muted', $brand-muted);
 
-@include bg-variant('.bg-secondary', $scheme-secondary);
+@include bg-variant('.bg-secondary', $brand-secondary);
 
-@include bg-variant('.bg-accent', $scheme-accent);
+@include bg-variant('.bg-accent', $brand-accent);
 
 @include bg-variant('.bg-info', $state-info-bg);
 
@@ -141,21 +141,11 @@ mark,
 
 @include bg-variant('.bg-danger', $state-danger-bg);
 
-@include bg-variant('.bg-mason', $scheme-mason);
+@include bg-variant('.bg-indigo', $color-indigo);
 
-@include bg-variant('.bg-instinct', $scheme-instinct);
+@include bg-variant('.bg-velvet', $color-velvet);
 
-@include bg-variant('.bg-mystic', $scheme-mystic);
-
-@include bg-variant('.bg-valor', $scheme-valor);
-
-@include bg-variant('.bg-indigo', $scheme-indigo);
-
-@include bg-variant('.bg-velvet', $scheme-velvet);
-
-@include bg-variant('.bg-sky', $scheme-sky);
-
-@include bg-variant('.bg-dark', $scheme-dark);
+@include bg-variant('.bg-dark', $color-dark);
 
 
 

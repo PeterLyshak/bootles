@@ -119,25 +119,12 @@
   @include pagination-variant($pagination-danger-active-color, $pagination-danger-active-bg, $pagination-danger-active-border);
 }
 
-// Mason Variant
-.pagination-mason {
-  @include pagination-variant($pagination-mason-active-color, $pagination-mason-active-bg, $pagination-mason-active-border);
+// Dark Variant
+.pagination-dark {
+  @include pagination-variant($pagination-dark-active-color, $pagination-dark-active-bg, $pagination-dark-active-border);
 }
 
-// Instinct Variant
-.pagination-instinct {
-  @include pagination-variant($pagination-instinct-active-color, $pagination-instinct-active-bg, $pagination-instinct-active-border);
-}
 
-// Mystic Variant
-.pagination-mystic {
-  @include pagination-variant($pagination-mystic-active-color, $pagination-mystic-active-bg, $pagination-mystic-active-border);
-}
-
-// Valor Variant
-.pagination-valor {
-  @include pagination-variant($pagination-valor-active-color, $pagination-valor-active-bg, $pagination-valor-active-border);
-}
 
 // Indigo Variant
 .pagination-indigo {
@@ -149,15 +136,7 @@
   @include pagination-variant($pagination-velvet-active-color, $pagination-velvet-active-bg, $pagination-velvet-active-border);
 }
 
-// Sky Variant
-.pagination-sky {
-  @include pagination-variant($pagination-sky-active-color, $pagination-sky-active-bg, $pagination-sky-active-border);
-}
 
-// Dark Variant
-.pagination-dark {
-  @include pagination-variant($pagination-dark-active-color, $pagination-dark-active-bg, $pagination-dark-active-border);
-}
 
 
 // Sizing

@@ -1,0 +1,152 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin navbar-variant(
+    $color, $bg, $border,
+    $brand-color, $brand-hover-color, $brand-hover-bg,
+    $link-color, $link-hover-color, $link-hover-bg,
+    $link-active-color, $link-active-bg,
+    $link-disabled-color, $link-disabled-bg,
+    $toggle-border-color, $toggle-hover-bg, $toggle-icon-bar-bg
+) {
+    background-color: $bg;
+    border-color: $border;
+    
+    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    @include box-shadow($shadow);
+    
+    .navbar-brand {
+        color: $brand-color;
+        &:hover,
+        &:focus {
+            color: $brand-hover-color;
+            background-color: $brand-hover-bg;
+        }
+    }
+
+    .navbar-text {
+        color: $color;
+    }
+
+    .navbar-nav {
+        > li > a {
+            color: $link-color;
+
+            &:hover,
+            &:focus {
+                color: $link-hover-color;
+                background-color: $link-hover-bg;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $link-active-color;
+                background-color: $link-active-bg;
+            }
+        }
+        > .disabled > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $link-disabled-color;
+                background-color: $link-disabled-bg;
+            }
+        }
+    }
+
+    // Darken the responsive nav toggle
+    .navbar-toggle {
+        border-color: $toggle-border-color;
+        &:hover,
+        &:focus {
+            background-color: $toggle-hover-bg;
+        }
+        .icon-bar {
+            background-color: $toggle-icon-bar-bg;
+        }
+    }
+
+    .navbar-collapse,
+    .navbar-form {
+        border-color: darken($bg, 7%);
+    }
+
+    // Dropdowns
+    .navbar-nav {
+        > .open > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: $link-active-bg;
+                color: $link-active-color;
+            }
+        }
+
+        @media (max-width: $grid-float-breakpoint-max) {
+            // Dropdowns get custom display
+            .open .dropdown-menu {
+                > .dropdown-header {
+                    border-color: $border;
+                }
+                .divider {
+                    background-color: $border;
+                }
+                > li > a {
+                    color: $link-color;
+                    &:hover,
+                    &:focus {
+                        color: $link-hover-color;
+                        background-color: $link-hover-bg;
+                    }
+                }
+                > .active > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: $link-active-color;
+                        background-color: $link-active-bg;
+                    }
+                }
+                > .disabled > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: $link-disabled-color;
+                        background-color: $link-disabled-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-link {
+        color: $link-color;
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+
+    .btn-link {
+        color: $link-color;
+        &:hover,
+        &:focus {
+            color: $link-hover-color;
+        }
+        &[disabled],
+        fieldset[disabled] & {
+            &:hover,
+            &:focus {
+                color: $link-disabled-color;
+            }
+        }
+    }
+}
+
+// Navbar sizes
+@mixin navbar-size($height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+
+}

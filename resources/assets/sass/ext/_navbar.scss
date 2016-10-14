@@ -1,2428 +1,351 @@
 .navbar-default {
-    background-color: $navbar-default-bg;
-    border-color: $navbar-default-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-default-link-color;
-        
-        &:hover {
-            color: $navbar-default-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-default-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-default-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-default-link-color;
-            
-            &:hover {
-                background-color: $navbar-default-link-hover-bg;
-                color: $navbar-default-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-default-link-active-bg;
-                color: $navbar-default-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-default-link-active-bg;
-            color: $navbar-default-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-default-link-active-bg;
-                color: $navbar-default-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-default-link-active-bg;
-            color: $navbar-default-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-default-link-active-bg;
-                color: $navbar-default-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-default-link-disabled-bg;
-            color: $navbar-default-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-default-link-disabled-bg;
-                color: $navbar-default-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-default-link-disabled-bg;
-                color: $navbar-default-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-default-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-default-link-hover-bg;
-                        color: $navbar-default-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-default-link-hover-bg;
-                        color: $navbar-default-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-default-link-active-bg;
-                    color: $navbar-default-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-default-link-active-bg;
-                        color: $navbar-default-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-default-link-active-bg;
-                        color: $navbar-default-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-default-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-default-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-default-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-default-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-default-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-default-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-default-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-default-border;
-    }
+    @include navbar-variant(
+        $navbar-default-color, $navbar-default-bg, $navbar-default-border,
+        $navbar-default-brand-color, $navbar-default-brand-hover-color, $navbar-default-brand-hover-bg,
+        $navbar-default-link-color, $navbar-default-link-hover-color, $navbar-default-link-hover-bg,
+        $navbar-default-link-active-color, $navbar-default-link-active-bg,
+        $navbar-default-link-disabled-color, $navbar-default-link-disabled-bg,
+        $navbar-default-toggle-border-color, $navbar-default-toggle-hover-bg, $navbar-default-toggle-icon-bar-bg
+    );
 }
 
 .navbar-smoke {
-    background-color: $navbar-smoke-bg;
-    border-color: $navbar-smoke-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-smoke-link-color;
-        
-        &:hover {
-            color: $navbar-smoke-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-smoke-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-smoke-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-smoke-link-color;
-            
-            &:hover {
-                background-color: $navbar-smoke-link-hover-bg;
-                color: $navbar-smoke-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-smoke-link-active-bg;
-                color: $navbar-smoke-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-smoke-link-active-bg;
-            color: $navbar-smoke-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-smoke-link-active-bg;
-                color: $navbar-smoke-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-smoke-link-active-bg;
-            color: $navbar-smoke-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-smoke-link-active-bg;
-                color: $navbar-smoke-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-smoke-link-disabled-bg;
-            color: $navbar-smoke-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-smoke-link-disabled-bg;
-                color: $navbar-smoke-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-smoke-link-disabled-bg;
-                color: $navbar-smoke-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-smoke-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-smoke-link-hover-bg;
-                        color: $navbar-smoke-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-smoke-link-hover-bg;
-                        color: $navbar-smoke-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-smoke-link-active-bg;
-                    color: $navbar-smoke-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-smoke-link-active-bg;
-                        color: $navbar-smoke-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-smoke-link-active-bg;
-                        color: $navbar-smoke-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-smoke-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-smoke-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-smoke-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-smoke-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-smoke-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-smoke-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-smoke-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-smoke-border;
-    }
+    @include navbar-variant(
+        $navbar-smoke-color, $navbar-smoke-bg, $navbar-smoke-border,
+        $navbar-smoke-brand-color, $navbar-smoke-brand-hover-color, $navbar-smoke-brand-hover-bg,
+        $navbar-smoke-link-color, $navbar-smoke-link-hover-color, $navbar-smoke-link-hover-bg,
+        $navbar-smoke-link-active-color, $navbar-smoke-link-active-bg,
+        $navbar-smoke-link-disabled-color, $navbar-smoke-link-disabled-bg,
+        $navbar-smoke-toggle-border-color, $navbar-smoke-toggle-hover-bg, $navbar-smoke-toggle-icon-bar-bg
+    );
 }
 
 .navbar-muted {
-    background-color: $navbar-muted-bg;
-    border-color: $navbar-muted-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-muted-link-color;
-        
-        &:hover {
-            color: $navbar-muted-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-muted-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-muted-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-muted-link-color;
-            
-            &:hover {
-                background-color: $navbar-muted-link-hover-bg;
-                color: $navbar-muted-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-muted-link-active-bg;
-                color: $navbar-muted-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-muted-link-active-bg;
-            color: $navbar-muted-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-muted-link-active-bg;
-                color: $navbar-muted-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-muted-link-active-bg;
-            color: $navbar-muted-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-muted-link-active-bg;
-                color: $navbar-muted-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-muted-link-disabled-bg;
-            color: $navbar-muted-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-muted-link-disabled-bg;
-                color: $navbar-muted-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-muted-link-disabled-bg;
-                color: $navbar-muted-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-muted-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-muted-link-hover-bg;
-                        color: $navbar-muted-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-muted-link-hover-bg;
-                        color: $navbar-muted-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-muted-link-active-bg;
-                    color: $navbar-muted-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-muted-link-active-bg;
-                        color: $navbar-muted-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-muted-link-active-bg;
-                        color: $navbar-muted-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-muted-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-muted-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-muted-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-muted-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-muted-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-muted-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-muted-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-muted-border;
-    }
+    @include navbar-variant(
+        $navbar-muted-color, $navbar-muted-bg, $navbar-muted-border,
+        $navbar-muted-brand-color, $navbar-muted-brand-hover-color, $navbar-muted-brand-hover-bg,
+        $navbar-muted-link-color, $navbar-muted-link-hover-color, $navbar-muted-link-hover-bg,
+        $navbar-muted-link-active-color, $navbar-muted-link-active-bg,
+        $navbar-muted-link-disabled-color, $navbar-muted-link-disabled-bg,
+        $navbar-muted-toggle-border-color, $navbar-muted-toggle-hover-bg, $navbar-muted-toggle-icon-bar-bg
+    );
 }
 
 .navbar-primary {
-    background-color: $navbar-primary-bg;
-    border-color: $navbar-primary-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-primary-link-color;
-        
-        &:hover {
-            color: $navbar-primary-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-primary-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-primary-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-primary-link-color;
-            
-            &:hover {
-                background-color: $navbar-primary-link-hover-bg;
-                color: $navbar-primary-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-primary-link-active-bg;
-                color: $navbar-primary-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-primary-link-active-bg;
-            color: $navbar-primary-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-primary-link-active-bg;
-                color: $navbar-primary-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-primary-link-active-bg;
-            color: $navbar-primary-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-primary-link-active-bg;
-                color: $navbar-primary-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-primary-link-disabled-bg;
-            color: $navbar-primary-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-primary-link-disabled-bg;
-                color: $navbar-primary-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-primary-link-disabled-bg;
-                color: $navbar-primary-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-primary-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-primary-link-hover-bg;
-                        color: $navbar-primary-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-primary-link-hover-bg;
-                        color: $navbar-primary-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-primary-link-active-bg;
-                    color: $navbar-primary-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-primary-link-active-bg;
-                        color: $navbar-primary-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-primary-link-active-bg;
-                        color: $navbar-primary-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-primary-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-primary-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-primary-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-primary-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-primary-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-primary-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-primary-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-primary-border;
-    }
+    @include navbar-variant(
+        $navbar-primary-color, $navbar-primary-bg, $navbar-primary-border,
+        $navbar-primary-brand-color, $navbar-primary-brand-hover-color, $navbar-primary-brand-hover-bg,
+        $navbar-primary-link-color, $navbar-primary-link-hover-color, $navbar-primary-link-hover-bg,
+        $navbar-primary-link-active-color, $navbar-primary-link-active-bg,
+        $navbar-primary-link-disabled-color, $navbar-primary-link-disabled-bg,
+        $navbar-primary-toggle-border-color, $navbar-primary-toggle-hover-bg, $navbar-primary-toggle-icon-bar-bg
+    );
 }
 
 .navbar-secondary {
-    background-color: $navbar-secondary-bg;
-    border-color: $navbar-secondary-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-
-    & .navbar-brand {
-        color: $navbar-secondary-link-color;
-        
-        &:hover {
-            color: $navbar-secondary-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-secondary-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-secondary-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-secondary-link-color;
-            
-            &:hover {
-                background-color: $navbar-secondary-link-hover-bg;
-                color: $navbar-secondary-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-secondary-link-active-bg;
-                color: $navbar-secondary-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-secondary-link-active-bg;
-            color: $navbar-secondary-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-secondary-link-active-bg;
-                color: $navbar-secondary-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-secondary-link-active-bg;
-            color: $navbar-secondary-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-secondary-link-active-bg;
-                color: $navbar-secondary-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-secondary-link-disabled-bg;
-            color: $navbar-secondary-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-secondary-link-disabled-bg;
-                color: $navbar-secondary-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-secondary-link-disabled-bg;
-                color: $navbar-secondary-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-secondary-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-secondary-link-hover-bg;
-                        color: $navbar-secondary-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-secondary-link-hover-bg;
-                        color: $navbar-secondary-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-secondary-link-active-bg;
-                    color: $navbar-secondary-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-secondary-link-active-bg;
-                        color: $navbar-secondary-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-secondary-link-active-bg;
-                        color: $navbar-secondary-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-secondary-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-secondary-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-secondary-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-secondary-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-secondary-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-secondary-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-secondary-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-secondary-border;
-    }
+    @include navbar-variant(
+        $navbar-secondary-color, $navbar-secondary-bg, $navbar-secondary-border,
+        $navbar-secondary-brand-color, $navbar-secondary-brand-hover-color, $navbar-secondary-brand-hover-bg,
+        $navbar-secondary-link-color, $navbar-secondary-link-hover-color, $navbar-secondary-link-hover-bg,
+        $navbar-secondary-link-active-color, $navbar-secondary-link-active-bg,
+        $navbar-secondary-link-disabled-color, $navbar-secondary-link-disabled-bg,
+        $navbar-secondary-toggle-border-color, $navbar-secondary-toggle-hover-bg, $navbar-secondary-toggle-icon-bar-bg
+    );
 }
 
 .navbar-accent {
-    background-color: $navbar-accent-bg;
-    border-color: $navbar-accent-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-accent-link-color;
-        
-        &:hover {
-            color: $navbar-accent-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-accent-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-accent-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-accent-link-color;
-            
-            &:hover {
-                background-color: $navbar-accent-link-hover-bg;
-                color: $navbar-accent-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-accent-link-active-bg;
-                color: $navbar-accent-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-accent-link-active-bg;
-            color: $navbar-accent-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-accent-link-active-bg;
-                color: $navbar-accent-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-accent-link-active-bg;
-            color: $navbar-accent-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-accent-link-active-bg;
-                color: $navbar-accent-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-accent-link-disabled-bg;
-            color: $navbar-accent-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-accent-link-disabled-bg;
-                color: $navbar-accent-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-accent-link-disabled-bg;
-                color: $navbar-accent-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-accent-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-accent-link-hover-bg;
-                        color: $navbar-accent-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-accent-link-hover-bg;
-                        color: $navbar-accent-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-accent-link-active-bg;
-                    color: $navbar-accent-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-accent-link-active-bg;
-                        color: $navbar-accent-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-accent-link-active-bg;
-                        color: $navbar-accent-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-accent-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-accent-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-accent-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-accent-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-accent-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-accent-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-accent-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-accent-border;
-    }
+    @include navbar-variant(
+        $navbar-accent-color, $navbar-accent-bg, $navbar-accent-border,
+        $navbar-accent-brand-color, $navbar-accent-brand-hover-color, $navbar-accent-brand-hover-bg,
+        $navbar-accent-link-color, $navbar-accent-link-hover-color, $navbar-accent-link-hover-bg,
+        $navbar-accent-link-active-color, $navbar-accent-link-active-bg,
+        $navbar-accent-link-disabled-color, $navbar-accent-link-disabled-bg,
+        $navbar-accent-toggle-border-color, $navbar-accent-toggle-hover-bg, $navbar-accent-toggle-icon-bar-bg
+    );
 }
 
-.navbar-info {
-    background-color: $navbar-info-bg;
-    border-color: $navbar-info-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-info-link-color;
-        
-        &:hover {
-            color: $navbar-info-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-info-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-info-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-info-link-color;
-            
-            &:hover {
-                background-color: $navbar-info-link-hover-bg;
-                color: $navbar-info-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-info-link-active-bg;
-                color: $navbar-info-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-info-link-active-bg;
-            color: $navbar-info-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-info-link-active-bg;
-                color: $navbar-info-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-info-link-active-bg;
-            color: $navbar-info-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-info-link-active-bg;
-                color: $navbar-info-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-info-link-disabled-bg;
-            color: $navbar-info-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-info-link-disabled-bg;
-                color: $navbar-info-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-info-link-disabled-bg;
-                color: $navbar-info-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-info-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-info-link-hover-bg;
-                        color: $navbar-info-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-info-link-hover-bg;
-                        color: $navbar-info-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-info-link-active-bg;
-                    color: $navbar-info-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-info-link-active-bg;
-                        color: $navbar-info-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-info-link-active-bg;
-                        color: $navbar-info-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-info-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-info-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-info-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-info-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-info-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-info-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-info-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-info-border;
-    }
+.navbar-red {
+    @include navbar-variant(
+        $navbar-red-color, $navbar-red-bg, $navbar-red-border,
+        $navbar-red-brand-color, $navbar-red-brand-hover-color, $navbar-red-brand-hover-bg,
+        $navbar-red-link-color, $navbar-red-link-hover-color, $navbar-red-link-hover-bg,
+        $navbar-red-link-active-color, $navbar-red-link-active-bg,
+        $navbar-red-link-disabled-color, $navbar-red-link-disabled-bg,
+        $navbar-red-toggle-border-color, $navbar-red-toggle-hover-bg, $navbar-red-toggle-icon-bar-bg
+    );
 }
 
-.navbar-success {
-    background-color: $navbar-success-bg;
-    border-color: $navbar-success-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-success-link-color;
-        
-        &:hover {
-            color: $navbar-success-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-success-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-success-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-success-link-color;
-            
-            &:hover {
-                background-color: $navbar-success-link-hover-bg;
-                color: $navbar-success-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-success-link-active-bg;
-                color: $navbar-success-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-success-link-active-bg;
-            color: $navbar-success-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-success-link-active-bg;
-                color: $navbar-success-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-success-link-active-bg;
-            color: $navbar-success-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-success-link-active-bg;
-                color: $navbar-success-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-success-link-disabled-bg;
-            color: $navbar-success-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-success-link-disabled-bg;
-                color: $navbar-success-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-success-link-disabled-bg;
-                color: $navbar-success-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-success-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-success-link-hover-bg;
-                        color: $navbar-success-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-success-link-hover-bg;
-                        color: $navbar-success-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-success-link-active-bg;
-                    color: $navbar-success-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-success-link-active-bg;
-                        color: $navbar-success-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-success-link-active-bg;
-                        color: $navbar-success-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-success-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-success-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-success-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-success-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-success-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-success-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-success-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-success-border;
-    }
-}
-
-.navbar-warning {
-    background-color: $navbar-warning-bg;
-    border-color: $navbar-warning-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-warning-link-color;
-        
-        &:hover {
-            color: $navbar-warning-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-warning-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-warning-link-active-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-warning-link-active-color;
-            
-            &:hover {
-                background-color: $navbar-warning-link-hover-bg;
-                color: $navbar-warning-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-warning-link-active-bg;
-                color: $navbar-warning-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-warning-link-active-bg;
-            color: $navbar-warning-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-warning-link-active-bg;
-                color: $navbar-warning-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-warning-link-active-bg;
-            color: $navbar-warning-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-warning-link-active-bg;
-                color: $navbar-warning-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-warning-link-disabled-bg;
-            color: $navbar-warning-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-warning-link-disabled-bg;
-                color: $navbar-warning-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-warning-link-disabled-bg;
-                color: $navbar-warning-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-warning-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-warning-link-hover-bg;
-                        color: $navbar-warning-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-warning-link-hover-bg;
-                        color: $navbar-warning-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-warning-link-active-bg;
-                    color: $navbar-warning-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-warning-link-active-bg;
-                        color: $navbar-warning-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-warning-link-active-bg;
-                        color: $navbar-warning-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-warning-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-warning-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-warning-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-warning-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-warning-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-warning-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-warning-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-warning-border;
-    }
-}
-
-.navbar-danger {
-  background-color: $navbar-danger-bg;
-  border-color: $navbar-danger-border;
-
-  .navbar-brand {
-    color: $navbar-danger-brand-color;
-    &:hover,
-    &:focus {
-      color: $navbar-danger-brand-hover-color;
-      background-color: $navbar-danger-brand-hover-bg;
-    }
-  }
-
-  .navbar-text {
-    color: $navbar-danger-color;
-  }
-
-  .navbar-nav {
-    > li > a {
-      color: $navbar-danger-link-color;
-
-      &:hover,
-      &:focus {
-        color: $navbar-danger-link-hover-color;
-        background-color: $navbar-danger-link-hover-bg;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-danger-link-active-color;
-        background-color: $navbar-danger-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-danger-link-disabled-color;
-        background-color: $navbar-danger-link-disabled-bg;
-      }
-    }
-  }
-
-  // Darken the responsive nav toggle
-  .navbar-toggle {
-    border-color: $navbar-danger-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: $navbar-danger-toggle-hover-bg;
-    }
-    .icon-bar {
-      background-color: $navbar-danger-toggle-icon-bar-bg;
-    }
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: darken($navbar-danger-bg, 7%);
-  }
-
-  // Dropdowns
-  .navbar-nav {
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $navbar-danger-link-active-bg;
-        color: $navbar-danger-link-active-color;
-      }
-    }
-
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display
-      .open .dropdown-menu {
-        > .dropdown-header {
-          border-color: $navbar-danger-border;
-        }
-        .divider {
-          background-color: $navbar-danger-border;
-        }
-        > li > a {
-          color: $navbar-danger-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-danger-link-hover-color;
-            background-color: $navbar-danger-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-danger-link-active-color;
-            background-color: $navbar-danger-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-danger-link-disabled-color;
-            background-color: $navbar-danger-link-disabled-bg;
-          }
-        }
-      }
-    }
-  }
-
-  .navbar-link {
-    color: $navbar-danger-link-color;
-    &:hover {
-      color: $navbar-danger-link-hover-color;
-    }
-  }
-
-  .btn-link {
-    color: $navbar-danger-link-color;
-    &:hover,
-    &:focus {
-      color: $navbar-danger-link-hover-color;
-    }
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        color: $navbar-danger-link-disabled-color;
-      }
-    }
-  }
-}
-
-.navbar-mason {
-    background-color: $navbar-mason-bg;
-    border-color: $navbar-mason-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-mason-link-color;
-        
-        &:hover {
-            color: $navbar-mason-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-mason-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-mason-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-mason-link-color;
-            
-            &:hover {
-                background-color: $navbar-mason-link-hover-bg;
-                color: $navbar-mason-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-mason-link-active-bg;
-                color: $navbar-mason-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-mason-link-active-bg;
-            color: $navbar-mason-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-mason-link-active-bg;
-                color: $navbar-mason-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-mason-link-active-bg;
-            color: $navbar-mason-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-mason-link-active-bg;
-                color: $navbar-mason-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-mason-link-disabled-bg;
-            color: $navbar-mason-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-mason-link-disabled-bg;
-                color: $navbar-mason-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-mason-link-disabled-bg;
-                color: $navbar-mason-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-mason-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-mason-link-hover-bg;
-                        color: $navbar-mason-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-mason-link-hover-bg;
-                        color: $navbar-mason-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-mason-link-active-bg;
-                    color: $navbar-mason-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-mason-link-active-bg;
-                        color: $navbar-mason-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-mason-link-active-bg;
-                        color: $navbar-mason-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-mason-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-mason-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-mason-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-mason-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-mason-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-mason-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-mason-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-mason-border;
-    }
-}
-
-.navbar-instinct {
-    background-color: $navbar-instinct-bg;
-    border-color: $navbar-instinct-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-instinct-link-color;
-        
-        &:hover {
-            color: $navbar-instinct-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-instinct-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-instinct-link-active-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-instinct-link-active-color;
-            
-            &:hover {
-                background-color: $navbar-instinct-link-hover-bg;
-                color: $navbar-instinct-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-instinct-link-active-bg;
-                color: $navbar-instinct-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-instinct-link-active-bg;
-            color: $navbar-instinct-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-instinct-link-active-bg;
-                color: $navbar-instinct-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-instinct-link-active-bg;
-            color: $navbar-instinct-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-instinct-link-active-bg;
-                color: $navbar-instinct-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-instinct-link-disabled-bg;
-            color: $navbar-instinct-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-instinct-link-disabled-bg;
-                color: $navbar-instinct-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-instinct-link-disabled-bg;
-                color: $navbar-instinct-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-instinct-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-instinct-link-hover-bg;
-                        color: $navbar-instinct-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-instinct-link-hover-bg;
-                        color: $navbar-instinct-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-instinct-link-active-bg;
-                    color: $navbar-instinct-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-instinct-link-active-bg;
-                        color: $navbar-instinct-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-instinct-link-active-bg;
-                        color: $navbar-instinct-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-instinct-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-instinct-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-instinct-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-instinct-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-instinct-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-instinct-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-instinct-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-instinct-border;
-    }
-}
-
-.navbar-mystic {
-    background-color: $navbar-mystic-bg;
-    border-color: $navbar-mystic-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-mystic-link-color;
-        
-        &:hover {
-            color: $navbar-mystic-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-mystic-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-mystic-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-mystic-link-color;
-            
-            &:hover {
-                background-color: $navbar-mystic-link-hover-bg;
-                color: $navbar-mystic-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-mystic-link-active-bg;
-                color: $navbar-mystic-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-mystic-link-active-bg;
-            color: $navbar-mystic-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-mystic-link-active-bg;
-                color: $navbar-mystic-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-mystic-link-active-bg;
-            color: $navbar-mystic-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-mystic-link-active-bg;
-                color: $navbar-mystic-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-mystic-link-disabled-bg;
-            color: $navbar-mystic-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-mystic-link-disabled-bg;
-                color: $navbar-mystic-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-mystic-link-disabled-bg;
-                color: $navbar-mystic-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-mystic-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-mystic-link-hover-bg;
-                        color: $navbar-mystic-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-mystic-link-hover-bg;
-                        color: $navbar-mystic-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-mystic-link-active-bg;
-                    color: $navbar-mystic-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-mystic-link-active-bg;
-                        color: $navbar-mystic-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-mystic-link-active-bg;
-                        color: $navbar-mystic-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-mystic-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-mystic-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-mystic-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-mystic-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-mystic-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-mystic-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-mystic-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-mystic-border;
-    }
-}
-
-.navbar-valor {
-    background-color: $navbar-valor-bg;
-    border-color: $navbar-valor-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-valor-link-color;
-        
-        &:hover {
-            color: $navbar-valor-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-valor-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-valor-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-valor-link-color;
-            
-            &:hover {
-                background-color: $navbar-valor-link-hover-bg;
-                color: $navbar-valor-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-valor-link-active-bg;
-                color: $navbar-valor-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-valor-link-active-bg;
-            color: $navbar-valor-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-valor-link-active-bg;
-                color: $navbar-valor-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-valor-link-active-bg;
-            color: $navbar-valor-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-valor-link-active-bg;
-                color: $navbar-valor-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-valor-link-disabled-bg;
-            color: $navbar-valor-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-valor-link-disabled-bg;
-                color: $navbar-valor-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-valor-link-disabled-bg;
-                color: $navbar-valor-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-valor-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-valor-link-hover-bg;
-                        color: $navbar-valor-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-valor-link-hover-bg;
-                        color: $navbar-valor-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-valor-link-active-bg;
-                    color: $navbar-valor-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-valor-link-active-bg;
-                        color: $navbar-valor-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-valor-link-active-bg;
-                        color: $navbar-valor-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-valor-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-valor-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-valor-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-valor-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-valor-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-valor-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-valor-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-valor-border;
-    }
-}
-
-.navbar-indigo {
-    background-color: $navbar-indigo-bg;
-    border-color: $navbar-indigo-border;
-    
-    $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    @include box-shadow($shadow);
-    
-    & .navbar-brand {
-        color: $navbar-indigo-link-color;
-        
-        &:hover {
-            color: $navbar-indigo-link-hover-color;
-        }
-        
-        &:focus {
-            color: $navbar-indigo-link-active-color;
-        }
-    }
-    
-    & .navbar-text {
-        color: $navbar-indigo-link-color;
-    }
-    
-    & .navbar-nav > li {
-        & > a {
-            color: $navbar-indigo-link-color;
-            
-            &:hover {
-                background-color: $navbar-indigo-link-hover-bg;
-                color: $navbar-indigo-link-hover-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-indigo-link-active-bg;
-                color: $navbar-indigo-link-active-color;
-            }
-        }
-        
-        &.active > a {
-            background-color: $navbar-indigo-link-active-bg;
-            color: $navbar-indigo-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-indigo-link-active-bg;
-                color: $navbar-indigo-link-active-color;
-            }
-        }
-        
-        &.open > a {
-            background-color: $navbar-indigo-link-active-bg;
-            color: $navbar-indigo-link-active-color;
-            
-            &:hover,
-            &:focus {
-                background-color: $navbar-indigo-link-active-bg;
-                color: $navbar-indigo-link-active-color;
-            }
-        }
-        
-        &.disabled > a {
-            background-color: $navbar-indigo-link-disabled-bg;
-            color: $navbar-indigo-link-disabled-color;
-            
-            &:hover {
-                background-color: $navbar-indigo-link-disabled-bg;
-                color: $navbar-indigo-link-disabled-color;
-            }
-            
-            &:focus {
-                background-color: $navbar-indigo-link-disabled-bg;
-                color: $navbar-indigo-link-disabled-color;
-            }
-        }
-        
-        @media (max-width: $screen-xs-max) {
-            /* Mobile only */
-            
-            &.open .dropdown-menu > li {
-                & > a {
-                    color: $navbar-indigo-link-color;
-                    
-                    &:hover {
-                        background-color: $navbar-indigo-link-hover-bg;
-                        color: $navbar-indigo-link-hover-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-indigo-link-hover-bg;
-                        color: $navbar-indigo-link-hover-color;
-                    }
-                }
-                
-                &.active > a {
-                    background-color: $navbar-indigo-link-active-bg;
-                    color: $navbar-indigo-link-active-color;
-                    
-                    &:hover {
-                        background-color: $navbar-indigo-link-active-bg;
-                        color: $navbar-indigo-link-active-color;
-                    }
-                    
-                    &:focus {
-                        background-color: $navbar-indigo-link-active-bg;
-                        color: $navbar-indigo-link-active-color;
-                    }
-                }
-            }
-            
-            &.open .dropdown-menu .divider {
-                background-color: $navbar-indigo-border;
-            }
-        }
-    }
-    
-    & .navbar-toggle {
-        border-color: $navbar-indigo-toggle-border-color;
-        
-        & .icon-bar {
-            background-color: $navbar-indigo-toggle-icon-bar-bg;
-        }
-        
-        &:hover {
-            background-color: $navbar-indigo-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-indigo-toggle-icon-bar-hover-bg;
-            }
-        }
-        
-        &:focus {
-            background-color: $navbar-indigo-toggle-hover-bg;
-            
-            & .icon-bar {
-                background-color: $navbar-indigo-toggle-icon-bar-active-bg;
-            }
-        }
-    }
-    
-    & .navbar-collapse,
-    & .navbar-form {
-        border-color: $navbar-indigo-border;
-    }
+.navbar-pink {
+    @include navbar-variant(
+        $navbar-pink-color, $navbar-pink-bg, $navbar-pink-border,
+        $navbar-pink-brand-color, $navbar-pink-brand-hover-color, $navbar-pink-brand-hover-bg,
+        $navbar-pink-link-color, $navbar-pink-link-hover-color, $navbar-pink-link-hover-bg,
+        $navbar-pink-link-active-color, $navbar-pink-link-active-bg,
+        $navbar-pink-link-disabled-color, $navbar-pink-link-disabled-bg,
+        $navbar-pink-toggle-border-color, $navbar-pink-toggle-hover-bg, $navbar-pink-toggle-icon-bar-bg
+    );
 }
 
 .navbar-velvet {
-  background-color: $navbar-velvet-bg;
-  border-color: $navbar-velvet-border;
-
-  .navbar-brand {
-    color: $navbar-velvet-brand-color;
-    &:hover,
-    &:focus {
-      color: $navbar-velvet-brand-hover-color;
-      background-color: $navbar-velvet-brand-hover-bg;
-    }
-  }
-
-  .navbar-text {
-    color: $navbar-velvet-color;
-  }
-
-  .navbar-nav {
-    > li > a {
-      color: $navbar-velvet-link-color;
-
-      &:hover,
-      &:focus {
-        color: $navbar-velvet-link-hover-color;
-        background-color: $navbar-velvet-link-hover-bg;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-velvet-link-active-color;
-        background-color: $navbar-velvet-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-velvet-link-disabled-color;
-        background-color: $navbar-velvet-link-disabled-bg;
-      }
-    }
-  }
-
-  // Darken the responsive nav toggle
-  .navbar-toggle {
-    border-color: $navbar-velvet-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: $navbar-velvet-toggle-hover-bg;
-    }
-    .icon-bar {
-      background-color: $navbar-velvet-toggle-icon-bar-bg;
-    }
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: darken($navbar-velvet-bg, 7%);
-  }
-
-  // Dropdowns
-  .navbar-nav {
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $navbar-velvet-link-active-bg;
-        color: $navbar-velvet-link-active-color;
-      }
-    }
-
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display
-      .open .dropdown-menu {
-        > .dropdown-header {
-          border-color: $navbar-velvet-border;
-        }
-        .divider {
-          background-color: $navbar-velvet-border;
-        }
-        > li > a {
-          color: $navbar-velvet-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-velvet-link-hover-color;
-            background-color: $navbar-velvet-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-velvet-link-active-color;
-            background-color: $navbar-velvet-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-velvet-link-disabled-color;
-            background-color: $navbar-velvet-link-disabled-bg;
-          }
-        }
-      }
-    }
-  }
-
-  .navbar-link {
-    color: $navbar-velvet-link-color;
-    &:hover {
-      color: $navbar-velvet-link-hover-color;
-    }
-  }
-
-  .btn-link {
-    color: $navbar-velvet-link-color;
-    &:hover,
-    &:focus {
-      color: $navbar-velvet-link-hover-color;
-    }
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        color: $navbar-velvet-link-disabled-color;
-      }
-    }
-  }
+    @include navbar-variant(
+        $navbar-velvet-color, $navbar-velvet-bg, $navbar-velvet-border,
+        $navbar-velvet-brand-color, $navbar-velvet-brand-hover-color, $navbar-velvet-brand-hover-bg,
+        $navbar-velvet-link-color, $navbar-velvet-link-hover-color, $navbar-velvet-link-hover-bg,
+        $navbar-velvet-link-active-color, $navbar-velvet-link-active-bg,
+        $navbar-velvet-link-disabled-color, $navbar-velvet-link-disabled-bg,
+        $navbar-velvet-toggle-border-color, $navbar-velvet-toggle-hover-bg, $navbar-velvet-toggle-icon-bar-bg
+    );
 }
 
-.navbar-sky {
-  background-color: $navbar-sky-bg;
-  border-color: $navbar-sky-border;
+.navbar-purple {
+    @include navbar-variant(
+        $navbar-purple-color, $navbar-purple-bg, $navbar-purple-border,
+        $navbar-purple-brand-color, $navbar-purple-brand-hover-color, $navbar-purple-brand-hover-bg,
+        $navbar-purple-link-color, $navbar-purple-link-hover-color, $navbar-purple-link-hover-bg,
+        $navbar-purple-link-active-color, $navbar-purple-link-active-bg,
+        $navbar-purple-link-disabled-color, $navbar-purple-link-disabled-bg,
+        $navbar-purple-toggle-border-color, $navbar-purple-toggle-hover-bg, $navbar-purple-toggle-icon-bar-bg
+    );
+}
 
-  .navbar-brand {
-    color: $navbar-sky-brand-color;
-    &:hover,
-    &:focus {
-      color: $navbar-sky-brand-hover-color;
-      background-color: $navbar-sky-brand-hover-bg;
+.navbar-deepPurple {
+    @include navbar-variant(
+        $navbar-deepPurple-color, $navbar-deepPurple-bg, $navbar-deepPurple-border,
+        $navbar-deepPurple-brand-color, $navbar-deepPurple-brand-hover-color, $navbar-deepPurple-brand-hover-bg,
+        $navbar-deepPurple-link-color, $navbar-deepPurple-link-hover-color, $navbar-deepPurple-link-hover-bg,
+        $navbar-deepPurple-link-active-color, $navbar-deepPurple-link-active-bg,
+        $navbar-deepPurple-link-disabled-color, $navbar-deepPurple-link-disabled-bg,
+        $navbar-deepPurple-toggle-border-color, $navbar-deepPurple-toggle-hover-bg, $navbar-deepPurple-toggle-icon-bar-bg
+    );
+}
+
+.navbar-indigo {
+    @include navbar-variant(
+        $navbar-indigo-color, $navbar-indigo-bg, $navbar-indigo-border,
+        $navbar-indigo-brand-color, $navbar-indigo-brand-hover-color, $navbar-indigo-brand-hover-bg,
+        $navbar-indigo-link-color, $navbar-indigo-link-hover-color, $navbar-indigo-link-hover-bg,
+        $navbar-indigo-link-active-color, $navbar-indigo-link-active-bg,
+        $navbar-indigo-link-disabled-color, $navbar-indigo-link-disabled-bg,
+        $navbar-indigo-toggle-border-color, $navbar-indigo-toggle-hover-bg, $navbar-indigo-toggle-icon-bar-bg
+    );
+}
+
+.navbar-blue {
+    @include navbar-variant(
+        $navbar-blue-color, $navbar-blue-bg, $navbar-blue-border,
+        $navbar-blue-brand-color, $navbar-blue-brand-hover-color, $navbar-blue-brand-hover-bg,
+        $navbar-blue-link-color, $navbar-blue-link-hover-color, $navbar-blue-link-hover-bg,
+        $navbar-blue-link-active-color, $navbar-blue-link-active-bg,
+        $navbar-blue-link-disabled-color, $navbar-blue-link-disabled-bg,
+        $navbar-blue-toggle-border-color, $navbar-blue-toggle-hover-bg, $navbar-blue-toggle-icon-bar-bg
+    );
+}
+
+.navbar-lightBlue {
+    @include navbar-variant(
+        $navbar-lightBlue-color, $navbar-lightBlue-bg, $navbar-lightBlue-border,
+        $navbar-lightBlue-brand-color, $navbar-lightBlue-brand-hover-color, $navbar-lightBlue-brand-hover-bg,
+        $navbar-lightBlue-link-color, $navbar-lightBlue-link-hover-color, $navbar-lightBlue-link-hover-bg,
+        $navbar-lightBlue-link-active-color, $navbar-lightBlue-link-active-bg,
+        $navbar-lightBlue-link-disabled-color, $navbar-lightBlue-link-disabled-bg,
+        $navbar-lightBlue-toggle-border-color, $navbar-lightBlue-toggle-hover-bg, $navbar-lightBlue-toggle-icon-bar-bg
+    );
+}
+
+.navbar-cyan {
+    @include navbar-variant(
+        $navbar-cyan-color, $navbar-cyan-bg, $navbar-cyan-border,
+        $navbar-cyan-brand-color, $navbar-cyan-brand-hover-color, $navbar-cyan-brand-hover-bg,
+        $navbar-cyan-link-color, $navbar-cyan-link-hover-color, $navbar-cyan-link-hover-bg,
+        $navbar-cyan-link-active-color, $navbar-cyan-link-active-bg,
+        $navbar-cyan-link-disabled-color, $navbar-cyan-link-disabled-bg,
+        $navbar-cyan-toggle-border-color, $navbar-cyan-toggle-hover-bg, $navbar-cyan-toggle-icon-bar-bg
+    );
+}
+
+.navbar-teal {
+    @include navbar-variant(
+        $navbar-teal-color, $navbar-teal-bg, $navbar-teal-border,
+        $navbar-teal-brand-color, $navbar-teal-brand-hover-color, $navbar-teal-brand-hover-bg,
+        $navbar-teal-link-color, $navbar-teal-link-hover-color, $navbar-teal-link-hover-bg,
+        $navbar-teal-link-active-color, $navbar-teal-link-active-bg,
+        $navbar-teal-link-disabled-color, $navbar-teal-link-disabled-bg,
+        $navbar-teal-toggle-border-color, $navbar-teal-toggle-hover-bg, $navbar-teal-toggle-icon-bar-bg
+    );
+}
+
+.navbar-green {
+    @include navbar-variant(
+        $navbar-green-color, $navbar-green-bg, $navbar-green-border,
+        $navbar-green-brand-color, $navbar-green-brand-hover-color, $navbar-green-brand-hover-bg,
+        $navbar-green-link-color, $navbar-green-link-hover-color, $navbar-green-link-hover-bg,
+        $navbar-green-link-active-color, $navbar-green-link-active-bg,
+        $navbar-green-link-disabled-color, $navbar-green-link-disabled-bg,
+        $navbar-green-toggle-border-color, $navbar-green-toggle-hover-bg, $navbar-green-toggle-icon-bar-bg
+    );
+}
+
+.navbar-lightGreen {
+    @include navbar-variant(
+        $navbar-lightGreen-color, $navbar-lightGreen-bg, $navbar-lightGreen-border,
+        $navbar-lightGreen-brand-color, $navbar-lightGreen-brand-hover-color, $navbar-lightGreen-brand-hover-bg,
+        $navbar-lightGreen-link-color, $navbar-lightGreen-link-hover-color, $navbar-lightGreen-link-hover-bg,
+        $navbar-lightGreen-link-active-color, $navbar-lightGreen-link-active-bg,
+        $navbar-lightGreen-link-disabled-color, $navbar-lightGreen-link-disabled-bg,
+        $navbar-lightGreen-toggle-border-color, $navbar-lightGreen-toggle-hover-bg, $navbar-lightGreen-toggle-icon-bar-bg
+    );
+}
+
+.navbar-lime {
+    @include navbar-variant(
+        $navbar-lime-color, $navbar-lime-bg, $navbar-lime-border,
+        $navbar-lime-brand-color, $navbar-lime-brand-hover-color, $navbar-lime-brand-hover-bg,
+        $navbar-lime-link-color, $navbar-lime-link-hover-color, $navbar-lime-link-hover-bg,
+        $navbar-lime-link-active-color, $navbar-lime-link-active-bg,
+        $navbar-lime-link-disabled-color, $navbar-lime-link-disabled-bg,
+        $navbar-lime-toggle-border-color, $navbar-lime-toggle-hover-bg, $navbar-lime-toggle-icon-bar-bg
+    );
+}
+
+.navbar-yellow {
+    @include navbar-variant(
+        $navbar-yellow-color, $navbar-yellow-bg, $navbar-yellow-border,
+        $navbar-yellow-brand-color, $navbar-yellow-brand-hover-color, $navbar-yellow-brand-hover-bg,
+        $navbar-yellow-link-color, $navbar-yellow-link-hover-color, $navbar-yellow-link-hover-bg,
+        $navbar-yellow-link-active-color, $navbar-yellow-link-active-bg,
+        $navbar-yellow-link-disabled-color, $navbar-yellow-link-disabled-bg,
+        $navbar-yellow-toggle-border-color, $navbar-yellow-toggle-hover-bg, $navbar-yellow-toggle-icon-bar-bg
+    );
+}
+
+.navbar-amber {
+    @include navbar-variant(
+        $navbar-amber-color, $navbar-amber-bg, $navbar-amber-border,
+        $navbar-amber-brand-color, $navbar-amber-brand-hover-color, $navbar-amber-brand-hover-bg,
+        $navbar-amber-link-color, $navbar-amber-link-hover-color, $navbar-amber-link-hover-bg,
+        $navbar-amber-link-active-color, $navbar-amber-link-active-bg,
+        $navbar-amber-link-disabled-color, $navbar-amber-link-disabled-bg,
+        $navbar-amber-toggle-border-color, $navbar-amber-toggle-hover-bg, $navbar-amber-toggle-icon-bar-bg
+    );
+}
+
+.navbar-orange {
+    @include navbar-variant(
+        $navbar-orange-color, $navbar-orange-bg, $navbar-orange-border,
+        $navbar-orange-brand-color, $navbar-orange-brand-hover-color, $navbar-orange-brand-hover-bg,
+        $navbar-orange-link-color, $navbar-orange-link-hover-color, $navbar-orange-link-hover-bg,
+        $navbar-orange-link-active-color, $navbar-orange-link-active-bg,
+        $navbar-orange-link-disabled-color, $navbar-orange-link-disabled-bg,
+        $navbar-orange-toggle-border-color, $navbar-orange-toggle-hover-bg, $navbar-orange-toggle-icon-bar-bg
+    );
+}
+
+.navbar-deepOrange {
+    @include navbar-variant(
+        $navbar-deepOrange-color, $navbar-deepOrange-bg, $navbar-deepOrange-border,
+        $navbar-deepOrange-brand-color, $navbar-deepOrange-brand-hover-color, $navbar-deepOrange-brand-hover-bg,
+        $navbar-deepOrange-link-color, $navbar-deepOrange-link-hover-color, $navbar-deepOrange-link-hover-bg,
+        $navbar-deepOrange-link-active-color, $navbar-deepOrange-link-active-bg,
+        $navbar-deepOrange-link-disabled-color, $navbar-deepOrange-link-disabled-bg,
+        $navbar-deepOrange-toggle-border-color, $navbar-deepOrange-toggle-hover-bg, $navbar-deepOrange-toggle-icon-bar-bg
+    );
+}
+
+.navbar-brown {
+    @include navbar-variant(
+        $navbar-brown-color, $navbar-brown-bg, $navbar-brown-border,
+        $navbar-brown-brand-color, $navbar-brown-brand-hover-color, $navbar-brown-brand-hover-bg,
+        $navbar-brown-link-color, $navbar-brown-link-hover-color, $navbar-brown-link-hover-bg,
+        $navbar-brown-link-active-color, $navbar-brown-link-active-bg,
+        $navbar-brown-link-disabled-color, $navbar-brown-link-disabled-bg,
+        $navbar-brown-toggle-border-color, $navbar-brown-toggle-hover-bg, $navbar-brown-toggle-icon-bar-bg
+    );
+}
+
+.navbar-blueGrey {
+    @include navbar-variant(
+        $navbar-blueGrey-color, $navbar-blueGrey-bg, $navbar-blueGrey-border,
+        $navbar-blueGrey-brand-color, $navbar-blueGrey-brand-hover-color, $navbar-blueGrey-brand-hover-bg,
+        $navbar-blueGrey-link-color, $navbar-blueGrey-link-hover-color, $navbar-blueGrey-link-hover-bg,
+        $navbar-blueGrey-link-active-color, $navbar-blueGrey-link-active-bg,
+        $navbar-blueGrey-link-disabled-color, $navbar-blueGrey-link-disabled-bg,
+        $navbar-blueGrey-toggle-border-color, $navbar-blueGrey-toggle-hover-bg, $navbar-blueGrey-toggle-icon-bar-bg
+    );
+}
+
+.navbar-grey {
+    @include navbar-variant(
+        $navbar-grey-color, $navbar-grey-bg, $navbar-grey-border,
+        $navbar-grey-brand-color, $navbar-grey-brand-hover-color, $navbar-grey-brand-hover-bg,
+        $navbar-grey-link-color, $navbar-grey-link-hover-color, $navbar-grey-link-hover-bg,
+        $navbar-grey-link-active-color, $navbar-grey-link-active-bg,
+        $navbar-grey-link-disabled-color, $navbar-grey-link-disabled-bg,
+        $navbar-grey-toggle-border-color, $navbar-grey-toggle-hover-bg, $navbar-grey-toggle-icon-bar-bg
+    );
+}
+
+
+// Navbar Sizes
+// --------------------------------------------------
+
+.navbar-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    @include navbar-size($navbar-height-large, $navbar-padding-large-vertical, $navbar-padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+    
+    min-height: $navbar-height-large;
+    border-radius: $btn-border-radius-large;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    
+    .navbar-brand {
+        height: $navbar-height-large;
+        padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
     }
-  }
-
-  .navbar-text {
-    color: $navbar-sky-color;
-  }
-
-  .navbar-nav {
-    > li > a {
-      color: $navbar-sky-link-color;
-
-      &:hover,
-      &:focus {
-        color: $navbar-sky-link-hover-color;
-        background-color: $navbar-sky-link-hover-bg;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-sky-link-active-color;
-        background-color: $navbar-sky-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-sky-link-disabled-color;
-        background-color: $navbar-sky-link-disabled-bg;
-      }
-    }
-  }
-
-  // Darken the responsive nav toggle
-  .navbar-toggle {
-    border-color: $navbar-sky-toggle-border-color;
-    &:hover,
-    &:focus {
-      background-color: $navbar-sky-toggle-hover-bg;
-    }
-    .icon-bar {
-      background-color: $navbar-sky-toggle-icon-bar-bg;
-    }
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: darken($navbar-sky-bg, 7%);
-  }
-
-  // Dropdowns
-  .navbar-nav {
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $navbar-sky-link-active-bg;
-        color: $navbar-sky-link-active-color;
-      }
-    }
-
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display
-      .open .dropdown-menu {
-        > .dropdown-header {
-          border-color: $navbar-sky-border;
-        }
-        .divider {
-          background-color: $navbar-sky-border;
-        }
+    
+    .navbar-nav {
         > li > a {
-          color: $navbar-sky-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-sky-link-hover-color;
-            background-color: $navbar-sky-link-hover-bg;
-          }
+            padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
         }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-sky-link-active-color;
-            background-color: $navbar-sky-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-sky-link-disabled-color;
-            background-color: $navbar-sky-link-disabled-bg;
-          }
-        }
-      }
     }
-  }
+    
+    .navbar-form {
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    
+    .navbar-toggle {
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+}
 
-  .navbar-link {
-    color: $navbar-sky-link-color;
-    &:hover {
-      color: $navbar-sky-link-hover-color;
+.navbar-sm {
+    // line-height: ensure even-numbered height of button next to large input
+    @include navbar-size($navbar-height-small, $navbar-padding-small-vertical, $navbar-padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+    
+    min-height: $navbar-height-small;
+    border-radius: $btn-border-radius-small;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    
+    .navbar-brand {
+        height: $navbar-height-small;
+        padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
     }
-  }
-
-  .btn-link {
-    color: $navbar-sky-link-color;
-    &:hover,
-    &:focus {
-      color: $navbar-sky-link-hover-color;
+    
+    .navbar-nav {
+        > li > a {
+            padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
+        }
     }
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        color: $navbar-sky-link-disabled-color;
-      }
+    
+    .navbar-form {
+        margin-top: 3px;
+        margin-bottom: 3px;
     }
-  }
+    
+    .navbar-toggle {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
 }
