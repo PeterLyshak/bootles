@@ -73,7 +73,7 @@
         margin: 8px 10px;
     }
     
-    /* Mobile only */
+    // Mobile only
     @media (max-width: $screen-xs-max) {
         & .navbar .row > [class^='col-'],
         & .navbar .row > [class*='col-'] {

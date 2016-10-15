@@ -293,29 +293,42 @@
     @include navbar-size($navbar-height-large, $navbar-padding-large-vertical, $navbar-padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
     
     min-height: $navbar-height-large;
-    border-radius: $btn-border-radius-large;
-    font-size: $font-size-large;
-    line-height: $line-height-large;
     
     .navbar-brand {
+        font-size: 24px;
         height: $navbar-height-large;
         padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
-    }
-    
-    .navbar-nav {
-        > li > a {
-            padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
-        }
-    }
-    
-    .navbar-form {
-        margin-top: 13px;
-        margin-bottom: 13px;
     }
     
     .navbar-toggle {
         margin-top: 13px;
         margin-bottom: 13px;
+    }
+    
+    // Desktop + Tablet Only
+    @media (min-width: $screen-sm-min) {
+        & {
+            border-radius: $btn-border-radius-large;
+            font-size: $font-size-large;
+            line-height: $line-height-large;
+        }
+        
+        &.navbar-static-top,
+        &.navbar-fixed-bottom,
+        &.navbar-fixed-top {
+            border-radius: 0;
+        }
+        
+        .navbar-nav {
+            > li > a {
+                padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
+            }
+        }
+        
+        .navbar-form {
+            margin-top: 13px;
+            margin-bottom: 13px;
+        }
     }
 }
 
@@ -324,28 +337,41 @@
     @include navbar-size($navbar-height-small, $navbar-padding-small-vertical, $navbar-padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
     
     min-height: $navbar-height-small;
-    border-radius: $btn-border-radius-small;
-    font-size: $font-size-small;
-    line-height: $line-height-small;
     
     .navbar-brand {
+        font-size: 16px;
         height: $navbar-height-small;
         padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
-    }
-    
-    .navbar-nav {
-        > li > a {
-            padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
-        }
-    }
-    
-    .navbar-form {
-        margin-top: 3px;
-        margin-bottom: 3px;
     }
     
     .navbar-toggle {
         margin-top: 3px;
         margin-bottom: 3px;
+    }
+    
+    // Desktop + Tablet Only
+    @media (min-width: $screen-sm-min) {
+        & {
+            border-radius: $btn-border-radius-small;
+            font-size: $font-size-small;
+            line-height: $line-height-small;
+        }
+        
+        &.navbar-static-top,
+        &.navbar-fixed-bottom,
+        &.navbar-fixed-top {
+            border-radius: 0;
+        }
+        
+        .navbar-nav {
+            > li > a {
+                padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
+            }
+        }
+        
+        .navbar-form {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
     }
 }
