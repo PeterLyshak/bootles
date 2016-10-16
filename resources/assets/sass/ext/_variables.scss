@@ -176,13 +176,12 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
+// Brands
+//====================
+
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
-
-$btn-smoke-color:              #61676a !default;
-$btn-smoke-bg:                 $color-smoke !default;
-$btn-smoke-border:            #bdc6cf !default;
 
 $btn-muted-color:              #fff !default;
 $btn-muted-bg:                 $brand-muted !default;
@@ -218,16 +217,93 @@ $btn-danger-border:              darken($btn-danger-bg, 4.5%) !default;
 
 
 
+// Colors
+//====================
 
+$btn-red-color:              #fff !default;
+$btn-red-bg:                 $color-red !default;
+$btn-red-border:             darken($btn-red-bg, 4.5%) !default;
 
+$btn-pink-color:              #fff !default;
+$btn-pink-bg:                 $color-pink !default;
+$btn-pink-border:             darken($btn-pink-bg, 4.5%) !default;
+
+$btn-velvet-color:              #fff !default;
+$btn-velvet-bg:                 $color-velvet !default;
+$btn-velvet-border:             darken($btn-velvet-bg, 4.5%) !default;
+
+$btn-purple-color:              #fff !default;
+$btn-purple-bg:                 $color-pink !default;
+$btn-purple-border:             darken($btn-purple-bg, 4.5%) !default;
+
+$btn-deepPurple-color:              #fff !default;
+$btn-deepPurple-bg:                 $color-deepPurple !default;
+$btn-deepPurple-border:             darken($btn-deepPurple-bg, 4.5%) !default;
 
 $btn-indigo-color:              #fff !default;
 $btn-indigo-bg:                 $color-indigo !default;
 $btn-indigo-border:             darken($btn-indigo-bg, 4.5%) !default;
 
-$btn-velvet-color:              #fff !default;
-$btn-velvet-bg:                 $color-velvet !default;
-$btn-velvet-border:             darken($btn-velvet-bg, 4.5%) !default;
+$btn-blue-color:              #fff !default;
+$btn-blue-bg:                 $color-blue !default;
+$btn-blue-border:             darken($btn-blue-bg, 4.5%) !default;
+
+$btn-lightBlue-color:              #fff !default;
+$btn-lightBlue-bg:                 $color-lightBlue !default;
+$btn-lightBlue-border:             darken($btn-lightBlue-bg, 4.5%) !default;
+
+$btn-cyan-color:              #fff !default;
+$btn-cyan-bg:                 $color-cyan !default;
+$btn-cyan-border:             darken($btn-cyan-bg, 4.5%) !default;
+
+$btn-teal-color:              #fff !default;
+$btn-teal-bg:                 $color-teal !default;
+$btn-teal-border:             darken($btn-teal-bg, 4.5%) !default;
+
+$btn-green-color:              #fff !default;
+$btn-green-bg:                 $color-green !default;
+$btn-green-border:             darken($btn-green-bg, 4.5%) !default;
+
+$btn-lightGreen-color:              #fff !default;
+$btn-lightGreen-bg:                 $color-lightGreen !default;
+$btn-lightGreen-border:             darken($btn-lightGreen-bg, 4.5%) !default;
+
+$btn-lime-color:              #fff !default;
+$btn-lime-bg:                 $color-lime !default;
+$btn-lime-border:             darken($btn-lime-bg, 4.5%) !default;
+
+$btn-yellow-color:              #fff !default;
+$btn-yellow-bg:                 $color-yellow !default;
+$btn-yellow-border:             darken($btn-yellow-bg, 4.5%) !default;
+
+$btn-amber-color:              #fff !default;
+$btn-amber-bg:                 $color-amber !default;
+$btn-amber-border:             darken($btn-amber-bg, 4.5%) !default;
+
+$btn-orange-color:              #fff !default;
+$btn-orange-bg:                 $color-orange !default;
+$btn-orange-border:             darken($btn-orange-bg, 4.5%) !default;
+
+$btn-deepOrange-color:              #fff !default;
+$btn-deepOrange-bg:                 $color-deepOrange !default;
+$btn-deepOrange-border:             darken($btn-deepOrange-bg, 4.5%) !default;
+
+$btn-brown-color:              #fff !default;
+$btn-brown-bg:                 $color-brown !default;
+$btn-brown-border:             darken($btn-brown-bg, 4.5%) !default;
+
+$btn-blueGrey-color:              #fff !default;
+$btn-blueGrey-bg:                 $color-blueGrey !default;
+$btn-blueGrey-border:             darken($btn-blueGrey-bg, 4.5%) !default;
+
+$btn-grey-color:              #fff !default;
+$btn-grey-bg:                 $color-grey !default;
+$btn-grey-border:             darken($btn-grey-bg, 4.5%) !default;
+
+$btn-smoke-color:              #61676a !default;
+$btn-smoke-bg:                 $color-smoke !default;
+$btn-smoke-border:            #bdc6cf !default;
+
 
 $btn-link-disabled-color:        $gray-light !default;
 

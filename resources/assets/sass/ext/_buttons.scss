@@ -2,12 +2,11 @@
     min-height: 34px;
 }
 
+// Brands
+//-----------------------------------------------------------------------------------------------------
+
 .btn-default {
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-}
-
-.btn-smoke {
-    @include button-variant($btn-smoke-color, $btn-smoke-bg, $btn-smoke-border);
 }
 
 .btn-muted {
@@ -42,26 +41,105 @@
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
-.btn-indigo {
-    @include button-variant($btn-indigo-color, $btn-indigo-bg, $btn-indigo-border);
+
+// Colors
+//-----------------------------------------------------------------------------------------------------
+
+.btn-red {
+    @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}
+
+.btn-pink {
+    @include button-variant($btn-pink-color, $btn-pink-bg, $btn-pink-border);
 }
 
 .btn-velvet {
     @include button-variant($btn-velvet-color, $btn-velvet-bg, $btn-velvet-border);
 }
 
+.btn-purple {
+    @include button-variant($btn-purple-color, $btn-purple-bg, $btn-purple-border);
+}
+
+.btn-deepPurple {
+    @include button-variant($btn-deepPurple-color, $btn-deepPurple-bg, $btn-deepPurple-border);
+}
+
+.btn-indigo {
+    @include button-variant($btn-indigo-color, $btn-indigo-bg, $btn-indigo-border);
+}
+
+.btn-blue {
+    @include button-variant($btn-blue-color, $btn-blue-bg, $btn-blue-border);
+}
+
+.btn-lightBlue {
+    @include button-variant($btn-lightBlue-color, $btn-lightBlue-bg, $btn-lightBlue-border);
+}
+
+.btn-cyan {
+    @include button-variant($btn-cyan-color, $btn-cyan-bg, $btn-cyan-border);
+}
+
+.btn-teal {
+    @include button-variant($btn-teal-color, $btn-teal-bg, $btn-teal-border);
+}
+
+.btn-green {
+    @include button-variant($btn-green-color, $btn-green-bg, $btn-green-border);
+}
+
+.btn-lightGreen {
+    @include button-variant($btn-lightGreen-color, $btn-lightGreen-bg, $btn-lightGreen-border);
+}
+
+.btn-lime {
+    @include button-variant($btn-lime-color, $btn-lime-bg, $btn-lime-border);
+}
+
+.btn-yellow {
+    @include button-variant($btn-yellow-color, $btn-yellow-bg, $btn-yellow-border);
+}
+
+.btn-amber {
+    @include button-variant($btn-amber-color, $btn-amber-bg, $btn-amber-border);
+}
+
+.btn-orange {
+    @include button-variant($btn-orange-color, $btn-orange-bg, $btn-orange-border);
+}
+
+.btn-deepOrange {
+    @include button-variant($btn-deepOrange-color, $btn-deepOrange-bg, $btn-deepOrange-border);
+}
+
+.btn-brown {
+    @include button-variant($btn-brown-color, $btn-brown-bg, $btn-brown-border);
+}
+
+.btn-blueGrey {
+    @include button-variant($btn-blueGrey-color, $btn-blueGrey-bg, $btn-blueGrey-border);
+}
+
+.btn-grey {
+    @include button-variant($btn-grey-color, $btn-grey-bg, $btn-grey-border);
+}
+
+.btn-smoke {
+    @include button-variant($btn-smoke-color, $btn-smoke-bg, $btn-smoke-border);
+}
+
+
 // Button Glow
-// --------------------------------------------------
+//======================================================
 
 .btn-glow {
+    
+    // Brands
+    //-------------------------------------------------------------------------------------------------
+    
     &.btn-default {
         $shadow: inset 0px -1px 0px 0px $btn-default-border,
-                      inset 0px 0px 8px 2px rgba(0,0,0,0.1);
-        @include box-shadow($shadow);
-    }
-    
-    &.btn-smoke {
-        $shadow: inset 0px -1px 0px 0px $btn-smoke-border,
                       inset 0px 0px 8px 2px rgba(0,0,0,0.1);
         @include box-shadow($shadow);
     }
@@ -114,95 +192,270 @@
         @include box-shadow($shadow);
     }
     
+    
+    // Colors
+    //-------------------------------------------------------------------------------------------------
+    
+    &.btn-red {
+        $shadow: inset 0px -1px 0px 0px $btn-red-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-pink {
+        $shadow: inset 0px -1px 0px 0px $btn-pink-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-velvet {
+        $shadow: inset 0px -1px 0px 0px $btn-velvet-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-purple {
+        $shadow: inset 0px -1px 0px 0px $btn-purple-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-deepPurple {
+        $shadow: inset 0px -1px 0px 0px $btn-deepPurple-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+
     &.btn-indigo {
         $shadow: inset 0px -1px 0px 0px $btn-indigo-border,
                       inset 0px 0px 8px 2px rgba(255,255,255,0.4);
         @include box-shadow($shadow);
     }
-}
-
-.btn-outline {
-    &.btn-default {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-default-border;
-        color: $btn-default-border;
+    
+    &.btn-blue {
+        $shadow: inset 0px -1px 0px 0px $btn-blue-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-lightBlue {
+        $shadow: inset 0px -1px 0px 0px $btn-lightBlue-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-cyan {
+        $shadow: inset 0px -1px 0px 0px $btn-cyan-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-teal {
+        $shadow: inset 0px -1px 0px 0px $btn-teal-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-green {
+        $shadow: inset 0px -1px 0px 0px $btn-green-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-lightGreen {
+        $shadow: inset 0px -1px 0px 0px $btn-lightGreen-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-lime {
+        $shadow: inset 0px -1px 0px 0px $btn-lime-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-yellow {
+        $shadow: inset 0px -1px 0px 0px $btn-yellow-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-amber {
+        $shadow: inset 0px -1px 0px 0px $btn-amber-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-orange {
+        $shadow: inset 0px -1px 0px 0px $btn-orange-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-deepOrange {
+        $shadow: inset 0px -1px 0px 0px $btn-deepOrange-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-brown {
+        $shadow: inset 0px -1px 0px 0px $btn-brown-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-blueGrey {
+        $shadow: inset 0px -1px 0px 0px $btn-blueGrey-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
+    }
+    
+    &.btn-grey {
+        $shadow: inset 0px -1px 0px 0px $btn-grey-border,
+                      inset 0px 0px 8px 2px rgba(255,255,255,0.4);
+        @include box-shadow($shadow);
     }
     
     &.btn-smoke {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-smoke-border;
-        color: $btn-smoke-border;
+        $shadow: inset 0px -1px 0px 0px $btn-smoke-border,
+                      inset 0px 0px 8px 2px rgba(0,0,0,0.1);
+        @include box-shadow($shadow);
+    }
+}
+
+.btn-outline {
+    
+    // Brands
+    //-------------------------------------------------------------------------------------------------
+    
+    &.btn-default {
+        @include button-outline($btn-default-border, transparent, $btn-default-border);
     }
     
     &.btn-muted {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-muted-bg;
-        color: $btn-muted-bg;
+        @include button-outline($btn-muted-border, transparent, $btn-muted-border);
     }
     
     &.btn-primary {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-primary-bg;
-        color: $btn-primary-bg;
+        @include button-outline($btn-primary-border, transparent, $btn-primary-border);
     }
     
     &.btn-secondary {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-secondary-bg;
-        color: $btn-secondary-bg;
+        @include button-outline($btn-secondary-border, transparent, $btn-secondary-border);
     }
     
     &.btn-accent {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-accent-bg;
-        color: $btn-accent-bg;
+        @include button-outline($btn-accent-border, transparent, $btn-accent-border);
     }
     
     &.btn-info {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-info-bg;
-        color: $btn-info-bg;
+        @include button-outline($btn-info-border, transparent, $btn-info-border);
     }
     
     &.btn-success {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-success-bg;
-        color: $btn-success-bg;
+        @include button-outline($btn-success-border, transparent, $btn-success-border);
     }
     
     &.btn-warning {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-warning-bg;
-        color: $btn-warning-bg;
+        @include button-outline($btn-warning-border, transparent, $btn-warning-border);
     }
     
     &.btn-danger {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-danger-bg;
-        color: $btn-danger-bg;
+        @include button-outline($btn-danger-border, transparent, $btn-danger-border);
+    }
+    
+    
+    // Colors
+    //-------------------------------------------------------------------------------------------------
+    
+    &.btn-red {
+        @include button-outline($btn-red-border, transparent, $btn-red-border);
+    }
+    
+    &.btn-pink {
+        @include button-outline($btn-pink-border, transparent, $btn-pink-border);
+    }
+    
+    &.btn-velvet {
+        @include button-outline($btn-velvet-border, transparent, $btn-velvet-border);
+    }
+    
+    &.btn-purple {
+        @include button-outline($btn-purple-border, transparent, $btn-purple-border);
+    }
+    
+    &.btn-deepPurple {
+        @include button-outline($btn-deepPurple-border, transparent, $btn-deepPurple-border);
     }
     
     &.btn-indigo {
-        background-image: none;
-        background-color: transparent;
-        border-color: $btn-indigo-bg;
-        color: $btn-indigo-bg;
+        @include button-outline($btn-indigo-border, transparent, $btn-indigo-border);
+    }
+    
+    &.btn-blue {
+        @include button-outline($btn-blue-border, transparent, $btn-blue-border);
+    }
+    
+    &.btn-lightBlue {
+        @include button-outline($btn-lightBlue-border, transparent, $btn-lightBlue-border);
+    }
+    
+    &.btn-cyan {
+        @include button-outline($btn-cyan-border, transparent, $btn-cyan-border);
+    }
+    
+    &.btn-teal {
+        @include button-outline($btn-teal-border, transparent, $btn-teal-border);
+    }
+    
+    &.btn-green {
+        @include button-outline($btn-green-border, transparent, $btn-green-border);
+    }
+    
+    &.btn-lightGreen {
+        @include button-outline($btn-lightGreen-border, transparent, $btn-lightGreen-border);
+    }
+    
+    &.btn-lime {
+        @include button-outline($btn-lime-border, transparent, $btn-lime-border);
+    }
+    
+    &.btn-yellow {
+        @include button-outline($btn-yellow-border, transparent, $btn-yellow-border);
+    }
+    
+    &.btn-amber {
+        @include button-outline($btn-amber-border, transparent, $btn-amber-border);
+    }
+    
+    &.btn-orange {
+        @include button-outline($btn-orange-border, transparent, $btn-orange-border);
+    }
+    
+    &.btn-deepOrange {
+        @include button-outline($btn-deepOrange-border, transparent, $btn-deepOrange-border);
+    }
+    
+    &.btn-brown {
+        @include button-outline($btn-brown-border, transparent, $btn-brown-border);
+    }
+    
+    &.btn-blueGrey {
+        @include button-outline($btn-blueGrey-border, transparent, $btn-blueGrey-border);
+    }
+    
+    &.btn-grey {
+        @include button-outline($btn-grey-border, transparent, $btn-grey-border);
+    }
+    
+    &.btn-smoke {
+        @include button-outline($btn-smoke-border, transparent, $btn-smoke-border);
     }
 }
 
 
 // Button Sizes
-// --------------------------------------------------
+//======================================================
 
 .btn-lg {
     min-height: 0;
@@ -226,14 +479,15 @@
 
 
 // Button Rounded
-// --------------------------------------------------
+//======================================================
 
 .btn-rounded {
     border-radius: 800em;
 }
 
+
 // Button Floating
-// --------------------------------------------------
+//======================================================
 
 .btn-floating {
     border-radius: 50%;

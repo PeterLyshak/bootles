@@ -78,3 +78,11 @@
     line-height: $line-height;
     border-radius: $border-radius;
 }
+
+// Button Outline
+@mixin button-outline($color, $background, $border) {
+    background-image: none;
+    background-color: $background;
+    border-color: $border;
+    color: $color;
+}
