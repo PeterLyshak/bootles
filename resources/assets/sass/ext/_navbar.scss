@@ -325,9 +325,15 @@
             }
         }
         
+        .navbar-btn,
         .navbar-form {
             margin-top: 13px;
             margin-bottom: 13px;
+        }
+        
+        .navbar-text {
+            margin-top: 18px;
+            margin-bottom: 18px;
         }
     }
 }
@@ -369,9 +375,15 @@
             }
         }
         
+        .navbar-btn,
         .navbar-form {
             margin-top: 3px;
             margin-bottom: 3px;
+        }
+        
+        .navbar-text {
+            margin-top: 11px;
+            margin-bottom: 11px;
         }
     }
 }

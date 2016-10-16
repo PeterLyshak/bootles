@@ -104,5 +104,8 @@ elixir(function(mix) {
         // Datatables
         '../../../vendor/datatables/DataTables-1.10.12/media/js/jquery.dataTables.js', // Datatables Core
         '../../../vendor/datatables/DataTables-1.10.12/media/js/dataTables.bootstrap.js', // Datatables Bootstrap
+        
+        // Bootles
+        '../../../resources/assets/js/bootles-ext.js',
 	], 'dist/js/bootles.min.js');
 });

@@ -1,166 +1,390 @@
-//
-// Navs
-// --------------------------------------------------
 
-// Pills
+// Default / Primary
 // -------------------------
 .nav-pills {
-  > li {
+    > li {
 
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-active-link-hover-color;
-        background-color: $nav-pills-active-link-hover-bg;
-      }
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-active-link-hover-color;
+                background-color: $nav-pills-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
 
+
+// Brands
+//======================================================
+
 .nav-pills.nav-muted {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-muted-active-link-hover-color;
-        background-color: $nav-pills-muted-active-link-hover-bg;
-      }
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-muted-active-link-hover-color;
+                background-color: $nav-pills-muted-active-link-hover-bg;
+          }
+        }
     }
-  }
 }
 
 .nav-pills.nav-secondary {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-secondary-active-link-hover-color;
-        background-color: $nav-pills-secondary-active-link-hover-bg;
-      }
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-secondary-active-link-hover-color;
+                background-color: $nav-pills-secondary-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
 
 .nav-pills.nav-accent {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-accent-active-link-hover-color;
-        background-color: $nav-pills-accent-active-link-hover-bg;
-      }
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-accent-active-link-hover-color;
+                background-color: $nav-pills-accent-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
 
 .nav-pills.nav-info {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-info-active-link-hover-color;
-        background-color: $nav-pills-info-active-link-hover-bg;
-      }
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-info-active-link-hover-color;
+                background-color: $nav-pills-info-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
 
-.nav-pills.nav-success {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-success-active-link-hover-color;
-        background-color: $nav-pills-success-active-link-hover-bg;
-      }
+.nav-pills.nav-inverse {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-inverse-active-link-hover-color;
+                background-color: $nav-pills-inverse-active-link-hover-bg;
+            }
+        }
     }
-  }
-}
-
-.nav-pills.nav-warning {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-warning-active-link-hover-color;
-        background-color: $nav-pills-warning-active-link-hover-bg;
-      }
-    }
-  }
-}
-
-.nav-pills.nav-danger {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-danger-active-link-hover-color;
-        background-color: $nav-pills-danger-active-link-hover-bg;
-      }
-    }
-  }
-}
-
-.nav-pills.nav-dark {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-dark-active-link-hover-color;
-        background-color: $nav-pills-dark-active-link-hover-bg;
-      }
-    }
-  }
 }
 
 
+// Colors
+//======================================================
 
-
-
-.nav-pills.nav-indigo {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-indigo-active-link-hover-color;
-        background-color: $nav-pills-indigo-active-link-hover-bg;
-      }
+.nav-pills.nav-red {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-red-active-link-hover-color;
+                background-color: $nav-pills-red-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
+
+.nav-pills.nav-pink {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-pink-active-link-hover-color;
+                background-color: $nav-pills-pink-active-link-hover-bg;
+            }
+        }
+    }
+}
+
 
 .nav-pills.nav-velvet {
-  > li {
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-velvet-active-link-hover-color;
-        background-color: $nav-pills-velvet-active-link-hover-bg;
-      }
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-velvet-active-link-hover-color;
+                background-color: $nav-pills-velvet-active-link-hover-bg;
+            }
+        }
     }
-  }
 }
 
+.nav-pills.nav-purple {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-purple-active-link-hover-color;
+                background-color: $nav-pills-purple-active-link-hover-bg;
+            }
+        }
+    }
+}
 
+.nav-pills.nav-deepPurple {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-deepPurple-active-link-hover-color;
+                background-color: $nav-pills-deepPurple-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-indigo {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-indigo-active-link-hover-color;
+                background-color: $nav-pills-indigo-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-blue {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-blue-active-link-hover-color;
+                background-color: $nav-pills-blue-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-lightBlue {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-lightBlue-active-link-hover-color;
+                background-color: $nav-pills-lightBlue-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-cyan {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-cyan-active-link-hover-color;
+                background-color: $nav-pills-cyan-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-teal {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-teal-active-link-hover-color;
+                background-color: $nav-pills-teal-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-green {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-green-active-link-hover-color;
+                background-color: $nav-pills-green-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-lightGreen {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-lightGreen-active-link-hover-color;
+                background-color: $nav-pills-lightGreen-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-lime {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-lime-active-link-hover-color;
+                background-color: $nav-pills-lime-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-yellow {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-yellow-active-link-hover-color;
+                background-color: $nav-pills-yellow-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-amber {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-amber-active-link-hover-color;
+                background-color: $nav-pills-amber-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-orange {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-orange-active-link-hover-color;
+                background-color: $nav-pills-orange-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-deepOrange {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-deepOrange-active-link-hover-color;
+                background-color: $nav-pills-deepOrange-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-brown {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-brown-active-link-hover-color;
+                background-color: $nav-pills-brown-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-blueGrey {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-blueGrey-active-link-hover-color;
+                background-color: $nav-pills-blueGrey-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-grey {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-grey-active-link-hover-color;
+                background-color: $nav-pills-grey-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-smoke {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-smoke-active-link-hover-color;
+                background-color: $nav-pills-smoke-active-link-hover-bg;
+            }
+        }
+    }
+}
