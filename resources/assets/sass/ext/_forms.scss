@@ -1,12 +1,17 @@
 .input-group-btn {
-    & > select.btn {
+    > select.btn {
         height: 34px;
     }
 }
 
 .input-group-sm {
     .input-group-btn {
-        & > select.btn {
+        > .btn {
+            min-height: 0;
+        }
+        
+        > select.btn {
+            min-height: 0;
             height: 30px;
         }
     }
@@ -14,7 +19,12 @@
 
 .input-group-lg {
     .input-group-btn {
-        & > select.btn {
+        > .btn {
+            min-height: 0;
+        }
+        
+        > select.btn {
+            min-height: 0;
             height: 46px;
         }
     }
@@ -39,13 +49,17 @@
     }
 }
 
+
 // Feedback states
+
 .has-success {
-  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+    @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
 }
+
 .has-warning {
-  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+    @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
 }
+
 .has-error {
-  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+    @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
 }

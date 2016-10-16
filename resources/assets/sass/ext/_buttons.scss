@@ -1,3 +1,7 @@
+.btn {
+    min-height: 34px;
+}
+
 .btn-default {
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
@@ -201,16 +205,22 @@
 // --------------------------------------------------
 
 .btn-lg {
+    min-height: 0;
+    
     // line-height: ensure even-numbered height of button next to large input
     @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
 }
 
 .btn-sm {
+    min-height: 0;
+    
     // line-height: ensure proper height of button next to small input
     @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
 }
 
 .btn-xs {
+    min-height: 0;
+    
     @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
 }
 
