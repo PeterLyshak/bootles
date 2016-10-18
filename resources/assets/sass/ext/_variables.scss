@@ -6,48 +6,18 @@ $bootstrap-sass-asset-helper: false !default;
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-
-$color-red:                 #F44336 !default;
-$color-pink:                #E91E63 !default;
-$color-velvet:            #ad1457 !default;
-$color-purple:             #9C27B0 !default;
-$color-deepPurple:       #673AB7 !default;
-$color-indigo:              #3F51B5 !default;
-$color-blue:                #2196F3 !default;
-$color-lightBlue:          #03A9F4 !default;
-$color-cyan:               #00BCD4 !default;
-$color-teal:                #009688 !default;
-$color-green:              #4CAF50 !default;
-$color-lightGreen:        #8BC34A !default;
-$color-lime:                #CDDC39 !default;
-$color-yellow:             #FFEB3B !default;
-$color-amber:             #FFC107 !default;
-$color-orange:            #FF9800 !default;
-$color-deepOrange:     #FF5722 !default;
-$color-brown:             #795548 !default;
-$color-blueGrey:         #607D8B !default;
-$color-grey:               #9E9E9E !default;
-
-$color-light:              #ffffff !default;
-$color-smoke:           #f1f1f1 !default; // #e6ebf1
-$color-dark:             #222222 !default;
-
+$brand-light:              #ffffff !default;
+$brand-dark:              #222222 !default;
 $brand-primary:          darken(#2196f3, 6.5%) !default;
 $brand-success:         #4caf50 !default; // #5cb85c
-$brand-info:              #00bcd4 !default; // #5bc0de #1cc8ca
+$brand-info:               #00bcd4 !default; // #5bc0de #1cc8ca
 $brand-warning:         #ff5722 !default;  // #f0ad4e
 $brand-danger:          #f44336 !default;  // #d9534f
 $brand-muted:           #607d8b !default;
 $brand-secondary:     #9933cc !default;
 $brand-accent:          #e91e63 !default;
+$brand-velvet:           #ad1457 !default;
 
 //== Scaffolding
 //
@@ -215,6 +185,9 @@ $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 4.5%) !default;
 
+$btn-velvet-color:              #fff !default;
+$btn-velvet-bg:                 $brand-velvet !default;
+$btn-velvet-border:             darken($btn-velvet-bg, 4.5%) !default;
 
 
 // Colors
@@ -227,10 +200,6 @@ $btn-red-border:             darken($btn-red-bg, 4.5%) !default;
 $btn-pink-color:              #fff !default;
 $btn-pink-bg:                 $color-pink !default;
 $btn-pink-border:             darken($btn-pink-bg, 4.5%) !default;
-
-$btn-velvet-color:              #fff !default;
-$btn-velvet-bg:                 $color-velvet !default;
-$btn-velvet-border:             darken($btn-velvet-bg, 4.5%) !default;
 
 $btn-purple-color:              #fff !default;
 $btn-purple-bg:                 $color-pink !default;
@@ -514,7 +483,7 @@ $navbar-padding-small-vertical:          (($navbar-height-small - $line-height-c
 //=================================================================
 
 $navbar-default-color:              #666666 !default;
-$navbar-default-bg:                 $color-light !default;
+$navbar-default-bg:                 $brand-light !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
@@ -601,7 +570,7 @@ $navbar-pink-toggle-border-color:              transparent !default;
 // Navbar Velvet
 //=================================================================
 $navbar-velvet-color:                                     #fff !default;
-$navbar-velvet-bg:                                        $color-velvet !default;
+$navbar-velvet-bg:                                        $brand-velvet !default;
 $navbar-velvet-border:                                   darken($navbar-velvet-bg, 3%) !default;
 
 // Navbar links
@@ -1265,31 +1234,31 @@ $navbar-accent-toggle-border-color:                 transparent !default;
 
 
 
-// Navbar Inverse
+// Navbar Dark
 //=================================================================
 // Reset inverted navbar basics
-$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
-$navbar-inverse-bg:                         #222 !default;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+$navbar-dark-color:                      lighten($gray-light, 15%) !default;
+$navbar-dark-bg:                         #222 !default;
+$navbar-dark-border:                     darken($navbar-dark-bg, 10%) !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
-$navbar-inverse-link-hover-color:           #fff !default;
-$navbar-inverse-link-hover-bg:              transparent !default;
-$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
-$navbar-inverse-link-disabled-color:        #444 !default;
-$navbar-inverse-link-disabled-bg:           transparent !default;
+$navbar-dark-link-color:                 lighten($gray-light, 15%) !default;
+$navbar-dark-link-hover-color:           #fff !default;
+$navbar-dark-link-hover-bg:              transparent !default;
+$navbar-dark-link-active-color:          $navbar-dark-link-hover-color !default;
+$navbar-dark-link-active-bg:             darken($navbar-dark-bg, 10%) !default;
+$navbar-dark-link-disabled-color:        #444 !default;
+$navbar-dark-link-disabled-bg:           transparent !default;
 
 // Inverted navbar brand label
-$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          #fff !default;
-$navbar-inverse-brand-hover-bg:             transparent !default;
+$navbar-dark-brand-color:                $navbar-dark-link-color !default;
+$navbar-dark-brand-hover-color:          #fff !default;
+$navbar-dark-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:            #333 !default;
-$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
-$navbar-inverse-toggle-border-color:        #333 !default;
+$navbar-dark-toggle-hover-bg:            #333 !default;
+$navbar-dark-toggle-icon-bar-bg:         #fff !default;
+$navbar-dark-toggle-border-color:        #333 !default;
 
 
 //== Navs
@@ -1339,9 +1308,13 @@ $nav-pills-accent-active-link-hover-color:         $component-active-color !defa
 $nav-pills-info-active-link-hover-bg:            $brand-info !default;
 $nav-pills-info-active-link-hover-color:         $component-active-color !default;
 
+// Velvet Pills
+$nav-pills-velvet-active-link-hover-bg:            $brand-velvet !default;
+$nav-pills-velvet-active-link-hover-color:         $component-active-color !default;
+
 // Inverse Pills
-$nav-pills-inverse-active-link-hover-bg:            $color-dark !default;
-$nav-pills-inverse-active-link-hover-color:         $component-active-color !default;
+$nav-pills-dark-active-link-hover-bg:            $brand-dark !default;
+$nav-pills-dark-active-link-hover-color:         $component-active-color !default;
 
 
 //== Pill Colors
@@ -1353,10 +1326,6 @@ $nav-pills-red-active-link-hover-color:         $component-active-color !default
 // Pink Pills
 $nav-pills-pink-active-link-hover-bg:            $color-pink !default;
 $nav-pills-pink-active-link-hover-color:         $component-active-color !default;
-
-// Velvet Pills
-$nav-pills-velvet-active-link-hover-bg:            $color-velvet !default;
-$nav-pills-velvet-active-link-hover-color:         $component-active-color !default;
 
 // Purple Pills
 $nav-pills-purple-active-link-hover-bg:            $color-purple !default;
@@ -1488,10 +1457,15 @@ $pagination-danger-active-color:              #fff !default;
 $pagination-danger-active-bg:                 $brand-danger !default;
 $pagination-danger-active-border:            $brand-danger !default;
 
+// Pagination Velvet
+$pagination-velvet-active-color:              #fff !default;
+$pagination-velvet-active-bg:                 $brand-velvet !default;
+$pagination-velvet-active-border:            $brand-velvet !default;
+
 // Pagination Dark
 $pagination-dark-active-color:              #fff !default;
-$pagination-dark-active-bg:                 $color-dark !default;
-$pagination-dark-active-border:            $color-dark !default;
+$pagination-dark-active-bg:                 $brand-dark !default;
+$pagination-dark-active-border:            $brand-dark !default;
 
 
 
@@ -1500,10 +1474,7 @@ $pagination-indigo-active-color:              #fff !default;
 $pagination-indigo-active-bg:                 $color-indigo !default;
 $pagination-indigo-active-border:            $color-indigo !default;
 
-// Pagination Velvet
-$pagination-velvet-active-color:              #fff !default;
-$pagination-velvet-active-bg:                 $color-velvet !default;
-$pagination-velvet-active-border:            $color-velvet !default;
+
 
 
 
@@ -1712,17 +1683,14 @@ $progress-bar-muted-bg:        $brand-muted !default;
 $progress-bar-secondary-bg:   $brand-secondary !default;
 //** Accent progress bar color
 $progress-bar-accent-bg:       $brand-accent !default;
+//** Velvet progress bar color
+$progress-bar-velvet-bg:        $brand-velvet !default;
 //** Dark progress bar color
-$progress-bar-dark-bg:          $color-dark !default;
-
+$progress-bar-dark-bg:          $brand-dark !default;
 
 
 //** Indigo progress bar color
 $progress-bar-indigo-bg:         $color-indigo !default;
-//** Velvet progress bar color
-$progress-bar-velvet-bg:        $color-velvet !default;
-
-
 
 
 

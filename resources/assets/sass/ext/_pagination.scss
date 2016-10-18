@@ -119,28 +119,28 @@
   @include pagination-variant($pagination-danger-active-color, $pagination-danger-active-bg, $pagination-danger-active-border);
 }
 
+// Velvet Variant
+.pagination-velvet {
+  @include pagination-variant($pagination-velvet-active-color, $pagination-velvet-active-bg, $pagination-velvet-active-border);
+}
+
 // Dark Variant
 .pagination-dark {
   @include pagination-variant($pagination-dark-active-color, $pagination-dark-active-bg, $pagination-dark-active-border);
 }
 
 
+// Colors
+//------------------------------------------------------------------------------------
 
 // Indigo Variant
 .pagination-indigo {
   @include pagination-variant($pagination-indigo-active-color, $pagination-indigo-active-bg, $pagination-indigo-active-border);
 }
 
-// Velvet Variant
-.pagination-velvet {
-  @include pagination-variant($pagination-velvet-active-color, $pagination-velvet-active-bg, $pagination-velvet-active-border);
-}
-
-
-
 
 // Sizing
-// --------------------------------------------------
+//------------------------------------------------------------------------------------
 
 // Large
 .pagination-lg {

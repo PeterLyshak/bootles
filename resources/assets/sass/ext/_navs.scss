@@ -76,15 +76,29 @@
     }
 }
 
-.nav-pills.nav-inverse {
+.nav-pills.nav-velvet {
     > li {
         // Active state
         &.active > a {
             &,
             &:hover,
             &:focus {
-                color: $nav-pills-inverse-active-link-hover-color;
-                background-color: $nav-pills-inverse-active-link-hover-bg;
+                color: $nav-pills-velvet-active-link-hover-color;
+                background-color: $nav-pills-velvet-active-link-hover-bg;
+            }
+        }
+    }
+}
+
+.nav-pills.nav-dark {
+    > li {
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $nav-pills-dark-active-link-hover-color;
+                background-color: $nav-pills-dark-active-link-hover-bg;
             }
         }
     }
@@ -117,21 +131,6 @@
             &:focus {
                 color: $nav-pills-pink-active-link-hover-color;
                 background-color: $nav-pills-pink-active-link-hover-bg;
-            }
-        }
-    }
-}
-
-
-.nav-pills.nav-velvet {
-    > li {
-        // Active state
-        &.active > a {
-            &,
-            &:hover,
-            &:focus {
-                color: $nav-pills-velvet-active-link-hover-color;
-                background-color: $nav-pills-velvet-active-link-hover-bg;
             }
         }
     }

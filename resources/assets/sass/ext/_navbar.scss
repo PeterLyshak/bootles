@@ -1,3 +1,6 @@
+// Brands
+//------------------------------------------------------------------------------------
+
 .navbar-default {
     @include navbar-variant(
         $navbar-default-color, $navbar-default-bg, $navbar-default-border,
@@ -6,6 +9,17 @@
         $navbar-default-link-active-color, $navbar-default-link-active-bg,
         $navbar-default-link-disabled-color, $navbar-default-link-disabled-bg,
         $navbar-default-toggle-border-color, $navbar-default-toggle-hover-bg, $navbar-default-toggle-icon-bar-bg
+    );
+}
+
+.navbar-dark {
+    @include navbar-variant(
+        $navbar-dark-color, $navbar-dark-bg, $navbar-dark-border,
+        $navbar-dark-brand-color, $navbar-dark-brand-hover-color, $navbar-dark-brand-hover-bg,
+        $navbar-dark-link-color, $navbar-dark-link-hover-color, $navbar-dark-link-hover-bg,
+        $navbar-dark-link-active-color, $navbar-dark-link-active-bg,
+        $navbar-dark-link-disabled-color, $navbar-dark-link-disabled-bg,
+        $navbar-dark-toggle-border-color, $navbar-dark-toggle-hover-bg, $navbar-dark-toggle-icon-bar-bg
     );
 }
 
@@ -64,6 +78,20 @@
     );
 }
 
+.navbar-velvet {
+    @include navbar-variant(
+        $navbar-velvet-color, $navbar-velvet-bg, $navbar-velvet-border,
+        $navbar-velvet-brand-color, $navbar-velvet-brand-hover-color, $navbar-velvet-brand-hover-bg,
+        $navbar-velvet-link-color, $navbar-velvet-link-hover-color, $navbar-velvet-link-hover-bg,
+        $navbar-velvet-link-active-color, $navbar-velvet-link-active-bg,
+        $navbar-velvet-link-disabled-color, $navbar-velvet-link-disabled-bg,
+        $navbar-velvet-toggle-border-color, $navbar-velvet-toggle-hover-bg, $navbar-velvet-toggle-icon-bar-bg
+    );
+}
+
+// Colors
+//------------------------------------------------------------------------------------
+
 .navbar-red {
     @include navbar-variant(
         $navbar-red-color, $navbar-red-bg, $navbar-red-border,
@@ -83,17 +111,6 @@
         $navbar-pink-link-active-color, $navbar-pink-link-active-bg,
         $navbar-pink-link-disabled-color, $navbar-pink-link-disabled-bg,
         $navbar-pink-toggle-border-color, $navbar-pink-toggle-hover-bg, $navbar-pink-toggle-icon-bar-bg
-    );
-}
-
-.navbar-velvet {
-    @include navbar-variant(
-        $navbar-velvet-color, $navbar-velvet-bg, $navbar-velvet-border,
-        $navbar-velvet-brand-color, $navbar-velvet-brand-hover-color, $navbar-velvet-brand-hover-bg,
-        $navbar-velvet-link-color, $navbar-velvet-link-hover-color, $navbar-velvet-link-hover-bg,
-        $navbar-velvet-link-active-color, $navbar-velvet-link-active-bg,
-        $navbar-velvet-link-disabled-color, $navbar-velvet-link-disabled-bg,
-        $navbar-velvet-toggle-border-color, $navbar-velvet-toggle-hover-bg, $navbar-velvet-toggle-icon-bar-bg
     );
 }
 

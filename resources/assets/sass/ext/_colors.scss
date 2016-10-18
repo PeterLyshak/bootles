@@ -1,6 +1,14 @@
 // Colors
 // --------------------------------------------------
 
+//## Gray and brand colors for use across Bootstrap.
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
 //## Red
 $color-red: #f44336 !default;
 $color-red-50: #ffebee !default;
@@ -312,6 +320,7 @@ $color-grey-700: #616161 !default;
 $color-grey-800: #424242 !default;
 $color-grey-900: #212121 !default;
 
+$color-smoke: #f1f1f1 !default; // #e6ebf1
 $color-black: #000000 !default;
 $color-white: #ffffff !default;
 $color-transparent: rgba(0, 0, 0, 0) !default;

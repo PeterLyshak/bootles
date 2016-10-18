@@ -11,6 +11,12 @@
     
     <div class="container">
         <div ng-switch on="pageName">
+            <!-- Colors
+            =============================================== -->
+            <div ng-switch-when="colors">
+                <ng-include src="'demo/partials/bootstrap/colors.html'"></ng-include>
+            </div>
+            
             <!-- Buttons
             =============================================== -->
             <div ng-switch-when="buttons">
