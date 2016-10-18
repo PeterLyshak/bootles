@@ -2,6 +2,24 @@
 // Tabs
 // --------------------------------------------------
 
+.nav-tabs {
+    border-bottom-width: 2px;
+    
+    > li {
+        margin-bottom: -2px;
+        
+        > a {
+            border-width: 2px;
+        }
+        
+        &.active > a,
+        &.active > a:hover,
+        &.active > a:focus {
+            border-width: 2px;
+        }
+    }
+}
+
 .nav-outline {
     
     .nav {
