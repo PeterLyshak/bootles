@@ -1,12 +1,12 @@
 /*
 |------------------------------------------------------------------------------------------------------
-| Canvas Base
+| Offcanvas Base
 |------------------------------------------------------------------------------------------------------
 |
 |
 */
 
-.canvas {
+.offcanvas {
     min-height: 100%;
     position: relative;
     
@@ -31,29 +31,29 @@
     }
 }
 
-.visible-canvas-open {
+.visible-offcanvas-open {
     display: none !important;
 }
 
-.canvas-open {
-    .hidden-canvas-open {
+.offcanvas-open {
+    .hidden-offcanvas-open {
         display: none !important;
     }
     
-    .visible-canvas-open {
+    .visible-offcanvas-open {
         display: block !important;
     }
 }
 
 /*
 |------------------------------------------------------------------------------------------------------
-| Canvas Body
+| Offcanvas Body
 |------------------------------------------------------------------------------------------------------
 |
 |
 */
 
-.canvas-body {
+.offcanvas-body {
     & {
         position: relative;
         z-index: 1;
@@ -84,8 +84,8 @@
     }
 }
 
-.canvas-right {
-    & > .canvas-body {
+.offcanvas-right {
+    & > .offcanvas-body {
         & {
             padding-right: 50px;
         }
@@ -95,7 +95,7 @@
         }
     }
     
-    .canvas-open & > .canvas-body {
+    .offcanvas-open & > .offcanvas-body {
         & {
             padding-right: 200px;
         }
@@ -117,14 +117,14 @@
 
 /*
 |------------------------------------------------------------------------------------------------------
-| Canvas Side
+| Offcanvas Side
 |------------------------------------------------------------------------------------------------------
 |
 |
 */
 
-.canvas-side-right,
-.canvas-side-left {
+.offcanvas-side-right,
+.offcanvas-side-left {
     display: none;
     position: absolute;
     top: 0;
@@ -135,38 +135,38 @@
     background: #f1f1f1;
 }
 
-.canvas-side-left {
-    .canvas-left & {
+.offcanvas-side-left {
+    .offcanvas-left & {
         display: block;
     }
 }
 
-.canvas-side-right {
+.offcanvas-side-right {
     & {
         position: absolute;
         left: auto;
         right: 0;
     }
     
-    .canvas-right & {
+    .offcanvas-right & {
         display: block;
     }
 }
 
 /*
 |------------------------------------------------------------------------------------------------------
-| Canvas Sidebar
+| Offcanvas Sidebar
 |------------------------------------------------------------------------------------------------------
 |
 |
 */
 
-.canvas-sidebar {
+.offcanvas-sidebar {
     & {
         width: 51px;
     }
     
-    .canvas-open & {
+    .offcanvas-open & {
         width: 201px;
     }
     
