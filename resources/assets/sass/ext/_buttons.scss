@@ -1,9 +1,14 @@
+// Base Style
+//======================================================
+
 .btn {
     min-height: 34px;
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 }
 
-// Brands
-//-----------------------------------------------------------------------------------------------------
+
+// Button Brands
+//======================================================
 
 .btn-default {
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
@@ -45,8 +50,8 @@
     @include button-variant($btn-velvet-color, $btn-velvet-bg, $btn-velvet-border);
 }
 
-// Colors
-//-----------------------------------------------------------------------------------------------------
+// Button Colors
+//======================================================
 
 .btn-red {
     @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
@@ -475,6 +480,28 @@
 }
 
 
+// Button Curved
+//======================================================
+
+.btn-curved {
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-curved-base);
+    
+    &.btn-lg {
+        // line-height: ensure even-numbered height of button next to large input
+        @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-curved-large);
+    }
+
+    &.btn-sm {
+        // line-height: ensure proper height of button next to small input
+        @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-curved-small);
+    }
+
+    &.btn-xs {
+        @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-curved-small);
+    }
+}
+
+
 // Button Rounded
 //======================================================
 
@@ -517,5 +544,45 @@
         padding-right: 2px;
         height: 22px;
         width: 22px;
+    }
+}
+
+
+// Button Link
+//======================================================
+
+// Make a button look and behave like a link
+.btn-link {
+    color: $link-color;
+    font-weight: normal;
+    border-radius: 0;
+
+    &,
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+        background-color: transparent;
+        @include box-shadow(none);
+    }
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+    }
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        background-color: transparent;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus {
+            color: $btn-link-disabled-color;
+            text-decoration: none;
+        }
     }
 }

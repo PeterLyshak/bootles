@@ -12,10 +12,11 @@
 
 // Basic Elements
 @import "ext/buttons";
-@import "ext/button-groups";
 @import "ext/forms";
 
 // Components (dependent with Basic Elements)
+@import "ext/button-groups";
+@import "ext/input-groups";
 @import "ext/navs";
 @import "ext/tabs";
 @import "ext/navbar";
