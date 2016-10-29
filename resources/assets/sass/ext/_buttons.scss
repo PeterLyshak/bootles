@@ -6,6 +6,10 @@
     @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 }
 
+.btn-social {
+    padding-left: 44px;
+}
+
 
 // Button Brands
 //======================================================
