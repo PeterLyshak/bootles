@@ -38,6 +38,7 @@ elixir(function(mix) {
 		'../../../vendor/flag-icon-css/flag-icon-css-2.3.1/css/flag-icon.css',
 		'../../../vendor/jquery-ui/jquery-ui-1.12.0.custom/jquery-ui.css',
 		'../../../vendor/swiper/Swiper-3.3.1/dist/css/swiper.css',
+		'../../../vendor/glidejs/glidejs-2.0.9/dist/css/glide.core.css',
 		'../../../vendor/jquery-raty/raty-2.7.0/lib/jquery.raty.css',
 		'../../../vendor/jquery-select2/select2-3.5.4/select2.css',
 		'../../../vendor/jquery-select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css',
@@ -87,7 +88,8 @@ elixir(function(mix) {
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.lazyload.js', // Lazyload
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.scrollstop.js', // Lazyload Scrollstop
         '../../../vendor/swiper/Swiper-3.3.1/dist/js/swiper.jquery.js', // Swiper Carousel
-        '../../../vendor/jquery-stickr/Stickr.js-1.0.1/jquery.stickr.js', // Stickr
+        '../../../vendor/glidejs/glidejs-2.0.9/dist/glide.js', // Swiper Carousel
+        '../../../vendor/sticky-kit/sticky-kit-1.1.2/jquery.sticky-kit.js', // Sticky Kit
         
         // jQuery Forms
         '../../../vendor/jquery-spinner/jquery.spinner-0.2.1/dist/js/jquery.spinner.js', // Spinner
