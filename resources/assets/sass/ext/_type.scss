@@ -84,6 +84,7 @@ mark,
 
 @include bg-variant('.bg-light', $brand-light);
 @include bg-variant('.bg-dark', $brand-dark);
+@include bg-variant('.bg-smoke', $brand-smoke);
 @include bg-variant('.bg-muted', $brand-muted);
 @include bg-variant('.bg-primary', $brand-primary);
 @include bg-variant('.bg-secondary', $brand-secondary);
@@ -389,7 +390,6 @@ mark,
 @include bg-variant('.bg-grey-800', $color-grey-800);
 @include bg-variant('.bg-grey-900', $color-grey-900);
 
-@include bg-variant('.bg-smoke', $color-smoke);
 
 // Page header
 // -------------------------

@@ -4,13 +4,8 @@
 @import "ext/mixins";
 
 // Core CSS
-@import "ext/base";
+@import "ext/scaffolding";
 @import "ext/type";
-
-// Layout
-@import "ext/offcanvas";
-
-// Basic Elements
 @import "ext/buttons";
 @import "ext/forms";
 
@@ -22,3 +17,7 @@
 @import "ext/navbar";
 @import "ext/pagination";
 @import "ext/progress-bars";
+@import "ext/panels";
+
+// Ext
+@import "ext/offcanvas";
