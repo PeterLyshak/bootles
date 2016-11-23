@@ -38,7 +38,8 @@ elixir(function(mix) {
         '../ng/app.module.js',
         '../ng/routes.module.js',
         '../ng/main.controllers.js',
-        '../ng/plugins.swiper.controller.js',
+        '../ng/component.colors.controller.js',
+        '../ng/plugin.swiper.controller.js',
     ], 'demo/js/app.ng.js');
     
     mix.styles([

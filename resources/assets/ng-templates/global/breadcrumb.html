@@ -3,10 +3,16 @@
 <!-- Modules -->
 <li class="active" ng-switch-when="bootstrap">Bootstrap</li>
 <li class="active" ng-switch-when="css">CSS</li>
-<li class="active" ng-switch-when="components">Components</li>
+<li class="{{ (pageModule == 'components') ? 'active' : ''}}" ng-if="(pageModule == 'components') ? 'true' : 'false'">
+    <a href="#/components">Components</a>
+</li>
 <li class="{{ (pageModule == 'plugins') ? 'active' : ''}}" ng-if="(pageModule == 'plugins') ? 'true' : 'false'">
     <a href="#/plugins">Plugins</a>
 </li>
+
+<!-- Components -->
+<li class="active" ng-switch-when="colors">Colors</li>
+<li class="active" ng-switch-when="drawer">Drawer</li>
 
 <!-- Plugins -->
 <li class="active" ng-switch-when="bootstrap-slider">Bootstrap Slider</li>

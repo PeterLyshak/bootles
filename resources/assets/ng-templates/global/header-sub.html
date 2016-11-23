@@ -23,8 +23,29 @@
                         <a href="#/bootstrap">Bootstrap</a>
                     </li>
                     
-                    <li class="{{ (pageName == 'components') ? 'active' : ''}}">
-                        <a href="#/components">Components</a>
+                    <li class="dropdown {{ (pageModule == 'components') ? 'active' : ''}}">
+                        <a href class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Components
+                            <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header hide">
+                                Components
+                            </li>
+                            
+                            <li class="{{ (pageName == 'colors') ? 'active' : ''}}">
+                                <a href="#/components/colors">Colors</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'drawer') ? 'active' : ''}}">
+                                <a href="#/components/drawer">Drawer</a>
+                            </li>
+                        </ul>
                     </li>
                     
                     <li class="dropdown {{ (pageModule == 'plugins') ? 'active' : ''}}">
