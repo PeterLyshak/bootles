@@ -22,7 +22,7 @@ require('laravel-elixir-ngtemplatecache');
 
 elixir(function(mix) {
     
-    mix.ngTemplateCache('/**/*.html', 'demo/js', 'demo/partials', {
+    mix.ngTemplateCache('/**/*.html', 'demo/js', 'resources/assets/ng-templates', {
         templateCache: {
             standalone: true
         },

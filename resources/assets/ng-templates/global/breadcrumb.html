@@ -1,0 +1,18 @@
+<li><a href="#/">Home</a></li>
+
+<!-- Modules -->
+<li class="active" ng-switch-when="bootstrap">Bootstrap</li>
+<li class="active" ng-switch-when="css">CSS</li>
+<li class="active" ng-switch-when="components">Components</li>
+<li class="{{ (pageModule == 'plugins') ? 'active' : ''}}" ng-if="(pageModule == 'plugins') ? 'true' : 'false'">
+    <a href="#/plugins">Plugins</a>
+</li>
+
+<!-- Plugins -->
+<li class="active" ng-switch-when="bootstrap-slider">Bootstrap Slider</li>
+<li class="active" ng-switch-when="swiper">Swiper</li>
+<li class="active" ng-switch-when="fixto">FixTo</li>
+<li class="active" ng-switch-when="jquery-spinner">jQuery Spinner</li>
+<li class="active" ng-switch-when="raty">Raty</li>
+<li class="active" ng-switch-when="select2">Select2</li>
+<li class="active" ng-switch-when="datatables">Datatables</li>

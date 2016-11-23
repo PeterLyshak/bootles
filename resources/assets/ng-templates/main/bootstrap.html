@@ -1,0 +1,147 @@
+<ng-include src="'global/header.html'"></ng-include>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb" ng-include src="'global/breadcrumb.html'" ng-switch on="pageName"></ul>
+        
+        <div class="page-header">
+            <h1 class="animated pulse">Bootstrap <small>Basic Elements</small></h1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div ng-switch on="pageName">
+            <!-- Colors
+            =============================================== -->
+            <div ng-switch-when="colors">
+                <ng-include src="'bootstrap/colors.html'"></ng-include>
+            </div>
+            
+            <!-- Buttons
+            =============================================== -->
+            <div ng-switch-when="buttons">
+                <ng-include src="'bootstrap/buttons.html'"></ng-include>
+            </div>
+            
+            <!-- Typography
+            =============================================== -->
+            <div ng-switch-when="typography">
+                <ng-include src="'bootstrap/typography.html'"></ng-include>
+            </div>
+            
+            <!-- Table
+            =============================================== -->
+            <div ng-switch-when="table">
+                <ng-include src="'bootstrap/table.html'"></ng-include>
+            </div>
+            
+            <!-- Forms
+            =============================================== -->
+            <div ng-switch-when="form">
+                <ng-include src="'bootstrap/form.html'"></ng-include>
+            </div>
+            
+            <!-- Helpers
+            =============================================== -->
+            <div ng-switch-when="helpers">
+                <ng-include src="'bootstrap/helpers.html'"></ng-include>
+            </div>
+            
+            <!-- Navbar
+            =============================================== -->
+            <div ng-switch-when="navbar">
+                <ng-include src="'bootstrap/navbar.html'"></ng-include>
+            </div>
+            
+            <!-- Navs
+            =============================================== -->
+            <div ng-switch-when="nav">
+                <ng-include src="'bootstrap/nav.html'"></ng-include>
+            </div>
+            
+            <!-- Tabs
+            =============================================== -->
+            <div ng-switch-when="tabs">
+                <ng-include src="'bootstrap/nav-tabs.html'"></ng-include>
+            </div>
+            
+            <!-- Breadcrumbs
+            =============================================== -->
+            <div ng-switch-when="breadcrumbs">
+                <ng-include src="'bootstrap/breadcrumbs.html'"></ng-include>
+            </div>
+            
+            <!-- Indicators
+            =============================================== -->
+            <div ng-switch-when="indicators">
+                <ng-include src="'bootstrap/indicators.html'"></ng-include>
+            </div>
+            
+            <!-- Pagination
+            =============================================== -->
+            <div ng-switch-when="pagination">
+                <ng-include src="'bootstrap/pagination.html'"></ng-include>
+            </div>
+            
+            <!-- Progress bars
+            =============================================== -->
+            <div ng-switch-when="progress">
+                <ng-include src="'bootstrap/progress.html'"></ng-include>
+            </div>
+            
+            <!-- Containers
+            =============================================== -->
+            <div ng-switch-when="containers">
+                <ng-include src="'bootstrap/containers.html'"></ng-include>
+            </div>
+            
+            <!-- Media
+            =============================================== -->
+            <div ng-switch-when="media">
+                <ng-include src="'bootstrap/media.html'"></ng-include>
+            </div>
+            
+            <!-- List Group
+            =============================================== -->
+            <div ng-switch-when="list-group">
+                <ng-include src="'bootstrap/list-group.html'"></ng-include>
+            </div>
+            
+            <!-- Dialogs
+            =============================================== -->
+            <div ng-switch-when="dialogs">
+                <ng-include src="'bootstrap/dialogs.html'"></ng-include>
+            </div>
+            
+            <div ng-switch-default>
+                <ng-include src="'errors/404.html'"></ng-include>
+            </div>
+        </div>
+        
+        <div id="source-modal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-hidden="true">
+                            ×
+                        </button>
+                        
+                        <h4 class="modal-title">
+                            Source Code
+                        </h4>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <pre></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <ng-include src="'global/footer.html'"></ng-include>
+</main>
