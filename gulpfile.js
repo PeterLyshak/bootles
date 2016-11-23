@@ -7,6 +7,8 @@ if (elixir.config.production == true) {
     process.env.NODE_ENV = 'production';
 }
 
+require('laravel-elixir-ngtemplatecache');
+
 /**
 |--------------------------------------------------------------------------
 | Elixir Asset Management
@@ -20,6 +22,17 @@ if (elixir.config.production == true) {
 
 elixir(function(mix) {
     
+    mix.ngTemplateCache('/**/*.html', 'demo/js', 'demo/partials', {
+        templateCache: {
+            standalone: true
+        },
+        htmlmin: {
+            collapseWhitespace: true,
+            removeComments: true
+        }
+    });
+    
+  
     // Mix ReactJS via Browserify
     mix.browserify([
         '../angular/app.module.js',

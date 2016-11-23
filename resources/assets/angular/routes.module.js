@@ -14,23 +14,23 @@
         
         $routeProvider.
             when('/', {
-                templateUrl: 'demo/partials/welcome.html',
+                templateUrl: 'main/welcome.html',
                 controller: 'welcomeController'
             }).
             when('/bootstrap', {
-                templateUrl: 'demo/partials/bootstrap.html',
+                templateUrl: 'main/bootstrap.html',
                 controller: 'bootstrapController'
             }).
             when('/bootstrap/:component', {
-                templateUrl: 'demo/partials/bootstrap.html',
+                templateUrl: 'main/bootstrap.html',
                 controller: 'bootstrapController'
             }).
             when('/css', {
-                templateUrl: 'demo/partials/css.html',
+                templateUrl: 'main/css.html',
                 controller: 'cssController'
             }).
             when('/plugins/:plugin', {
-                templateUrl: 'demo/partials/plugins.html',
+                templateUrl: 'main/plugins.html',
                 controller: 'pluginsController'
             }).
             // when('/portfolio/:phoneId', {
