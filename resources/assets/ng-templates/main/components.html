@@ -1,0 +1,51 @@
+<ng-include src="'global/header.html'"></ng-include>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb" ng-include src="'global/breadcrumb.html'" ng-switch on="pageName"></ul>
+        
+        <div class="page-header">
+            <h1 class="animated pulse">Components <small>Basic Elements</small></h1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div ng-switch on="pageName">
+            <!-- Drawer
+            =============================================== -->
+            <div ng-switch-when="drawer">
+                <ng-include src="'components/drawer.html'"></ng-include>
+            </div>
+            
+            <div ng-switch-default>
+                <ng-include src="'errors/404.html'"></ng-include>
+            </div>
+        </div>
+        
+        <div id="source-modal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-hidden="true">
+                            ×
+                        </button>
+                        
+                        <h4 class="modal-title">
+                            Source Code
+                        </h4>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <pre></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <ng-include src="'global/footer.html'"></ng-include>
+</main>

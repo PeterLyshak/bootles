@@ -502,6 +502,42 @@
 
 /**
 |------------------------------------------------------------------------------------
+| Components Controller
+|------------------------------------------------------------------------------------
+|
+*/
+
+(function() {
+    'use strict';
+    
+    angular
+        .module('myApp')
+        .controller('componentsController', componentsController);
+        
+    componentsController.$inject = [
+        '$scope',
+        '$location',
+        '$route',
+        '$routeParams',
+        '$templateCache',
+        '$http',
+    ];
+    
+    function componentsController($scope, $location, $route, $routeParams, $templateCache, $http) {
+        $scope.$route = $route;
+        $scope.$location = $location;
+        $scope.$routeParams = $routeParams;
+        $scope.component = $routeParams.component;
+        $scope.pageModule = 'components';
+        $scope.pageName = $scope.component ? $scope.component : "drawer";
+        $scope.errors = {};
+        $scope.messages = {};
+    }
+})();
+
+
+/**
+|------------------------------------------------------------------------------------
 | Plugins Controller
 |------------------------------------------------------------------------------------
 |

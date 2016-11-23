@@ -12,35 +12,42 @@
         // $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         // $locationProvider.html5Mode(true);
         
-        $routeProvider.
-            when('/', {
+        $routeProvider
+            .when('/', {
                 templateUrl: 'main/welcome.html',
                 controller: 'welcomeController'
-            }).
-            when('/bootstrap', {
+            })
+            .when('/bootstrap', {
                 templateUrl: 'main/bootstrap.html',
                 controller: 'bootstrapController'
-            }).
-            when('/bootstrap/:component', {
+            })
+            .when('/bootstrap/:component', {
                 templateUrl: 'main/bootstrap.html',
                 controller: 'bootstrapController'
-            }).
-            when('/css', {
+            })
+            .when('/components', {
+                templateUrl: 'main/components.html',
+                controller: 'componentsController'
+            })
+            .when('/components/:component', {
+                templateUrl: 'main/components.html',
+                controller: 'componentsController'
+            })
+            .when('/css', {
                 templateUrl: 'main/css.html',
                 controller: 'cssController'
-            }).
-            when('/plugins/:plugin', {
+            })
+            .when('/plugins/:plugin', {
                 templateUrl: 'main/plugins.html',
                 controller: 'pluginsController'
-            }).
-            // when('/portfolio/:phoneId', {
+            })
+            // .when('/portfolio/:phoneId', {
                 // templateUrl: 'demo/partials/phone-detail.html',
                 // controller: 'PhoneDetailCtrl'
-            // }).
-            otherwise({
+            // })
+            .otherwise({
                 redirectTo: '/'
             });
-        
     }
 })();
 

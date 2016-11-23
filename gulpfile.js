@@ -35,10 +35,10 @@ elixir(function(mix) {
   
     // Mix ReactJS via Browserify
     mix.browserify([
-        '../angular/app.module.js',
-        '../angular/routes.module.js',
-        '../angular/controllers.js',
-        '../angular/plugins.controller.js',
+        '../ng/app.module.js',
+        '../ng/routes.module.js',
+        '../ng/main.controllers.js',
+        '../ng/plugins.swiper.controller.js',
     ], 'demo/js/app.ng.js');
     
     mix.styles([
