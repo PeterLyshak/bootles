@@ -1,0 +1,76 @@
+/*
+|-------------------------------------------------------------------------------------
+| Drawer Base
+|-------------------------------------------------------------------------------------
+|
+|
+*/
+
+.drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1300;
+    
+    .drawer-content {
+        position: absolute;
+        top: 0;
+        left: -266px;
+        z-index: 1;
+        height: 100% !important;
+        width: 256px !important;
+        background-color: #fff;
+        overflow: auto;
+        
+        @include transition(
+            left 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms,
+            right 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+        );
+        
+        @include box-shadow(
+            rgba(0, 0, 0, 0.156863) 0px 3px 10px,
+            rgba(0, 0, 0, 0.227451) 0px 3px 10px
+        );
+    }
+    
+    &.in .drawer-content {
+        left: 0;
+    }
+}
+
+.drawer-right {
+    left: auto;
+    right: 0;
+    
+    .drawer-content {
+        left: auto;
+        right: -266px;
+    }
+    
+    &.in .drawer-content {
+        left: auto;
+        right: 0;
+    }
+}
+
+.drawer-open {
+    overflow: hidden;
+}
+
+.drawer-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: auto;
+    background-color: #000;
+    
+    @include opacity(0.5);
+        
+    &.in {
+        @include opacity(0.5);
+    }
+}
