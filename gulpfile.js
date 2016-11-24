@@ -123,5 +123,6 @@ elixir(function(mix) {
         
         // Bootles
         '../../../resources/assets/js/bootles-ext.js',
+        '../../../resources/assets/js/drawer.js',
 	], 'dist/js/bootles.min.js');
 });
