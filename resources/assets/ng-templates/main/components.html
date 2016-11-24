@@ -19,6 +19,12 @@
                 <ng-include src="'components/drawer.html'"></ng-include>
             </div>
             
+            <!-- Offcanvas
+            =============================================== -->
+            <div ng-switch-when="offcanvas">
+                <ng-include src="'components/offcanvas.html'"></ng-include>
+            </div>
+            
             <div ng-switch-default>
                 <ng-include src="'errors/404.html'"></ng-include>
             </div>
@@ -46,7 +52,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
     
     <ng-include src="'global/footer.html'"></ng-include>
