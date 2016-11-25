@@ -313,8 +313,8 @@
     
     .navbar-brand {
         font-size: 24px;
-        height: $navbar-height-large;
-        padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
+        height: ($navbar-height-large - 1);
+        padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal ($navbar-padding-large-vertical - 1);
     }
     
     .navbar-toggle {
@@ -338,7 +338,7 @@
         
         .navbar-nav {
             > li > a {
-                padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal;
+                padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal ($navbar-padding-large-vertical - 1);
             }
         }
         
