@@ -7,8 +7,8 @@
 */
 
 .offcanvas {
-    min-height: 100%;
     position: relative;
+    min-height: 100%;
     
     @media (min-width: $screen-sm-min) {
         .container {
@@ -25,22 +25,32 @@
     @media (min-width: $screen-lg-min) {
         .container {
             max-width: 1170px;
-            // width: 980px;
             width: auto;
         }
     }
 }
 
-.visible-offcanvas-open {
+.visible-offcanvas-left-open,
+.visible-offcanvas-right-open {
     display: none !important;
 }
 
-.offcanvas-open {
-    .hidden-offcanvas-open {
+.offcanvas-left-open {
+    .hidden-offcanvas-left-open {
         display: none !important;
     }
     
-    .visible-offcanvas-open {
+    .visible-offcanvas-left-open {
+        display: block !important;
+    }
+}
+
+.offcanvas-right-open {
+    .hidden-offcanvas-right-open {
+        display: none !important;
+    }
+    
+    .visible-offcanvas-right-open {
         display: block !important;
     }
 }
@@ -95,7 +105,7 @@
         }
     }
     
-    .offcanvas-open & > .offcanvas-body {
+    .offcanvas-right-open & > .offcanvas-body {
         & {
             padding-right: 200px;
         }
@@ -169,12 +179,13 @@
 */
 
 .offcanvas-sidebar {
-    .peep-right &,
-    .peep-left & {
+    .peep-left &,
+    .peep-right & {
         width: 50px;
     }
     
-    .offcanvas-open & {
+    .offcanvas-left-open .offcanvas-left &,
+    .offcanvas-right-open .offcanvas-right & {
         width: 200px;
     }
     
