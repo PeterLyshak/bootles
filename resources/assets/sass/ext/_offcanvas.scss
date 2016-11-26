@@ -31,7 +31,11 @@
 }
 
 .visible-offcanvas-left-open,
-.visible-offcanvas-right-open {
+.visible-offcanvas-right-open,
+.visible-inline-offcanvas-left-open,
+.visible-inline-offcanvas-right-open,
+.visible-inline-block-offcanvas-left-open,
+.visible-inline-block-offcanvas-right-open {
     display: none !important;
 }
 
@@ -43,6 +47,14 @@
     .visible-offcanvas-left-open {
         display: block !important;
     }
+    
+    .visible-inline-offcanvas-left-open {
+        display: inline !important;
+    }
+    
+    .visible-inline-block-offcanvas-left-open {
+        display: inline-block !important;
+    }
 }
 
 .offcanvas-right-open {
@@ -52,6 +64,14 @@
     
     .visible-offcanvas-right-open {
         display: block !important;
+    }
+    
+    .visible-inline-offcanvas-right-open {
+        display: inline !important;
+    }
+    
+    .visible-inline-block-offcanvas-right-open {
+        display: inline-block !important;
     }
 }
 
@@ -66,7 +86,7 @@
 .offcanvas-body {
     & {
         position: relative;
-        z-index: 1;
+        z-index: auto;
         height: 100%;
         min-height: 100%;
         padding: 0;
@@ -139,7 +159,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1000;
     
     min-height: 100%;
     padding: 0;
@@ -170,6 +190,16 @@
     }
 }
 
+
+.offcanvas-fixed {
+    .offcanvas-left,
+    .offcanvas-right {
+        position: fixed;
+        min-height: 0;
+        height: 100%;
+    }
+}
+
 /*
 |------------------------------------------------------------------------------------------------------
 | Offcanvas Sidebar
@@ -187,6 +217,12 @@
     .offcanvas-left-open .offcanvas-left &,
     .offcanvas-right-open .offcanvas-right & {
         width: 200px;
+    }
+    
+    .offcanvas-left-open .offcanvas-fixed .offcanvas-left &,
+    .offcanvas-right-open .offcanvas-fixed .offcanvas-right & {
+        position: relative;
+        height: 100%;
     }
     
     & .navbar-nav {

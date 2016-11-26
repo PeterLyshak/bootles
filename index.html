@@ -50,9 +50,9 @@
     <base href="/demo/" />
     -->
 </head>
-<body>
+<body class="offcanvas-right-open">
     
-    <div id="ngContent" class="offcanvas peep-right">
+    <div id="ngContent" class="offcanvas offcanvas-fixed peep-right">
         <div class="offcanvas-body">
             <div ng-view></div>
         </div>
@@ -73,9 +73,13 @@
                             </div>
                         </nav>
                     </div>
+                    
+                    <div class="offcanvas-sidebar-content">
+                        Sidebar Content
+                    </div>
                 </div>
             
-                <div class="visible-offcanvas-right-open">
+                <div class="visible-inline-offcanvas-right-open">
                     <div class="navbar-wrapper">
                         <nav class="navbar navbar-static-top navbar-cyan navbar-lg" role="navigation">
                             <div class="container-fluid">
@@ -108,6 +112,10 @@
                                 </div>
                             </div>
                         </nav>
+                    </div>
+                    
+                    <div class="offcanvas-sidebar-content">
+                        Sidebar Content
                     </div>
                 </div>
             </aside>
