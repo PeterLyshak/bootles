@@ -318,8 +318,15 @@
     }
     
     .navbar-toggle {
-        margin-top: 13px;
-        margin-bottom: 13px;
+        font-size: $font-size-large;
+        line-height: 0;
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+    
+    .navbar-form-lg {
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     
     // Desktop + Tablet Only

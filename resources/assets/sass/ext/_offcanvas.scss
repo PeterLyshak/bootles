@@ -107,7 +107,6 @@
     @media (max-width: $screen-xs-max) {
         & .navbar .row > [class^='col-'],
         & .navbar .row > [class*='col-'] {
-            padding: 0;
             min-height: 0;
         }
         
