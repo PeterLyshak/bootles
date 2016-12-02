@@ -1,4 +1,4 @@
-<main>
+<div ng-controller="componentDrawerController">
     <div class="page-header">
         <h2 id="drawer" class="animated pulse">
             Drawer <small>Components</small>
@@ -63,4 +63,29 @@
             
         </div>
     </div>
-</main>
+    
+    <div class="panel panel-smoke">
+        <div class="panel-heading">
+            <h3 class="panel-title">Right Docked example</h3>
+        </div>
+        
+        <div class="panel-body">
+            <div class="text-right">
+                <button type="button"
+                    class="btn btn-default btn-collapse"
+                    data-activates="drawerExample3">
+                    Toggle SideNav
+                </button>
+            </div>
+            
+            <div id="drawerExample3" class="drawer fade" aria-expanded="false">
+                <div class="drawer-content">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                    anderson cred nesciunt sapiente ea proident. 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

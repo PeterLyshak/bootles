@@ -39,6 +39,7 @@ elixir(function(mix) {
         '../ng/routes.module.js',
         '../ng/main.controllers.js',
         '../ng/component.colors.controller.js',
+        '../ng/component.drawer.controller.js',
         '../ng/plugin.swiper.controller.js',
     ], 'demo/js/app.ng.js');
     
@@ -124,5 +125,6 @@ elixir(function(mix) {
         // Bootles
         '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
+        '../../../resources/assets/js/materialize.js',
 	], 'dist/js/bootles.min.js');
 });
