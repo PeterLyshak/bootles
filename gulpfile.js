@@ -37,7 +37,10 @@ elixir(function(mix) {
     mix.browserify([
         '../ng/app.module.js',
         '../ng/routes.module.js',
-        '../ng/main.controllers.js',
+        '../ng/main.welcome.controller.js',
+        '../ng/main.bootstrap.controller.js',
+        '../ng/main.components.controller.js',
+        '../ng/main.plugins.controller.js',
         '../ng/component.colors.controller.js',
         '../ng/component.drawer.controller.js',
         '../ng/plugin.swiper.controller.js',

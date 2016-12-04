@@ -15,17 +15,15 @@
     componentDrawerController.$inject = [
         '$scope',
         '$location',
-        '$route',
-        '$routeParams',
+        '$stateParams',
         '$templateCache',
         '$http',
     ];
     
-    function componentDrawerController($scope, $location, $route, $routeParams, $templateCache, $http) {
-        $scope.$route = $route;
+    function componentDrawerController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
-        $scope.$routeParams = $routeParams;
-        $scope.component = $routeParams.component;
+        $scope.$stateParams = $stateParams;
+        $scope.component = $stateParams.component;
         $scope.componentName = "drawer";
         $scope.errors = {};
         $scope.messages = {};

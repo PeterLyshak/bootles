@@ -15,17 +15,15 @@
     componentColorsController.$inject = [
         '$scope',
         '$location',
-        '$route',
-        '$routeParams',
+        '$stateParams',
         '$templateCache',
         '$http',
     ];
     
-    function componentColorsController($scope, $location, $route, $routeParams, $templateCache, $http) {
-        $scope.$route = $route;
+    function componentColorsController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
-        $scope.$routeParams = $routeParams;
-        $scope.component = $routeParams.component;
+        $scope.$stateParams = $stateParams;
+        $scope.component = $stateParams.component;
         $scope.componentName = "colors";
         $scope.errors = {};
         $scope.messages = {};

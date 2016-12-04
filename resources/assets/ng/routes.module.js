@@ -5,49 +5,58 @@
         .module('myApp')
         .config(config);
     
-    config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
+    // config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
+    config.$inject = ['$stateProvider', '$urlRouterProvider'];
     
-    function config($routeProvider, $locationProvider, $httpProvider) {
-        // $httpProvider.defaults.headers.common['X-PJAX'] = true;
-        // $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-        // $locationProvider.html5Mode(true);
+    function config($stateProvider, $urlRouterProvider) {
         
-        $routeProvider
-            .when('/', {
+        $urlRouterProvider.otherwise('/');
+        
+        $stateProvider
+            // Index
+            .state('index', {
+                url: '/',
                 templateUrl: 'main/welcome.html',
-                controller: 'welcomeController'
+                controller: 'welcomeController',
             })
-            .when('/bootstrap', {
+            
+            
+            // Bootstrap
+            .state('bootstrap', {
+                url: '/bootstrap',
                 templateUrl: 'main/bootstrap.html',
-                controller: 'bootstrapController'
+                controller: 'bootstrapController',
             })
-            .when('/bootstrap/:component', {
+            .state('bootstrapComponent', {
+                url: '/bootstrap/:component',
                 templateUrl: 'main/bootstrap.html',
-                controller: 'bootstrapController'
+                controller: 'bootstrapController',
             })
-            .when('/components', {
+            
+            // Components
+            .state('components', {
+                url: '/components',
                 templateUrl: 'main/components.html',
                 controller: 'componentsController'
             })
-            .when('/components/:component', {
+            .state('componentsComponent', {
+                url: '/components/:component',
                 templateUrl: 'main/components.html',
                 controller: 'componentsController'
             })
-            .when('/css', {
-                templateUrl: 'main/css.html',
-                controller: 'cssController'
-            })
-            .when('/plugins/:plugin', {
+            
+            // Plugins
+            .state('plugins', {
+                url: '/plugins',
                 templateUrl: 'main/plugins.html',
                 controller: 'pluginsController'
             })
-            // .when('/portfolio/:phoneId', {
-                // templateUrl: 'demo/partials/phone-detail.html',
-                // controller: 'PhoneDetailCtrl'
-            // })
-            .otherwise({
-                redirectTo: '/'
-            });
+            .state('pluginsPlugin', {
+                url: '/plugins/:plugin',
+                templateUrl: 'main/plugins.html',
+                controller: 'pluginsController'
+            })
+            
     }
 })();
 

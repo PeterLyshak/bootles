@@ -15,19 +15,17 @@
     pluginSwiperController.$inject = [
         '$scope',
         '$location',
-        '$route',
-        '$routeParams',
+        '$stateParams',
         '$templateCache',
         '$http',
     ];
     
-    function pluginSwiperController($scope, $location, $route, $routeParams, $templateCache, $http) {
-        $scope.$route = $route;
+    function pluginSwiperController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
-        $scope.$routeParams = $routeParams;
+        $scope.$stateParams = $stateParams;
         $scope.pageName = "swiper";
         $scope.pageModule = 'plugins';
-        $scope.plugin = $routeParams.plugin;
+        $scope.plugin = $stateParams.plugin;
         $scope.errors = {};
         $scope.messages = {};
         
