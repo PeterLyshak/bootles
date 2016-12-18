@@ -4,7 +4,7 @@
 
         <section>
             <div class="container">
-                <div id="login-container">
+                <div id="login-container" ng-if="!isAuthenticated">
                     <form>
                         <fieldset>
                             <label for="user">User</label>
@@ -28,6 +28,11 @@
                     <a href="" ng-click="vm.facebookLogin()">Log In with Facebook</a><br/>
                 </div>
                 
+                <div ng-if="isAuthenticated">
+                    <p>You are already logged in!</p>
+                    <button class="btn btn-danger" ng-click="vm.authService.logout()">Log Out</button>
+                </div>
+            
                 <div class="hidden">
                     <div ng-if="!isAuthenticated">
                         <button class="btn btn-primary" ng-click="vm.authService.lockLogin()">
