@@ -36,8 +36,11 @@ elixir(function(mix) {
     // Mix ReactJS via Browserify
     mix.browserify([
         '../ng/app.module.js',
+        '../ng/authService.service.js',
+        '../ng/app.run.js',
         '../ng/routes.module.js',
         '../ng/main.welcome.controller.js',
+        '../ng/main.login.controller.js',
         '../ng/main.bootstrap.controller.js',
         '../ng/main.components.controller.js',
         '../ng/main.plugins.controller.js',

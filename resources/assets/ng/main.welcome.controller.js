@@ -18,6 +18,7 @@
         '$stateParams',
         '$templateCache',
         '$http',
+        'authService',
     ];
     
     function welcomeController(
@@ -25,14 +26,24 @@
         $location,
         $stateParams,
         $templateCache,
-        $http
+        $http,
+        authService
     ) {
+        
+        var vm = this;
+        
         $scope.$stateParams = $stateParams;
         $scope.pageName = 'welcome';
         $scope.pageModule = 'index';
         $scope.errors = {};
         $scope.messages = {};
         
+        vm.authService = authService;
+        
+        authService.getProfileDeferred().then(function (profile) {
+            vm.profile = profile;
+        });
+    
         /*
         $scope.$route = $route;
         $scope.$location = $location;

@@ -112,6 +112,20 @@
                     </li>
                 </ul>
                 
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-if="!isAuthenticated" class="{{ (pageName == 'login') ? 'active' : ''}}">
+                        <a href="#/login">
+                            Log in
+                        </a>
+                    </li>
+                    
+                    <li ng-if="isAuthenticated">
+                        <a href="javascript:;" ng-click="vm.authService.logout()">
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+                
                 <ul class="nav navbar-nav navbar-right" ng-switch on="pageModule">
                     <li class="dropdown" ng-switch-when="templates">
                         <a href class="dropdown-toggle"

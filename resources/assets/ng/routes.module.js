@@ -5,21 +5,48 @@
         .module('myApp')
         .config(config);
     
-    // config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider'];
-    config.$inject = ['$stateProvider', '$urlRouterProvider'];
+    config.$inject = [
+        // '$routeProvider',
+        // '$locationProvider',
+        // '$httpProvider'
+        '$stateProvider',
+        'angularAuth0Provider',
+        'lockProvider',
+        '$urlRouterProvider',
+        'jwtOptionsProvider'
+    ];
     
-    function config($stateProvider, $urlRouterProvider) {
+    function config(
+        $stateProvider,
+        angularAuth0Provider,
+        lockProvider,
+        $urlRouterProvider,
+        jwtOptionsProvider
+    ) {
         
-        $urlRouterProvider.otherwise('/');
-        
+        // Configuration for angular-jwt
+        jwtOptionsProvider.config({
+            tokenGetter: function () {
+                return localStorage.getItem('id_token');
+            }
+        });
+    
         $stateProvider
             // Index
             .state('index', {
                 url: '/',
                 templateUrl: 'main/welcome.html',
                 controller: 'welcomeController',
+                controllerAs: 'vm',
             })
             
+            // Auth
+            .state('login', {
+                url: '/login',
+                templateUrl: 'main/login.html',
+                controller: 'LoginController',
+                controllerAs: 'vm',
+            })
             
             // Bootstrap
             .state('bootstrap', {
@@ -56,7 +83,19 @@
                 templateUrl: 'main/plugins.html',
                 controller: 'pluginsController'
             })
-            
+        
+        angularAuth0Provider.init({
+            clientID: 'vQLN0V90OASSE2w0cNKJRk2YXFF1XXK1',
+            domain: 'jackhummah.auth0.com'
+        });
+  
+        lockProvider.init({
+            clientID: 'vQLN0V90OASSE2w0cNKJRk2YXFF1XXK1',
+            domain: 'jackhummah.auth0.com'
+        });
+        
+        $urlRouterProvider.otherwise('/');
+        
     }
 })();
 
