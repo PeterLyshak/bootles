@@ -131,6 +131,6 @@ elixir(function(mix) {
         // Bootles
         '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
-        '../../../resources/assets/js/materialize.js',
+        '../../../vendor/materialize/materialize-0.97.8/js/bin/materialize.custom.js',
 	], 'dist/js/bootles.min.js');
 });
