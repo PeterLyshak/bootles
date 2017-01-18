@@ -85,6 +85,7 @@ elixir(function(mix) {
         '../../../vendor/moment/moment-2.14.1/min/moment.min.js', // Moment
         '../../../vendor/moment-range/moment-range-2.2.0/dist/moment-range.js', // Moment Range
         '../../../vendor/wow/wow-1.1.2/dist/wow.js', // WOW
+        '../../../vendor/sticky-js/sticky-js-1.1.6/dist/sticky.min.js', // Sticky
         
         // jQuery Core
         '../../../vendor/jquery/jquery-1.12.0.js', // jQuery
@@ -110,7 +111,6 @@ elixir(function(mix) {
         '../../../vendor/jquery-lazyload/jquery_lazyload-1.9.7/jquery.scrollstop.js', // Lazyload Scrollstop
         '../../../vendor/swiper/Swiper-3.3.1/dist/js/swiper.jquery.js', // Swiper Carousel
         '../../../vendor/glidejs/glidejs-2.0.9/dist/glide.js', // Swiper Carousel
-        '../../../vendor/sticky-kit/sticky-kit-1.1.2/jquery.sticky-kit.js', // Sticky Kit
         
         // jQuery Forms
         '../../../vendor/jquery-spinner/jquery.spinner-0.2.1/dist/js/jquery.spinner.js', // Spinner
