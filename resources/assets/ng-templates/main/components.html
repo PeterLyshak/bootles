@@ -25,6 +25,12 @@
                 <ng-include src="'components/offcanvas.html'"></ng-include>
             </div>
             
+            <!-- Cards
+            =============================================== -->
+            <div ng-switch-when="cards">
+                <ng-include src="'components/cards.html'"></ng-include>
+            </div>
+            
             <div ng-switch-default>
                 <ng-include src="'errors/404.html'"></ng-include>
             </div>
