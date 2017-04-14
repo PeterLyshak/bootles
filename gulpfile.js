@@ -22,7 +22,7 @@ require('laravel-elixir-ngtemplatecache');
 
 elixir(function(mix) {
     
-    mix.ngTemplateCache('/**/*.html', 'demo/js', 'resources/assets/ng-templates', {
+    mix.ngTemplateCache('/**/*.html', 'docs/js', 'resources/assets/ng-templates', {
         templateCache: {
             standalone: true
         },
@@ -47,7 +47,7 @@ elixir(function(mix) {
         '../ng/component.colors.controller.js',
         '../ng/component.drawer.controller.js',
         '../ng/plugin.swiper.controller.js',
-    ], 'demo/js/app.ng.js');
+    ], 'docs/js/app.ng.js');
     
     mix.styles([
 		'../../../vendor/bootstrap/bootstrap-3.3.7/css/bootstrap.css',
@@ -65,16 +65,16 @@ elixir(function(mix) {
 		'../../../vendor/jquery-select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css', // [t0m] select2-bootstrap-css
 		// '../../../vendor/datatables/DataTables-1.10.12/media/css/jquery.dataTables.min.css',
 		'../../../vendor/datatables/DataTables-1.10.13/datatables.css', // [DataTables] DataTables
-	], 'dist/css/bootles.min.css');
+	], 'docs/dist/css/bootles.min.css');
     
     mix.sass([
         'bootles-ext.scss',
-    ], 'dist/css/bootles-ext.min.css');
+    ], 'docs/dist/css/bootles-ext.min.css');
     
     /*
     mix.sass([
         'bootles-theme-base.scss',
-    ], 'dist/css/bootles-theme-base.min.css');
+    ], 'docs/dist/css/bootles-theme-base.min.css');
     */
     
     // Mix jQuery core and plugins
@@ -135,5 +135,5 @@ elixir(function(mix) {
         '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
         '../../../vendor/materialize/materialize-0.97.8/js/bin/materialize.custom.js',
-	], 'dist/js/bootles.min.js');
+	], 'docs/dist/js/bootles.min.js');
 });
