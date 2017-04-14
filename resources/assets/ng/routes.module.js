@@ -13,7 +13,8 @@
         'angularAuth0Provider',
         'lockProvider',
         '$urlRouterProvider',
-        'jwtOptionsProvider'
+        'jwtOptionsProvider',
+        '$templateFactoryProvider'
     ];
     
     function config(
@@ -21,8 +22,10 @@
         angularAuth0Provider,
         lockProvider,
         $urlRouterProvider,
-        jwtOptionsProvider
+        jwtOptionsProvider,
+        $templateFactoryProvider
     ) {
+        $templateFactoryProvider.shouldUnsafelyUseHttp(true);
         
         // Configuration for angular-jwt
         jwtOptionsProvider.config({
