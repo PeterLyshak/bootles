@@ -3,7 +3,10 @@
 // -------------------------
 .nav-pills {
     > li {
-
+        > a {
+            border-radius: 0;
+        }
+        
         // Active state
         &.active > a {
             &,
@@ -14,8 +17,15 @@
             }
         }
     }
+    
+    &.nav-curved {
+        > li {
+            > a {
+                border-radius: $nav-pills-border-radius;
+            }
+        }
+    }
 }
-
 
 // Brands
 //======================================================
