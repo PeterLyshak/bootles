@@ -2,14 +2,14 @@
 //======================================================
 
 .btn {
-  min-height: 34px;
-  @include button-size($font-size-base, $line-height-base, $btn-border-radius-base);
+    min-height: 34px;
+    @include button-size($font-size-base, $line-height-base, $btn-border-radius-base);
 
-  &:active,
-  &.active {
-    background-image: none;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-  }
+    &:active,
+    &.active {
+        background-image: none;
+        @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
 }
 
 
@@ -19,37 +19,37 @@
 
 // Make a button look and behave like a link
 .btn-link {
-  color: $link-color;
-  font-weight: normal;
+    color: $link-color;
+    font-weight: normal;
 
-  &,
-  &:active,
-  &.active,
-  &[disabled],
-  fieldset[disabled] & {
-    background-color: transparent;
-    @include box-shadow(none);
-  }
-  &,
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-  }
-  &:hover,
-  &:focus {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    background-color: transparent;
-  }
-  &[disabled],
-  fieldset[disabled] & {
+    &,
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+        background-color: transparent;
+        @include box-shadow(none);
+    }
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+    }
     &:hover,
     &:focus {
-      color: $btn-link-disabled-color;
-      text-decoration: none;
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        background-color: transparent;
     }
-  }
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus {
+            color: $btn-link-disabled-color;
+            text-decoration: none;
+        }
+    }
 }
 
 

@@ -86,6 +86,18 @@
                 templateUrl: 'main/plugins.html',
                 controller: 'pluginsController'
             })
+            
+            // Templates
+            .state('templates', {
+                url: '/templates',
+                templateUrl: 'main/templates.html',
+                controller: 'templatesController'
+            })
+            .state('templatesSub', {
+                url: '/templates/:template',
+                templateUrl: 'main/templates.html',
+                controller: 'templatesController'
+            })
         
         angularAuth0Provider.init({
             clientID: 'vQLN0V90OASSE2w0cNKJRk2YXFF1XXK1',

@@ -44,6 +44,7 @@ elixir(function(mix) {
         '../ng/main.bootstrap.controller.js',
         '../ng/main.components.controller.js',
         '../ng/main.plugins.controller.js',
+        '../ng/main.templates.controller.js',
         '../ng/component.colors.controller.js',
         '../ng/component.drawer.controller.js',
         '../ng/plugin.swiper.controller.js',

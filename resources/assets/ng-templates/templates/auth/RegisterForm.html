@@ -1,0 +1,191 @@
+<div>
+    <div class="registerFormSocial text-center">
+        <a href="javascript:void(0)" class="btn btn-social btn-facebook">
+            <i class="fa fa-facebook" />
+            Sign in with Facebook
+        </a>
+        
+        <a href="javascript:void(0)" class="btn btn-social btn-google">
+            <i class="fa fa-google" />
+            Sign in with Google
+        </a>
+    </div>
+    
+    <div class="registerFormSeparator">
+        <hr aria-hidden="true" />
+
+        <div class="registerFormSeparatorLabel text-center">
+            <span class="label label-info">or</span>
+        </div>
+    </div>
+
+    <form
+        ref="RegisterForm"
+        id="RegisterForm"
+        method="POST"
+        role="form"
+    >
+        <div class"form-group">
+            <label
+                for="username"
+                id="usernameLabel"
+                class="hide"
+            >
+                Username
+            </label>
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">@</span>
+
+                <input
+                    name="username"
+                    id="username"
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                    autoFocus="true"
+                    required="true"
+                    aria-describedby="usernameLabel"
+                />
+            </div>
+
+            <span class="help-block"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label
+                        for="first_name"
+                        id="firstNameLabel"
+                        class="hide"
+                    >
+                        First Name
+                    </label>
+
+                    <input
+                        name="first_name"
+                        id="first_name"
+                        type="text"
+                        class="form-control input-lg"
+                        placeholder="First Name"
+                        autoFocus={false}
+                        required={true}
+                        aria-describedby="firstNameLabel"
+                    />
+
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label
+                        for="last_name"
+                        id="lastNameLabel"
+                        class="hide"
+                    >
+                        Last Name
+                    </label>
+
+                    <input
+                        name="last_name"
+                        id="last_name"
+                        type="text"
+                        class="form-control input-lg"
+                        placeholder="Last Name"
+                        required="true"
+                        aria-describedby="lastNameLabel"
+                    />
+
+                    <span class="help-block"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr aria-hidden="true" />
+
+        <div class="form-group">
+            <label
+                for="email_address"
+                id="emailAddressLabel"
+                class="hide"
+            >
+                Email Address
+            </label>
+
+            <input
+                name="email_address"
+                id="email_address"
+                type="email"
+                class="form-control input-lg"
+                placeholder="Email Address"
+                required="true"
+                aria-describedby="emailAddressLabel"
+            />
+
+            <span class="help-block"></span>
+        </div>
+
+        <div class="form-group">
+            <label
+                for="password"
+                id="passwordLabel"
+                class="hide"
+            >
+                Password
+            </label>
+
+            <input
+                ref="RegisterFormPasswordField"
+                name="password"
+                id="password"
+                type="password"
+                class="form-control input-lg"
+                placeholder="Password"
+                required="true"
+                aria-describedby="passwordLabel"
+            />
+
+            <span class="help-block"></span>
+        </div>
+
+        <div class="form-group">
+            <label
+                for="password_confirmation"
+                id="passwordConfirmationLabel"
+                class="hide"
+            >
+                Confirm Password
+            </label>
+
+            <input
+                name="password_confirmation"
+                id="password_confirmation"
+                type="password"
+                class="form-control input-lg"
+                placeholder="Confirm Password"
+                required="true"
+                aria-describedby="passwordConfirmationLabel"
+            />
+
+            <span class="help-block"></span>
+        </div>
+        
+        <br aria-hidden="true" />
+        
+        <div class="alert alert-danger alert-dismissable animated shake" >
+            <h4>Alert Title</h4>
+            <p>Alert message</p>
+        </div>
+
+        <button
+            ref="RegisterFormSubmit"
+            type="submit"
+            class="formSubmit btn btn-success btn-lg btn-block psn-relative"
+            data-loading-text="Sign Up"
+        >
+            Sign Up
+        </button>
+    </form>
+</div>

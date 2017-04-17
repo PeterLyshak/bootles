@@ -1,0 +1,67 @@
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+    color: $jumbotron-color;
+    background-color: $jumbotron-bg;
+
+    h1,
+    .h1 {
+        color: $jumbotron-heading-color;
+    }
+
+    > hr {
+        border-top-color: darken($jumbotron-bg, 10%);
+    }
+    
+    // Brands
+    //======================================================
+    
+    &.jumbotron-light {
+        background-color: $brand-light;
+    }
+    &.jumbotron-dark {
+        background-color: $brand-dark;
+        color: $color-white;
+    }
+    &.jumbotron-smoke {
+        background-color: $brand-smoke;
+    }
+    &.jumbotron-muted {
+        background-color: $brand-muted;
+        color: $color-white;
+    }
+    &.jumbotron-primary {
+        background-color: $brand-primary;
+        color: $color-white;
+    }
+    &.jumbotron-secondary {
+        background-color: $brand-secondary;
+        color: $color-white;
+    }
+    &.jumbotron-accent {
+        background-color: $brand-accent;
+        color: $color-white;
+    }
+    &.jumbotron-success {
+        background-color: $brand-success;
+        color: $color-white;
+    }
+    &.jumbotron-info {
+        background-color: $brand-info;
+    }
+    &.jumbotron-warning {
+        background-color: $brand-warning;
+        color: $color-white;
+    }
+    &.jumbotron-danger {
+        background-color: $brand-danger;
+        color: $color-white;
+    }
+    &.jumbotron-velvet {
+        background-color: $brand-velvet;
+        color: $color-white;
+    }
+}
