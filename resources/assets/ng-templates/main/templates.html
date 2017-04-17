@@ -19,6 +19,30 @@
         <ng-include src="'templates/auth/Login.html'"></ng-include>
     </div>
     
+    <!-- About
+    =============================================== -->
+    <div ng-switch-when="about">
+        <ng-include src="'templates/index/About.html'"></ng-include>
+    </div>
+    
+    <!-- Settings
+    =============================================== -->
+    <div ng-switch-when="settings">
+        <ng-include src="'templates/settings/Settings.html'"></ng-include>
+    </div>
+    
+    <!-- Profile
+    =============================================== -->
+    <div ng-switch-when="profile">
+        <ng-include src="'templates/profile/Profile.html'"></ng-include>
+    </div>
+    
+    <!-- Home
+    =============================================== -->
+    <div ng-switch-when="home">
+        <ng-include src="'templates/index/Home.html'"></ng-include>
+    </div>
+    
     <div ng-switch-default>
         <ng-include src="'errors/404.html'"></ng-include>
     </div>
