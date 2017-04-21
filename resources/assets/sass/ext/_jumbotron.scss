@@ -6,7 +6,8 @@
 .jumbotron {
     color: $jumbotron-color;
     background-color: $jumbotron-bg;
-
+    margin-bottom: 0;
+    
     h1,
     .h1 {
         color: $jumbotron-heading-color;

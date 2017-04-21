@@ -32,7 +32,6 @@ elixir(function(mix) {
         }
     });
     
-  
     // Mix ReactJS via Browserify
     mix.browserify([
         '../ng/app.module.js',
@@ -65,7 +64,6 @@ elixir(function(mix) {
 		'../../../vendor/jquery-raty/raty-2.7.1/lib/jquery.raty.css', // [wbotelhos] raty
 		'../../../vendor/jquery-select2/select2-3.5.4/select2.css', // [select2] select2
 		'../../../vendor/jquery-select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css', // [t0m] select2-bootstrap-css
-		// '../../../vendor/datatables/DataTables-1.10.12/media/css/jquery.dataTables.min.css',
 		'../../../vendor/datatables/DataTables-1.10.13/datatables.css', // [DataTables] DataTables
         'bootles-ext.scss',
     ], 'docs/dist/css/bootles.min.css');
