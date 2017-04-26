@@ -46,6 +46,7 @@ elixir(function(mix) {
         '../ng/main.templates.controller.js',
         '../ng/component.colors.controller.js',
         '../ng/component.drawer.controller.js',
+        '../ng/component.tabs.controller.js',
         '../ng/plugin.swiper.controller.js',
     ], 'docs/js/app.ng.js');
     
@@ -125,6 +126,7 @@ elixir(function(mix) {
         // Bootles
         '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
-        '../../../vendor/materialize/materialize-0.97.8/js/bin/materialize.custom.js',
+        // '../../../vendor/materialize/materialize-0.97.8/js/bin/materialize.custom.js',
+        '../../../vendor/materialize/materialize-v0.98.2/js/materialize.custom.js',
 	], 'docs/dist/js/bootles.min.js');
 });
