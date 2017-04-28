@@ -21,7 +21,6 @@
 }
 
 .nav-outline {
-    
     .nav {
         &.nav-justified > li {
             display: table-cell;
@@ -37,8 +36,7 @@
         > .active > a {
             font-weight: 600;
         }
-        
-        
+
         > li > a:hover,
         > li > a:focus,
         .open > a,
@@ -55,6 +53,7 @@
     
     .progress {
         height: 2px;
+        margin-bottom: 0;
     }
     
     .progress-bar {
@@ -65,7 +64,6 @@
     &.unanimated .progress-bar {
         transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
-    
 }
 
 
