@@ -305,6 +305,30 @@
 // Navbar Sizes
 // --------------------------------------------------
 
+.navbar {
+    .navbar-nav {
+        > li {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.navbar-sub {
+    // Desktop + Tablet Only
+    @media (min-width: $screen-sm-min) {
+        .navbar-nav {
+            float: none;
+            font-size: 0;
+            text-align: center;
+            
+            > li {
+                display: inline-block;
+                float: none;
+            }
+        }
+    }
+}
+
 .navbar-lg {
     // line-height: ensure even-numbered height of button next to large input
     @include navbar-size($navbar-height-large, $navbar-padding-large-vertical, $navbar-padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
@@ -344,6 +368,10 @@
         }
         
         .navbar-nav {
+            > li {
+                font-size: $font-size-large;
+            }
+            
             > li > a {
                 padding: $navbar-padding-large-vertical $navbar-padding-large-horizontal ($navbar-padding-large-vertical - 1);
             }
@@ -361,8 +389,17 @@
         }
         
         .navbar-text {
+            font-size: $font-size-large;
             margin-top: 18px;
             margin-bottom: 18px;
+        }
+        
+        .navbar-sub {
+            .navbar-nav {
+                > li > a {
+                    padding: ($navbar-padding-large-vertical - 5) $navbar-padding-large-horizontal ($navbar-padding-large-vertical - 6);
+                }
+            }
         }
     }
 }
@@ -399,6 +436,10 @@
         }
         
         .navbar-nav {
+            > li {
+                font-size: $font-size-small;
+            }
+            
             > li > a {
                 padding: $navbar-padding-small-vertical $navbar-padding-small-horizontal;
             }
@@ -411,8 +452,12 @@
         }
         
         .navbar-text {
+            font-size: $font-size-small;
             margin-top: 11px;
             margin-bottom: 11px;
         }
     }
 }
+
+
+
