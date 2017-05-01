@@ -63,16 +63,16 @@
                 controller: 'bootstrapController',
             })
             
-            // Components
-            .state('components', {
-                url: '/components',
-                templateUrl: 'main/components.html',
-                controller: 'componentsController'
+            // Material
+            .state('material', {
+                url: '/material',
+                templateUrl: 'main/material.html',
+                controller: 'materialController'
             })
-            .state('componentsComponent', {
-                url: '/components/:component',
-                templateUrl: 'main/components.html',
-                controller: 'componentsController'
+            .state('materialComponent', {
+                url: '/material/:component',
+                templateUrl: 'main/material.html',
+                controller: 'materialController'
             })
             
             // Plugins

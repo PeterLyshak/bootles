@@ -1,6 +1,6 @@
 /**
 |------------------------------------------------------------------------------------
-| Component - Drawer Controller
+| Material - Drawer Controller
 |------------------------------------------------------------------------------------
 |
 */
@@ -10,9 +10,9 @@
     
     angular
         .module('myApp')
-        .controller('componentDrawerController', componentDrawerController);
+        .controller('materialDrawerController', materialDrawerController);
         
-    componentDrawerController.$inject = [
+    materialDrawerController.$inject = [
         '$scope',
         '$location',
         '$stateParams',
@@ -20,7 +20,7 @@
         '$http',
     ];
     
-    function componentDrawerController($scope, $location, $stateParams, $templateCache, $http) {
+    function materialDrawerController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
         $scope.$stateParams = $stateParams;
         $scope.component = $stateParams.component;
@@ -42,6 +42,5 @@
                 draggable: true // Choose whether you can drag to open on touch screens
             });
         });
-        
     }
 })();

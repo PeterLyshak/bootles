@@ -23,37 +23,33 @@
                         <a href="#/bootstrap">Bootstrap</a>
                     </li>
                     
-                    <li class="dropdown {{ (pageModule == 'components') ? 'active' : ''}}">
+                    <li class="dropdown {{ (pageModule == 'material') ? 'active' : ''}}">
                         <a href class="dropdown-toggle"
                             data-toggle="dropdown"
                             role="button"
                             aria-haspopup="true"
                             aria-expanded="false">
-                            Components
+                            Material
                             <span class="caret"></span>
                         </a>
                         
                         <ul class="dropdown-menu">
-                            <li class="dropdown-header hide">
-                                Components
-                            </li>
-                            
                             <li class="{{ (pageName == 'colors') ? 'active' : ''}}">
-                                <a href="#/components/colors">Colors</a>
+                                <a href="#/material/colors">Colors</a>
                             </li>
                             
                             <li class="{{ (pageName == 'drawer') ? 'active' : ''}}">
-                                <a href="#/components/drawer">Drawer</a>
+                                <a href="#/material/drawer">Drawer</a>
                             </li>
                             
                             <li class="{{ (pageName == 'offcanvas') ? 'active' : ''}}">
-                                <a href="#/components/offcanvas">Offcanvas</a>
+                                <a href="#/material/offcanvas">Offcanvas</a>
                             </li>
                             
                             <li role="separator" class="divider"></li>
                             
                             <li class="{{ (pageName == 'cards') ? 'active' : ''}}">
-                                <a href="#/components/cards">Cards</a>
+                                <a href="#/material/cards">Cards</a>
                             </li>
                         </ul>
                     </li>

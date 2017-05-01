@@ -1,6 +1,6 @@
 /**
 |------------------------------------------------------------------------------------
-| Plugin - Swiper Controller
+| Material - Colors Controller
 |------------------------------------------------------------------------------------
 |
 */
@@ -10,9 +10,9 @@
     
     angular
         .module('myApp')
-        .controller('componentColorsController', componentColorsController);
+        .controller('materialColorsController', materialColorsController);
         
-    componentColorsController.$inject = [
+    materialColorsController.$inject = [
         '$scope',
         '$location',
         '$stateParams',
@@ -20,7 +20,7 @@
         '$http',
     ];
     
-    function componentColorsController($scope, $location, $stateParams, $templateCache, $http) {
+    function materialColorsController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
         $scope.$stateParams = $stateParams;
         $scope.component = $stateParams.component;

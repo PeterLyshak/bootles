@@ -1,6 +1,6 @@
 /**
 |------------------------------------------------------------------------------------
-| Component - Tabs Controller
+| Material - Tabs Controller
 |------------------------------------------------------------------------------------
 |
 */
@@ -10,9 +10,9 @@
     
     angular
         .module('myApp')
-        .controller('componentTabsController', componentTabsController);
+        .controller('materialTabsController', materialTabsController);
         
-    componentTabsController.$inject = [
+    materialTabsController.$inject = [
         '$scope',
         '$location',
         '$stateParams',
@@ -20,7 +20,7 @@
         '$http',
     ];
     
-    function componentTabsController($scope, $location, $stateParams, $templateCache, $http) {
+    function materialTabsController($scope, $location, $stateParams, $templateCache, $http) {
         $scope.$location = $location;
         $scope.$stateParams = $stateParams;
         $scope.component = $stateParams.component;
