@@ -146,6 +146,14 @@
             }
         }
     }
+    
+    .navbar-sub {
+        .navbar-nav {
+            > .active > a {
+                border-bottom-color: $link-active-color;
+            }
+        }
+    }
 }
 
 // Navbar sizes

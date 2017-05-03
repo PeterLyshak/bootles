@@ -1214,10 +1214,13 @@ $navbar-default-toggle-border-color:                 transparent !default;
 $label-default-bg:            $gray-light !default;
 
 //** Panel
-$panel-default-text:          $gray-dark !default;
-$panel-default-border:        #ddd !default;
-$panel-default-heading-bg:    #fff !default;
+$panel-default-text:                 $gray-dark !default;
+$panel-default-border:             #ddd !default;
+$panel-default-heading-bg:      #fff !default;
 
+//** Well
+$well-default-bg:             #fff !default;
+$well-default-border:       darken($well-default-bg, 7%) !default;
 
 //## PRIMARY
 //======================================================
@@ -1659,10 +1662,13 @@ $nav-pills-smoke-active-link-hover-bg:            $brand-smoke !default;
 $nav-pills-smoke-active-link-hover-color:         #666666 !default;
 
 //** Panel
-$panel-smoke-text:             $gray-light !default;
-$panel-smoke-border:          $brand-smoke !default;
+$panel-smoke-text:               $gray-light !default;
+$panel-smoke-border:           $brand-smoke !default;
 $panel-smoke-heading-bg:    $brand-smoke !default;
 
+//** Well
+$well-smoke-bg:             #f5f5f5 !default;
+$well-smoke-border:       darken($well-smoke-bg, 7%) !default;
 
 //## LIGHT
 //======================================================
@@ -1672,6 +1678,9 @@ $panel-light-text:             $gray-dark !default;
 $panel-light-border:          #ddd !default;
 $panel-light-heading-bg:    #fff !default;
 
+//** Well
+$well-light-bg:             #f5f5f5 !default;
+$well-light-border:       darken($well-light-bg, 7%) !default;
 
 //## DARK
 //======================================================

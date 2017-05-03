@@ -18,13 +18,99 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="hidden-xs {{ (pageModule == 'bootstrap') ? 'active' : ''}}">
+                <ul class="nav navbar-nav" ng-switch on="pageModule">
+                    <li class="hidden-xs {{ (pageModule == 'bootstrap') ? 'hidden' : ''}}">
                         <a href="#/bootstrap">Bootstrap</a>
                     </li>
                     
+                    <li class="dropdown {{ (pageModule == 'bootstrap') ? 'active' : ''}}" ng-switch-when="bootstrap">
+                        <a 
+                            href="javascript:void(0);"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Bootstrap <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="{{ (pageName == 'buttons') ? 'active' : ''}}">
+                                <a href="#/bootstrap/buttons">Buttons</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'typography') ? 'active' : ''}}">
+                                <a href="#/bootstrap/typography">Typography</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'table') ? 'active' : ''}}">
+                                <a href="#/bootstrap/table">Table</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'form') ? 'active' : ''}}">
+                                <a href="#/bootstrap/form">Form</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'containers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/containers">Containers</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'well') ? 'active' : ''}}">
+                                <a href="#/bootstrap/well">Well</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'helpers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/helpers">Helpers</a>
+                            </li>
+                            
+                            <li class="divider"></li>
+                            
+                            <li class="{{ (pageName == 'navbar') ? 'active' : ''}}">
+                                <a href="#/bootstrap/navbar">Navbar</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'nav') ? 'active' : ''}}">
+                                <a href="#/bootstrap/nav">Navs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'tabs') ? 'active' : ''}}">
+                                <a href="#/bootstrap/tabs">Tabs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'breadcrumbs') ? 'active' : ''}}">
+                                <a href="#/bootstrap/breadcrumbs">Breadcrumbs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'indicators') ? 'active' : ''}}">
+                                <a href="#/bootstrap/indicators">Indicators</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'pagination') ? 'active' : ''}}">
+                                <a href="#/bootstrap/pagination">Pagination</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'progress') ? 'active' : ''}}">
+                                <a href="#/bootstrap/progress">Progress Bars</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'media') ? 'active' : ''}}">
+                                <a href="#/bootstrap/media">Media</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'list-group') ? 'active' : ''}}">
+                                <a href="#/bootstrap/list-group">List Group</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'dialog') ? 'active' : ''}}">
+                                <a href="#/bootstrap/dialog">Dialogs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                     <li class="dropdown {{ (pageModule == 'material') ? 'active' : ''}}">
-                        <a href class="dropdown-toggle"
+                        <a 
+                            href="javascript:void(0);"
+                            class="dropdown-toggle"
                             data-toggle="dropdown"
                             role="button"
                             aria-haspopup="true"
@@ -46,6 +132,10 @@
                                 <a href="#/material/offcanvas">Offcanvas</a>
                             </li>
                             
+                            <li class="{{ (pageName == 'tabs') ? 'active' : ''}}">
+                                <a href="#/material/tabs">Tabs</a>
+                            </li>
+                            
                             <li role="separator" class="divider"></li>
                             
                             <li class="{{ (pageName == 'cards') ? 'active' : ''}}">
@@ -55,7 +145,8 @@
                     </li>
                     
                     <li class="dropdown {{ (pageModule == 'plugins') ? 'active' : ''}}">
-                        <a href
+                        <a 
+                            href="javascript:void(0);"
                             class="dropdown-toggle"
                             data-toggle="dropdown"
                             role="button"
@@ -69,18 +160,23 @@
                             <li class="dropdown-header">
                                 Form
                             </li>
+                            
                             <li class="{{ (pageName == 'bootstrap-slider') ? 'active' : ''}}">
                                 <a href="#/plugins/bootstrap-slider">Bootstrap Slider</a>
                             </li>
+                            
                             <li class="{{ (pageName == 'jquery-spinner') ? 'active' : ''}}">
                                 <a href="#/plugins/jquery-spinner">jQuery Spinner</a>
                             </li>
+                            
                             <li class="{{ (pageName == 'jquery-mask') ? 'active' : ''}}">
                                 <a href="#/plugins/jquery-mask">jQuery Mask</a>
                             </li>
+                            
                             <li class="{{ (pageName == 'raty') ? 'active' : ''}}">
                                 <a href="#/plugins/raty">Raty</a>
                             </li>
+                            
                             <li class="{{ (pageName == 'select2') ? 'active' : ''}}">
                                 <a href="#/plugins/select2">Select2</a>
                             </li>
@@ -90,9 +186,11 @@
                             <li class="dropdown-header">
                                 Presentation
                             </li>
+                            
                             <li class="{{ (pageName == 'swiper') ? 'active' : ''}}">
                                 <a href="#/plugins/swiper">Swiper</a>
                             </li>
+                            
                             <li class="{{ (pageName == 'fixto') ? 'active' : ''}}">
                                 <a href="#/plugins/fixto">FixTo</a>
                             </li>
@@ -102,10 +200,10 @@
                             <li class="dropdown-header">
                                 Table
                             </li>
+                            
                             <li class="{{ (pageName == 'datatables') ? 'active' : ''}}">
                                 <a href="#/plugins/datatables">Datatables</a>
                             </li>
-                            
                         </ul>
                     </li>
                     
@@ -170,84 +268,6 @@
                             <li><a href="?scrollto">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                
-                    <li class="dropdown" ng-switch-when="bootstrap" >
-                        <a href class="dropdown-toggle"
-                            data-toggle="dropdown"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false">
-                            Bootstrap <span class="caret"></span>
-                        </a>
-                        
-                        <ul class="dropdown-menu">
-                            <li class="{{ (pageName == 'buttons') ? 'active' : ''}}">
-                                <a href="#/bootstrap/buttons">Buttons</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'typography') ? 'active' : ''}}">
-                                <a href="#/bootstrap/typography">Typography</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'table') ? 'active' : ''}}">
-                                <a href="#/bootstrap/table">Table</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'form') ? 'active' : ''}}">
-                                <a href="#/bootstrap/form">Form</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'containers') ? 'active' : ''}}">
-                                <a href="#/bootstrap/containers">Containers</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'helpers') ? 'active' : ''}}">
-                                <a href="#/bootstrap/helpers">Helpers</a>
-                            </li>
-                            
-                            <li class="divider"></li>
-                            
-                            <li class="{{ (pageName == 'navbar') ? 'active' : ''}}">
-                                <a href="#/bootstrap/navbar">Navbar</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'nav') ? 'active' : ''}}">
-                                <a href="#/bootstrap/nav">Navs</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'tabs') ? 'active' : ''}}">
-                                <a href="#/bootstrap/tabs">Tabs</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'breadcrumbs') ? 'active' : ''}}">
-                                <a href="#/bootstrap/breadcrumbs">Breadcrumbs</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'indicators') ? 'active' : ''}}">
-                                <a href="#/bootstrap/indicators">Indicators</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'pagination') ? 'active' : ''}}">
-                                <a href="#/bootstrap/pagination">Pagination</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'progress') ? 'active' : ''}}">
-                                <a href="#/bootstrap/progress">Progress Bars</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'media') ? 'active' : ''}}">
-                                <a href="#/bootstrap/media">Media</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'list-group') ? 'active' : ''}}">
-                                <a href="#/bootstrap/list-group">List Group</a>
-                            </li>
-                            
-                            <li class="{{ (pageName == 'dialog') ? 'active' : ''}}">
-                                <a href="#/bootstrap/dialog">Dialogs</a>
-                            </li>
                         </ul>
                     </li>
                 </ul>

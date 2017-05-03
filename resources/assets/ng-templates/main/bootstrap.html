@@ -1,15 +1,13 @@
 <ng-include src="'global/header.html'"></ng-include>
 
-<main>
-    <div class="container">
-        <ul class="breadcrumb" ng-include src="'global/breadcrumb.html'" ng-switch on="pageName"></ul>
-        
+<main class="container">
+    <ul class="breadcrumb" ng-include src="'global/breadcrumb.html'" ng-switch on="pageName"></ul>
+    
+    <div class="well">
         <div class="page-header">
             <h1 class="animated pulse">Bootstrap <small>Basic Elements</small></h1>
         </div>
-    </div>
     
-    <div class="container">
         <div ng-switch on="pageName">
             <!-- Buttons
             =============================================== -->
@@ -87,6 +85,12 @@
             =============================================== -->
             <div ng-switch-when="containers">
                 <ng-include src="'bootstrap/containers.html'"></ng-include>
+            </div>
+            
+            <!-- Well
+            =============================================== -->
+            <div ng-switch-when="well">
+                <ng-include src="'bootstrap/well.html'"></ng-include>
             </div>
             
             <!-- Media

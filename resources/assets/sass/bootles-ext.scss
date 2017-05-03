@@ -3,13 +3,13 @@
 @import "ext/variables";
 @import "ext/mixins";
 
-// Core CSS
+// Bootstrap Core CSS
 @import "ext/scaffolding";
 @import "ext/type";
 @import "ext/buttons";
 @import "ext/forms";
 
-// Components (dependent with Basic Elements)
+// Bootstrap Components (dependent with Basic Elements)
 @import "ext/dropdowns";
 @import "ext/button-groups";
 @import "ext/input-groups";
@@ -22,7 +22,9 @@
 @import "ext/progress-bars";
 @import "ext/media";
 @import "ext/panels";
+@import "ext/wells";
 
-// Ext
+// Material Components
 @import "ext/drawer";
 @import "ext/offcanvas";
+@import "ext/mui-tabs";
