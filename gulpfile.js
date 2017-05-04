@@ -127,7 +127,12 @@ elixir(function(mix) {
         // Bootles
         '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
-        // '../../../vendor/materialize/materialize-0.97.8/js/bin/materialize.custom.js',
-        '../../../vendor/materialize/materialize-v0.98.2/js/materialize.custom.js',
+        // '../../../vendor/materialize/materialize-src-v0.98.2/js/bin/materialize.custom.js',
+        '../../../resources/assets/js/global.js',
+        '../../../resources/assets/js/hammer.min.js',
+        '../../../resources/assets/js/jquery.hammer.js',
+        '../../../resources/assets/js/velocity.min.js',
+        '../../../resources/assets/js/sideNav.js',
+        '../../../resources/assets/js/tabs.js',
 	], 'docs/dist/js/bootles.min.js');
 });
