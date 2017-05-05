@@ -21,37 +21,55 @@
 }
 
 .nav-outline {
-    .nav {
-        &.nav-justified > li {
-            display: table-cell;
-            width: 1%;
-        }
+    position: relative;
+    border-bottom: 0;
     
-        > li > a {
+    white-space: nowrap;
+    
+
+    > li {
+        white-space: normal;
+        
+        > a {
+            border-color: transparent;
             color: #666;
+            
             margin-bottom: 0;
         }
         
-        > .open > a,
-        > .active > a {
+        &.open > a,
+        &.active > a {
             font-weight: 600;
         }
-
-        > li > a:hover,
-        > li > a:focus,
-        .open > a,
-        .open > a:focus,
-        .open > a:hover,        {
-            background-color: transparent;
+        
+        > a:hover {
+            border-color: transparent;
         }
         
-        > li > a:focus {
+        > a:focus {
             outline: 5px auto -webkit-focus-ring-color;
             outline-offset: -2px;
         }
+        
+        > a:hover,
+        > a:focus,
+        &.open > a,
+        &.open > a:focus,
+        &.open > a:hover {
+            background-color: transparent;
+            
+        }
+
+        &.active > a,
+        &.active > a:focus,
+        &.active > a:hover {
+            background-color: transparent;
+            border-color: transparent;
+        }
     }
-    
+
     .progress {
+        clear: both;
         height: 2px;
         margin-bottom: 0;
     }
@@ -62,6 +80,24 @@
     }
     
     &.unanimated .progress-bar {
-        transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
+    
+    &.nav-justified {
+        > li {
+            display: table-cell;
+            width: 1%;
+            
+            > a {
+                border-bottom: 0;
+            }
+            
+            &.active > a,
+            &.active > a:focus,
+            &.active > a:hover {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+    } 
 }

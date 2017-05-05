@@ -45,6 +45,7 @@ elixir(function(mix) {
         '../ng/main/pluginsController.js',
         '../ng/main/templatesController.js',
         '../ng/bootstrap/bootstrapNavbarFullController.js',
+        '../ng/bootstrap/bootstrapTabController.js',
         '../ng/material/materialColorsController.js',
         '../ng/material/materialDrawerController.js',
         '../ng/material/materialTabsController.js',
@@ -53,7 +54,7 @@ elixir(function(mix) {
     
     mix.sass([
         'fonts.scss',
-        '../../../vendor/bootstrap/bootstrap-3.3.7/css/bootstrap.css',
+        '../../../vendor/bootstrap/bootstrap-3.3.7/dist/css/bootstrap.css',
 		'../../../vendor/bootstrap-social/bootstrap-social-5.1.1/bootstrap-social.css', // [lipis] bootstrap-social
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/css/ripples.css',
         '../../../vendor/bootstrap-slider/bootstrap-slider-9.7.0/dist/css/bootstrap-slider.css', // [seiyria] bootstrap-slider
@@ -95,7 +96,20 @@ elixir(function(mix) {
         '../../../vendor/jquery-serializeObject/jQuery.serializeObject-2.0.3/jquery.serializeObject.js', // [hongymagic] jQuery.serializeObject
         
         // Bootstrap
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/bootstrap.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/dist/js/bootstrap.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/transition.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/alert.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/button.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/carousel.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/collapse.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/dropdown.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/modal.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/tooltip.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/popover.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/scrollspy.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/js/affix.js', // Bootstrap Core
+        // '../../../vendor/bootstrap/bootstrap-3.3.7/js/tab.js', // Bootstrap Core
+        '../../../resources/assets/js/bs.tab.custom.js',
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/material.js', // Bootstrap Material
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/ripples.js', // Bootstrap Material Ripples
         '../../../vendor/bootstrap-slider/bootstrap-slider-9.7.0/dist/bootstrap-slider.js', // [seiyria] bootstrap-slider
@@ -125,7 +139,6 @@ elixir(function(mix) {
         '../../../vendor/datatables/DataTables-1.10.13/datatables.js', // [DataTables] Datatables + Bootstrap
 
         // Bootles
-        '../../../resources/assets/js/bootles-ext.js',
         '../../../resources/assets/js/drawer.js',
         // '../../../vendor/materialize/materialize-src-v0.98.2/js/bin/materialize.custom.js',
         '../../../resources/assets/js/global.js',

@@ -1,4 +1,4 @@
-<div id="tabs">
+<div id="tabs" ng-controller="bootstrapTabController">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Tabs</h3>
@@ -49,96 +49,119 @@
     
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Outline</h3>
+            <h2 class="panel-title">Outline</h2>
         </div>
         
         <div class="panel-body">
             <div class="subsection">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 id="nav-outline">Outline</h2>
+                        <h3 id="nav-outline">Outline (Default)</h3>
                         
                         <div class="bs-component">
-                            <div class="nav-outline">
-                                <ul class="nav nav-justified">
-                                    <li class="active"><a href="" data-target="#outline1a" data-toggle="tab">Home</a></li>
-                                    <li><a href="" data-target="#outline1b" data-toggle="tab">Profile</a></li>
-                                    <li class="disabled"><a>Disabled</a></li>
-                                    <li class="dropdown">
-                                        <a href="" class="dropdown-toggle" data-toggle="dropdown" >
-                                            Dropdown <span class="caret"></span>
-                                        </a>
+                            <ul class="nav nav-tabs nav-outline customTab">
+                                <li class="active">
+                                    <a href data-toggle="tab">
+                                        Home
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href data-toggle="tab">
+                                        Profile
+                                    </a>
+                                </li>
+                                
+                                <li class="disabled">
+                                    <a href="javascript:void(0);">Disabled</a>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href
+                                        class="dropdown-toggle"
+                                        data-toggle="dropdown"
+                                    >
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href data-toggle="tab">
+                                                Action
+                                            </a>
+                                        </li>
                                         
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="" data-target="#outline1c" data-toggle="tab">Action</a>
-                                            </li>
-                                            
-                                            <li class="divider"></li>
-                                            
-                                            <li>
-                                                <a href="" data-target="#outline1d" data-toggle="tab">Another action</a>
-                                            </li>
-                                      </ul>
-                                    </li>
-                                </ul>
+                                        <li class="divider"></li>
+                                        
+                                        <li>
+                                            <a href data-toggle="tab">
+                                                Another action
+                                            </a>
+                                        </li>
+                                  </ul>
+                                </li>
                                 
                                 <div class="progress progress-xs">
                                     <div class="progress-bar progress-bar-accent"></div>
                                 </div>
-                            </div>
-                            
-                            <div id="myTabContent" class="tab-content panel-body">
-                                <div class="tab-pane fade active in" id="outline1a">
-                                    <p>
-                                        Raw denim you probably haven't heard of them jean
-                                        shorts Austin. Nesciunt tofu stumptown aliqua, retro
-                                        synth master cleanse. Mustache cliche tempor,
-                                        williamsburg carles vegan helvetica. Reprehenderit
-                                        butcher retro keffiyeh dreamcatcher synth. Cosby
-                                        sweater eu banh mi, qui irure terry richardson ex squid.
-                                        Aliquip placeat salvia cillum iphone. Seitan aliquip quis
-                                        cardigan american apparel, butcher voluptate nisi qui.
-                                    </p>
-                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="nav-outline">Outline (Justified)</h3>
+                        
+                        <div class="bs-component">
+                            <ul class="nav nav-tabs nav-outline nav-justified">
+                                <li class="active">
+                                    <a href data-toggle="tab">
+                                        Home
+                                    </a>
+                                </li>
                                 
-                                <div class="tab-pane fade" id="outline1b">
-                                    <p>
-                                        Food truck fixie locavore, accusamus mcsweeney's marfa
-                                        nulla single-origin coffee squid. Exercitation +1 labore
-                                        velit, blog sartorial PBR leggings next level wes
-                                        anderson artisan four loko farm-to-table craft beer twee.
-                                        Qui photo booth letterpress, commodo enim craft beer
-                                        mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR.
-                                        Homo nostrud organic, assumenda labore aesthetic
-                                        magna delectus mollit.
-                                    </p>
-                                </div>
+                                <li>
+                                    <a href data-toggle="tab">
+                                        Profile
+                                    </a>
+                                </li>
                                 
-                                <div class="tab-pane fade" id="outline1c">
-                                    <p>
-                                        Etsy mixtape wayfarers, ethical wes anderson tofu
-                                        before they sold out mcsweeney's organic lomo retro
-                                        fanny pack lo-fi farm-to-table readymade. Messenger
-                                        bag gentrify pitchfork tattooed craft beer, iphone
-                                        skateboard locavore carles etsy salvia banksy hoodie
-                                        helvetica. DIY synth PBR banksy irony. Leggings gentrify
-                                        squid 8-bit cred pitchfork.
-                                    </p>
-                                </div>
+                                <li class="disabled">
+                                    <a href="javascript:void(0);">Disabled</a>
+                                </li>
                                 
-                                <div class="tab-pane fade" id="outline1d">
-                                    <p>
-                                        Trust fund seitan letterpress, keytar raw denim keffiyeh
-                                        etsy art party before they sold out master cleanse
-                                        gluten-free squid scenester freegan cosby sweater.
-                                        Fanny pack portland seitan DIY, art party locavore wolf
-                                        cliche high life echo park Austin. Cred vinyl keffiyeh DIY
-                                        salvia PBR, banh mi before they sold out farm-to-table
-                                        VHS viral locavore cosby sweater.
-                                    </p>
+                                <li class="dropdown">
+                                    <a href
+                                        class="dropdown-toggle"
+                                        data-toggle="dropdown"
+                                    >
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href data-toggle="tab">
+                                                Action
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="divider"></li>
+                                        
+                                        <li>
+                                            <a href data-toggle="tab">
+                                                Another action
+                                            </a>
+                                        </li>
+                                  </ul>
+                                </li>
+                                
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-accent"></div>
                                 </div>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>

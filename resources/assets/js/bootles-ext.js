@@ -9,7 +9,8 @@
 
 +function ($) {
     'use strict';
-    
+  
+    /*
     $(document)
     .on('show.bs.tab.data-api', '.nav-outline [data-toggle="tab"]', function(e) {
         // get active tab
@@ -67,5 +68,5 @@
             left: itemPosition.left - paddingLeft,
         });
     }
-
+    */
 }(jQuery);

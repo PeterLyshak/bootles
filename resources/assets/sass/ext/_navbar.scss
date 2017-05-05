@@ -317,9 +317,12 @@
     text-align: center;
     
     .navbar-nav {
+        display: inline-block;
         float: none;
         font-size: 0;
         margin: 0 -15px;
+        width: auto;
+        vertical-align: bottom;
 
         > li {
             display: inline-block;
@@ -328,6 +331,12 @@
         
         > li > a {
             border-bottom: 2px solid transparent;
+        }
+        
+        &.nav-outline {
+            > li > a {
+                border-bottom: 0;
+            }
         }
     }
     

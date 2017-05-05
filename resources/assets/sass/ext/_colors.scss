@@ -13,13 +13,25 @@ $gray-light:         lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:      lighten($gray-base, 93.5%) !default; // #eee
 
 
-//## BLACK & WHITE
+//## TRANSPARENT
 //======================================================
-
-$color-black:              #000000 !default;
-$color-white:             #ffffff !default;
 $color-transparent:     rgba(0, 0, 0, 0) !default;
 
+
+//## WHITE
+//======================================================
+$color-white:             #ffffff !default;
+
+//** Progress Bar
+$progress-bar-white-bg:          $color-white !default;
+
+
+//## BLACK
+//======================================================
+$color-black:              #000000 !default;
+
+//** Progress Bar
+$progress-bar-black-bg:          $color-black !default;
 
 //## RED
 //======================================================
@@ -1677,6 +1689,9 @@ $well-smoke-border:       darken($well-smoke-bg, 7%) !default;
 $panel-light-text:             $gray-dark !default;
 $panel-light-border:          #ddd !default;
 $panel-light-heading-bg:    #fff !default;
+
+//** Progress Bar
+$progress-bar-light-bg:          $brand-light !default;
 
 //** Well
 $well-light-bg:             #f5f5f5 !default;

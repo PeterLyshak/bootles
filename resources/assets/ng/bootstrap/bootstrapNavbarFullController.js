@@ -38,7 +38,7 @@
         
         $scope.$watch('$viewContentLoaded', function()
         {
-            $('ul.tabs').tabs();
+            $('.navbar-sub .nav > .active > a').tab('show');
         });
     }
 })();

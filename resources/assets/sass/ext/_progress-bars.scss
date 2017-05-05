@@ -2,6 +2,10 @@
 // Progress bars
 // --------------------------------------------------
 
+.progress-transparent {
+    background-color: transparent;
+}
+
 // Bar itself
 // -------------------------
 
@@ -14,41 +18,36 @@
   @include transition(width .6s ease);
 }
 
-// Variations
+// Brand Variations
 // -------------------------
 
 .progress-bar-muted {
     @include progress-bar-variant($progress-bar-muted-bg);
 }
-
 .progress-bar-secondary {
     @include progress-bar-variant($progress-bar-secondary-bg);
 }
-
 .progress-bar-accent {
     @include progress-bar-variant($progress-bar-accent-bg);
 }
-
 .progress-bar-info {
     @include progress-bar-variant($progress-bar-info-bg);
 }
-
 .progress-bar-success {
     @include progress-bar-variant($progress-bar-success-bg);
 }
-
 .progress-bar-warning {
     @include progress-bar-variant($progress-bar-warning-bg);
 }
-
 .progress-bar-danger {
     @include progress-bar-variant($progress-bar-danger-bg);
 }
-
 .progress-bar-velvet {
     @include progress-bar-variant($progress-bar-velvet-bg);
 }
-
+.progress-bar-light {
+    @include progress-bar-variant($progress-bar-light-bg);
+}
 .progress-bar-dark {
     @include progress-bar-variant($progress-bar-dark-bg);
 }
