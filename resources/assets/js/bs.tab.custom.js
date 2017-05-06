@@ -37,11 +37,11 @@
     if ($progress.length) {
         this.progress($this.closest('li'), true);
         
-        // $ul
-            // .off('resize.bs.tab')
-            // .on('resize.bs.tab', $.proxy(function(e) {
-                // this.progress($this.closest('li'), false);
-            // }, this));
+        $ul
+            .off('resize.bs.tab')
+            .on('resize.bs.tab', $.proxy(function(e) {
+                this.progress($this.closest('li'), false);
+            }, this));
     }
 
     if ($this.parent('li').hasClass('active')) return

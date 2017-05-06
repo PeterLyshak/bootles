@@ -82,6 +82,7 @@ elixir(function(mix) {
         '../../../vendor/moment-range/moment-range-3.0.0/dist/moment-range.js', // [gf3] moment-range
         '../../../vendor/wow/wow-1.1.2/dist/wow.js', // [matthieua] WOW
         '../../../vendor/sticky-js/sticky-js-1.1.6/dist/sticky.min.js', // [rgalus] sticky-js
+        '../../../vendor/javascript-detect-element-resize/javascript-detect-element-resize-0.5.3/detect-element-resize.js', // [bitovi] jquerypp
         
         // jQuery Core
         '../../../vendor/jquery/jquery-1.12.4.js', // jQuery
