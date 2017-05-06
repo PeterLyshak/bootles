@@ -108,9 +108,8 @@ elixir(function(mix) {
 		'../../../vendor/bootstrap/bootstrap-3.3.7/js/tooltip.js', // Bootstrap Core
 		'../../../vendor/bootstrap/bootstrap-3.3.7/js/popover.js', // Bootstrap Core
 		'../../../vendor/bootstrap/bootstrap-3.3.7/js/scrollspy.js', // Bootstrap Core
+        '../../../vendor/bootstrap/bootstrap-3.3.7/js/tab.js', // Bootstrap Core
 		'../../../vendor/bootstrap/bootstrap-3.3.7/js/affix.js', // Bootstrap Core
-        // '../../../vendor/bootstrap/bootstrap-3.3.7/js/tab.js', // Bootstrap Core
-        '../../../resources/assets/js/bs.tab.custom.js',
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/material.js', // Bootstrap Material
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/ripples.js', // Bootstrap Material Ripples
         '../../../vendor/bootstrap-slider/bootstrap-slider-9.7.0/dist/bootstrap-slider.js', // [seiyria] bootstrap-slider
