@@ -1,0 +1,39 @@
+<div ref="ListingComposerPage" id="ListingComposerPage" class="page">
+    <header ref="ListingComposerSubHeader" id="ListingComposerSubHeader">
+        <div class="subheader bg-smoke">
+            <div class="container">
+                <!-- pagelet: pageletAdsPublisherButtons
+                ======================================== -->
+                <ng-include src="'templates/listings/ListingComposerButtons.html'"></ng-include>
+                
+                <h4 class="clearfix">
+                    <i class="fa fa-bullhorn"></i> 
+
+                    <span>Publish your Classified Ad</span>
+                </h4>
+            </div>
+        </div>
+    </header>
+    
+    <br aria-hidden="true" />
+    <br aria-hidden="true" />
+    
+    <div class="section-sm container">
+        <div class="row">
+            <div class="col-sm-3">
+                <ng-include src="'templates/listings/ListingComposerNav.html'"></ng-include>
+            </div>
+            
+            <div class="col-sm-9">
+                <ng-include src="'templates/listings/ListingComposerDetails.html'"></ng-include>
+                <ng-include src="'templates/listings/ListingComposerPhotos.html'"></ng-include>
+                <ng-include src="'templates/listings/ListingComposerPricing.html'"></ng-include>
+                <ng-include src="'templates/listings/ListingComposerCategory.html'"></ng-include>
+                <ng-include src="'templates/listings/ListingComposerLocation.html'"></ng-include>
+                <ng-include src="'templates/listings/ListingComposerOthers.html'"></ng-include>
+            </div>
+        </div>
+    </div>
+    
+    <ng-include src="'templates/global/Footer.html'"></ng-include>
+</div>

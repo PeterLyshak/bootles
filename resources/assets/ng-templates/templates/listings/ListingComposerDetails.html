@@ -1,0 +1,108 @@
+<div class="panel-body">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="ad_title" class="col-sm-3 control-label">
+                <span class="lead">
+                    Title<strong class="text-danger">*</strong>
+                </span>
+                
+                <i 
+                    class="fa fa-info-circle text-silver"
+                    data-toggle="tooltip"
+                    data-placement="auto"
+                    title="Title"
+               />
+            </label>
+            
+            <div class="col-sm-9">
+                <input
+                    type="text"
+                    name="listing_title"
+                    id="listing_title"
+                    class="form-control input-lg"
+                    placeholder="Title"
+                />
+                <span class="help-block"></span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="ad_classification" class="col-sm-3 control-label">
+                Classification
+                
+                <i class="fa fa-info-circle text-silver"
+                   data-toggle="tooltip"
+                   data-placement="auto"
+                   title="Classification"></i>
+            </label>
+            
+            <div class="col-sm-9">
+                <label class="radio-inline">
+                    <input type="radio" name="listing_classification" value="1" checked />
+                    Selling
+                </label>
+                
+                <label class="radio-inline">
+                    <input type="radio" name="listing_classification" value="2" />
+                    Buying
+                </label>
+                
+                <label class="radio-inline">
+                    <input type="radio" name="listing_classification" value="3" />
+                    For Rent
+                </label>
+                
+                <span class="help-block"></span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="listing_condition" class="col-sm-3 control-label">
+                Condition
+                
+                <i class="fa fa-info-circle text-silver"
+                   data-toggle="tooltip"
+                   data-placement="auto"
+                   title="Condition"></i>
+            </label>
+            
+            <div class="col-sm-9">
+                <select
+                    id="listing_condition"
+                    placeholder="Condition"
+                    class="form-control"
+                >
+                    <option> - </option>
+                    <option value="new">Brand New</option>
+                    <option value="used">Used (2nd Hand)</option>
+                    <option value="defective">Defective</option>
+                </select>
+
+                <span class="help-block"></span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="listing_description" class="col-sm-3 control-label">
+                Description
+                
+                <i class="fa fa-info-circle text-silver"
+                   data-toggle="tooltip"
+                   data-placement="auto"
+                   title="Description"></i>
+            </label>
+            
+            <div class="col-sm-9">
+                <textarea
+                    id="listing_description"
+                    name="listing_description"
+                    class="form-control resize-vertical"
+                    placeholder="Listing Description"
+                    rows="12"
+                ></textarea>
+                
+                <span class="help-block"></span>
+            </div>
+        </div>
+    </div>
+</div>
