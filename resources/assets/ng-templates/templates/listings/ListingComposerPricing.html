@@ -1,6 +1,122 @@
 <div class="panel panel-smoke">
-    <div class="panel-heading">Pricing</div>
-    <div class="panel-body">
-        Pricing content
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a
+                href
+                data-toggle="collapse"
+                data-target="#ListingComposerPricingCollapse"
+            >
+                Pricing
+            </a>
+        </h4>
+    </div>
+    
+    <div id="ListingComposerPricingCollapse" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="listing_price" class="col-sm-3 control-label text-muted">
+                        Price <strong class="text-danger">*</strong>
+                        
+                        <i
+                            title="Price"
+                            class="fa fa-info-circle text-silver"
+                            data-toggle="tooltip"
+                            data-placement="auto"
+                        />
+                    </label>
+                    
+                    <div class="col-sm-9">
+                        <div class="form-family lead">
+                            <div class="input-group" data-trigger="spinner">
+                                <div class="input-group-btn">
+                                    <select
+                                        name="listing_currency_code"
+                                        class="ListingComposerPricingCurrencyCodeSelect btn btn-default select-unsplit"
+                                        placeholder="Currency"
+                                    >
+                                        <option
+                                            value="PHP"
+                                            data-sign="₱"
+                                            selected
+                                        >
+                                            PHP (&#8369;)
+                                        </option>
+                                    </select>
+                                </div>
+                                
+                                <input
+                                    name="listing_price"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="0.00"
+                                    data-spin="spinner"
+                                    data-rule="currency"
+                                    data-step="1.00"
+                                />
+                            </div>
+                        </div>
+                        
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="listing_base_price" class="col-sm-3 control-label text-muted">
+                        Base Price
+                        
+                        <i 
+                            title="Base Price"
+                            class="fa fa-info-circle text-silver"
+                            data-toggle="tooltip"
+                            data-placement="auto"
+                        />
+                    </label>
+                    
+                    <div class="col-sm-9">
+                        <div class="form-family lead">
+                            <div data-trigger="spinner">
+                                <input
+                                    name="listing_base_price"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="0.00"
+                                    data-spin="spinner"
+                                    data-rule="currency"
+                                    data-step="1.00"
+                                />
+                            </div>
+                        </div>
+                        
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                    
+                <div class="form-group">
+                    <label for="listing_price_conditions" class="col-sm-3 control-label text-muted">
+                        Price Conditions
+                        <i
+                            class="fa fa-info-circle"
+                            data-toggle="tooltip"
+                            data-placement="auto"
+                            title="Price Conditions"
+                        />
+                    </label>
+                    
+                    <div class="col-sm-9">
+                        <textarea
+                            name="listing_price_conditions"
+                            id="ListingPriceConditions"
+                            class="form-control resize-vertical"
+                            rows="4"
+                            placeholder="Price Conditions"
+                        ></textarea>
+
+                        <span class="help-block hide"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>

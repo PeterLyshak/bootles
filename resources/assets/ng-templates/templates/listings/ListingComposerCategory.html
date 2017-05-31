@@ -1,6 +1,62 @@
 <div class="panel panel-smoke">
-    <div class="panel-heading">Category</div>
-    <div class="panel-body">
-        Category content
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <a
+                href
+                data-toggle="collapse"
+                data-target="#ListingComposerCategoryCollapse"
+            >
+                Category
+            </a>
+        </h3>
+    </div>
+    
+    <div id="ListingComposerCategoryCollapse" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="listing_category" class="col-sm-3 control-label text-muted">
+                        Category <strong class="text-danger">*</strong>
+                    </label>
+                    
+                    <div class="col-sm-9">
+                        <select
+                            name="listing_category"
+                            id="ListingCategoryItemSelect"
+                            class="form-control"
+                            placeholder="Search Category"
+                        >
+                            <option value=""></option>
+                            <optgroup label="Vehicles">
+                                <option value="28" selected>Cars</option>
+                                <option value="29">Motorcycles</option>
+                                <option value="30">Car Parts & Accessories</option>
+                            </optgroup>
+                            
+                            <optgroup label="Real Estate"></optgroup>
+                            
+                            <optgroup label="Merchandise">
+                                <option value="4">Books</option>
+                                <option value="6">Cameras</option>
+                                <option value="7">Cellphones</option>
+                                <option value="8">Computers</option>
+                                <option value="9">Entertainment</option>
+                                <option value="10">Furniture</option>
+                                <option value="11">Health, Fitness & Beauty</option>
+                            </optgroup>
+                        </select>
+
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                
+                <!-- pagelet: pageletAdsPublisherMacroItemCategorySpecifics
+                ================================================== -->
+                <div id="ListingComposerMacroItemCategorySpecifics" class="pagelet">
+                    <ng-include src="'templates/listings/ListingComposerCategoryItemSpecifics.html'"></ng-include>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </div>

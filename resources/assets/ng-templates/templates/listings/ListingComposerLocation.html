@@ -1,6 +1,52 @@
 <div class="panel panel-smoke">
-    <div class="panel-heading">Location</div>
-    <div class="panel-body">
-        Location content
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <a
+                href
+                data-toggle="collapse"
+                data-target="#ListingComposerLocationCollapse"
+            >
+                Location
+            </a>
+        </h3>
+    </div>
+    
+    <div id="ListingComposerLocationCollapse" class="panel-collapse collapse in">
+        <div class="panel-body form-horizontal">
+            
+            <div class="form-group">
+                <label for="listing_location_place_id" class="col-sm-3 control-label text-muted">
+                    Location <strong class="text-danger">*</strong>
+                </label>
+                
+                <div class="col-sm-9">
+                    <div class="lead">
+                        <textarea
+                            id="ListingComposerLocationCitySelect"
+                            name="listing_location_place_id"
+                            class="form-control sel2-container-multisingle"
+                            placeholder="City, State, Country"
+                        ></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="listing_location_scope" placeholder="Scope" />
+                    <input type="hidden" name="listing_location_reference" placeholder="Reference" />
+                    <input type="hidden" name="listing_location_lat" placeholder="Lat" />
+                    <input type="hidden" name="listing_location_lng" placeholder="Lng" />
+                    <input type="hidden" name="listing_location_locality" placeholder="City" />
+                    <input type="hidden" name="listing_location_administrative_area_level_1" placeholder="State" />
+                    <input type="hidden" name="listing_location_country_code" placeholder="Country Code" />
+                    
+                    <textarea
+                        name="listing_location_street_number"
+                        class="form-control resize-vertical"
+                        placeholder="Address"
+                    ></textarea>
+
+                    <span class="help-block"></span>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </div>

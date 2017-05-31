@@ -1,6 +1,98 @@
 <div class="panel panel-smoke">
-    <div class="panel-heading">Photos</div>
-    <div class="panel-body">
-        Photos content
+    <div class="panel-heading">
+        <h3 class="panel-title clearfix">
+            <span class="btn btn-success btn-fileinput pull-right">
+                <i class="glyphicon glyphicon-plus"></i>
+                
+                <span>Add Photos</span>
+                
+                <input
+                    name="listing_photos[]"
+                    id="ListingComposerPhotosInputFile"
+                    class="hidden"
+                    type="file"
+                    multiple="multiple"
+                />
+            </span>
+            
+            <a
+                href
+                data-toggle="collapse"
+                data-target="#ListingComposerPhotosCollapse"
+            >
+                Photos
+            </a>
+        </h3>
+    </div>
+    
+    <div id="ListingComposerPhotosCollapse" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <div id="ListingComposerPhotosCluster" class="row">
+            
+                <div class="ListingComposerPhotosItem col-xs-6 col-md-4">
+                    <div class="thumbnail pos-rel">
+                        <div class="pull-right btn-group btn-group-sm">
+                            <button
+                                type="button"
+                                class="btn btn-link dropdown-toggle"
+                                data-toggle="dropdown"
+                            >
+                                <span class="caret"></span>
+                            </button>
+                            
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li>
+                                    <a class="radio">
+                                        <label>
+                                            <input
+                                                type="radio"
+                                                name="photo_primary_cover"
+                                                value=""
+                                            />
+                                                       
+                                            Set As Primary
+                                        </label>
+                                    </a>
+                                </li>
+                                
+                                <li class="divider"></li>
+                                
+                                <li>
+                                    <a href="#"
+                                         class="ListingComposerPhotosItemDelete"
+                                         data-toggle="modal"
+                                         data-target="#modal1">
+                                        Delete This Photo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <img
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                            class="img-thumbnail"
+                            style="width: 100%; min-height: 50px;"
+                        />
+                        
+                        <div class="caption" style="padding: 4px 0 0;">
+                            <textarea
+                                name="photo_caption[{{ $photo->photo->photo_id or null }}]"
+                                class="form-control input-sm resize-none"
+                                rows="4"
+                                placeholder="Say something about this photo..."
+                            ></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="help-block">
+                <div class="help-empty well-lg text-muted text-center">
+                    <h1><i class="fa fa-camera"></i></h1>
+                    <h3>No photos yet</h3>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
