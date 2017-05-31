@@ -3,24 +3,26 @@
 <main>
     <div class="container">
         <ul class="breadcrumb" ng-include src="'global/breadcrumb.html'" ng-switch on="pageName"></ul>
-        
-        <div class="page-header">
-            <h1 class="animated pulse">Plugins</h1>
-        </div>
     </div>
     
-    <div class="container">
-        <div ng-switch on="pageName">
-            <!-- Buttons
-            =============================================== -->
-            <div ng-switch-when="swiper">
-                <ng-include src="'plugins/swiper.html'"></ng-include>
-            </div>
-            
-            <div ng-switch-default>
-                <ng-include src="'errors/404.html'"></ng-include>
-            </div>
+    <div ng-switch on="pageName">
+    
+        <!-- Select2
+        =============================================== -->
+        <div ng-switch-when="select2">
+            <ng-include src="'plugins/select2.html'"></ng-include>
         </div>
+        
+        <!-- Swiper
+        =============================================== -->
+        <div ng-switch-when="swiper">
+            <ng-include src="'plugins/swiper.html'"></ng-include>
+        </div>
+        
+        <div ng-switch-default>
+            <ng-include src="'errors/404.html'"></ng-include>
+        </div>
+        
     </div>
     
     <ng-include src="'global/footer.html'"></ng-include>

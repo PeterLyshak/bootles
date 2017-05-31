@@ -49,7 +49,8 @@ elixir(function(mix) {
         '../ng/material/materialColorsController.js',
         '../ng/material/materialDrawerController.js',
         '../ng/material/materialTabsController.js',
-        '../ng/plugin.swiper.controller.js',
+        '../ng/plugins/pluginSelect2Controller.js',
+        '../ng/plugins/pluginSwiperController.js',
     ], 'docs/js/app.ng.js');
     
     mix.sass([
@@ -124,7 +125,7 @@ elixir(function(mix) {
         // jQuery Forms
         '../../../vendor/jquery-spinner/jquery.spinner-0.2.1/dist/js/jquery.spinner.js', // [vsn4ik] jquery.spinner
         '../../../vendor/jquery-select2/select2-3.5.4/select2.js', // [select2] select2
-        '../../../vendor/jquery-select2/select2-placecomplete/jquery.placecomplete.js', // [stephjang] placecomplete
+        '../../../vendor/jquery-select2/select2-3.5.4-placecomplete/jquery.placecomplete.js', // [stephjang] placecomplete
         '../../../vendor/jquery-raty/raty-2.7.1/lib/jquery.raty.js', // [wbotelhos] raty
         '../../../vendor/jquery-mask/jQuery-Mask-Plugin-1.14.8/dist/jquery.mask.js', // [igorescobar] jQuery-Mask-Plugin
         
