@@ -68,7 +68,7 @@ elixir(function(mix) {
 		'../../../vendor/jquery-raty/raty-2.7.1/lib/jquery.raty.css', // [wbotelhos] raty
 		'../../../vendor/select2/select2-3.5.4/select2.css', // [select2] select2
 		'../../../vendor/select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css', // [t0m] select2-bootstrap-css
-		'../../../vendor/datatables/datatables-1.10.15/custom/datatables.css', // [DataTables] DataTables
+		'../../../vendor/datatables/datatables-1.10.15/media/css/jquery.dataTables.css', // [DataTables] DataTables
         'bootles-ext.scss',
     ], 'docs/dist/css/bootles.min.css');
 
@@ -87,7 +87,7 @@ elixir(function(mix) {
 
         // jQuery Core
         '../../../vendor/jquery/jquery-1.12.4.js', // jQuery
-        '../../../vendor/jquery/jquery-migrate-1.4.1.js', // jQuery Migrate
+        '../../../vendor/jquery/jquery-migrate-1.4.1.min.js', // jQuery Migrate
         '../../../vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.js', // jQuery UI
         '../../../vendor/jquery-file-upload/jquery-file-upload-9.18.0/js/vendor/jquery.ui.widget.js', // jQuery UI Widget
         '../../../vendor/jquery-ui-touch-punch/jquery-ui-touch-punch-0.2.3/jquery.ui.touch-punch.js', // [furf] jquery-ui-touch-punch
@@ -98,19 +98,19 @@ elixir(function(mix) {
         '../../../vendor/jquery-serializeObject/jQuery.serializeObject-2.0.3/jquery.serializeObject.js', // [hongymagic] jQuery.serializeObject
 
         // Bootstrap
-		// '../../../vendor/bootstrap/bootstrap-3.3.7/dist/js/bootstrap.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/transition.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/alert.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/button.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/carousel.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/collapse.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/dropdown.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/modal.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/tooltip.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/popover.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/scrollspy.js', // Bootstrap Core
-        '../../../vendor/bootstrap/bootstrap-3.3.7/js/tab.js', // Bootstrap Core
-		'../../../vendor/bootstrap/bootstrap-3.3.7/js/affix.js', // Bootstrap Core
+		'../../../vendor/bootstrap/bootstrap-3.3.7/dist/js/bootstrap.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/transition.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/alert.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/button.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/carousel.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/collapse.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/dropdown.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/modal.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/tooltip.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/popover.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/scrollspy.js', // Bootstrap Core
+        // '../../../vendor/bootstrap/bootstrap-3.3.7/js/tab.js', // Bootstrap Core
+		// '../../../vendor/bootstrap/bootstrap-3.3.7/js/affix.js', // Bootstrap Core
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/material.js', // Bootstrap Material
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/js/ripples.js', // Bootstrap Material Ripples
         '../../../vendor/bootstrap-slider/bootstrap-slider-9.8.0/dist/bootstrap-slider.js', // [seiyria] bootstrap-slider
@@ -137,9 +137,9 @@ elixir(function(mix) {
         '../../../vendor/tinymce/tinymce-4.6.4/community/jquery.tinymce.min.js', // [tinymce] tinymce
 
         // Datatables
-        // '../../../vendor/datatables/DataTables-1.10.12/media/js/jquery.dataTables.js', // Datatables Core
-        // '../../../vendor/datatables/DataTables-1.10.12/media/js/dataTables.bootstrap.js', // Datatables Bootstrap
-        '../../../vendor/datatables/datatables-1.10.15/custom/datatables.js', // [DataTables] Datatables + Bootstrap
+        '../../../vendor/datatables/datatables-1.10.15/media/js/jquery.dataTables.min.js', // [DataTables] Datatables + Bootstrap
+        '../../../vendor/datatables/datatables-1.10.15/media/js/dataTables.bootstrap.min.js', // [DataTables] Datatables + Bootstrap
+        // '../../../vendor/datatables/datatables-1.10.15/custom/datatables.js', // [DataTables] Datatables + Bootstrap
 
         // Bootles
         '../../../resources/assets/js/drawer.js',
