@@ -30,6 +30,7 @@ textarea.form-control {
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
 @include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
+
 .form-group-sm {
     .form-control {
         height: $input-height-small;
@@ -56,6 +57,7 @@ textarea.form-control {
 }
 
 @include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $input-border-radius-large);
+
 .form-group-lg {
     .form-control {
         height: $input-height-large;
@@ -110,6 +112,29 @@ a.form-control-feedback,
 button.form-control-feedback {
     pointer-events: auto;
     width: auto;
+    
+    .form-group-lg .form-control + &,
+    .input-group-lg + &,
+    .input-lg + & {
+        font-size: 18px;
+        line-height: inherit;
+        padding: 10px 12px;
+        width: auto;
+    }
+    
+    .form-group-sm .form-control + &,
+    .input-group-sm + &,
+    .input-sm + & {
+        line-height: inherit;
+        min-height: 30px;
+        width: auto;
+    }
+}
+
+.has-feedback.form-group-lg {
+    .form-control {
+        padding-right: 42.5px;
+    }
 }
 
 // Feedback states
