@@ -108,6 +108,12 @@ textarea.form-control {
 // Feedback
 //======================================================
 
+.has-feedback {
+    .navbar &.form-group {
+        margin-bottom: 0;
+    }
+}
+
 a.form-control-feedback,
 button.form-control-feedback {
     pointer-events: auto;
@@ -128,6 +134,18 @@ button.form-control-feedback {
         line-height: inherit;
         min-height: 30px;
         width: auto;
+    }
+}
+
+button.form-control-feedback {
+    .navbar & {
+        color: #333;
+    }
+    
+    .navbar &:hover,
+    .navbar &:focus {
+        color: #333;
+        text-decoration: none;
     }
 }
 
