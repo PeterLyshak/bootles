@@ -81,23 +81,6 @@ textarea.form-control {
     }
 }
 
-
-// Feedback states
-//======================================================
-
-.has-success {
-    @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
-}
-
-.has-warning {
-    @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
-}
-
-.has-error {
-    @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
-}
-
-
 // Glow style
 //======================================================
 
@@ -119,3 +102,30 @@ textarea.form-control {
         @include box-shadow($shadow);
     }
 }
+
+// Feedback
+//======================================================
+
+a.form-control-feedback,
+button.form-control-feedback {
+    pointer-events: auto;
+    width: auto;
+}
+
+// Feedback states
+//======================================================
+
+.has-success {
+    @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+}
+
+.has-warning {
+    @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+}
+
+.has-error {
+    @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+}
+
+
+

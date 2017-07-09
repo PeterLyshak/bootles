@@ -12,6 +12,10 @@ body {
     color: $text-color;
 }
 
+a[disabled] {
+    pointer-events: none;
+}
+
 #react-content,
 div[data-reactroot] {
     display: inline;
