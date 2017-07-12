@@ -1,0 +1,169 @@
+<div class="container" ng-controller="pluginTinymceController">
+    <div class="well">
+        <div class="page-header">
+            <h1 class="animated pulse">Swiper <small>Most Modern Mobile Touch Slider</small></h1>
+        </div>
+        
+        <!-- TinyMCE
+        =============================================== -->
+        
+        <textarea class="form-control" data-init="tinymce">
+          <p style="text-align: center;">
+            <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
+          </p>
+
+          <h1 style="text-align: center;">Welcome to the TinyMCE editor demo!</h1>
+
+          <p>
+            Please try out the features provided in this basic example.<br>
+            Note that any <strong>MoxieManager</strong> file and image management functionality in this example is part of our commercial offering – the demo is to show the integration.
+          </p>
+
+          <h2>Got questions or need help?</h2>
+
+          <ul>
+            <li>Our <a href="https://www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+            <li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/" target="_blank">Community Forum</a>.</li>
+            <li>We also offer enterprise grade support as part of <a href="www.tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
+          </ul>
+
+          <h2>A simple table to play with</h2>
+
+          <table style="text-align: center;">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Cost</th>
+                <th>Really?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TinyMCE</td>
+                <td>Free</td>
+                <td>YES!</td>
+              </tr>
+              <tr>
+                <td>Plupload</td>
+                <td>Free</td>
+                <td>YES!</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Found a bug?</h2>
+
+          <p>
+            If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
+          </p>
+
+          <h2>Finally ...</h2>
+
+          <p>
+            Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
+          </p>
+          <p>
+            Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
+          </p>
+        </textarea>
+    
+        <br />
+    
+        <div>
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href 
+                        data-target="#swiperBasicHtml"
+                        id="swiperBasicHtmlTab"
+                        role="tab"
+                        data-toggle="tab"
+                        aria-controls="swiperBasicHtml"
+                        aria-expanded="true">
+                        HTML
+                    </a>
+                </li>
+                
+                <li role="presentation" class="">
+                    <a href 
+                        data-target="#swiperBasicCss"
+                        role="tab"
+                        id="swiperBasicCssTab"
+                        data-toggle="tab"
+                        aria-controls="swiperBasicCss"
+                        aria-expanded="false">
+                        CSS
+                    </a>
+                </li>
+                
+                <li role="presentation" class="">
+                    <a href
+                        data-target="#swiperBasicJs"
+                        role="tab"
+                        id="swiperBasicJsTab"
+                        data-toggle="tab"
+                        aria-controls="swiperBasicJs"
+                        aria-expanded="false">
+                        JS
+                    </a>
+                </li>
+            </ul>
+            
+            <br />
+        
+            <div class="tab-content" id="swiperBasic">
+                <div class="tab-pane fade active in" role="tabpanel" id="swiperBasicHtml" aria-labelledby="swiperBasicHtml">
+<pre class="prettyprint linenums"><code class="language-html">&lt;div class="swiper-container"&gt;
+&lt;div class="swiper-wrapper"&gt;
+&lt;div class="swiper-slide"&gt;
+  &lt;img src="img.jpg" /&gt;
+&lt;/div&gt;
+
+&lt;div class="swiper-slide"&gt;
+  &lt;img src="img.jpg" /&gt;
+&lt;/div&gt;
+
+&lt;div class="swiper-slide"&gt;
+  &lt;img src="img.jpg" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </div>
+            
+                <div class="tab-pane fade" role="tabpanel" id="swiperBasicCss" aria-labelledby="swiperBasicCssTab">
+<pre class="prettyprint linenums"><code class="language-css">.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+</code></pre>
+                </div>
+            
+                <div class="tab-pane fade" role="tabpanel" id="swiperBasicJs" aria-labelledby="swiperBasicJsTab">
+<pre class="prettyprint linenums"><code class="language-js">var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+spaceBetween: 0
+});
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

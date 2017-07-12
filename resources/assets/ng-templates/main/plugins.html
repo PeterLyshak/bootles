@@ -19,6 +19,12 @@
             <ng-include src="'plugins/swiper.html'"></ng-include>
         </div>
         
+        <!-- TinyMCE
+        =============================================== -->
+        <div ng-switch-when="tinymce">
+            <ng-include src="'plugins/tinymce.html'"></ng-include>
+        </div>
+        
         <div ng-switch-default>
             <ng-include src="'errors/404.html'"></ng-include>
         </div>

@@ -49,8 +49,9 @@ elixir(function(mix) {
         '../ng/material/materialColorsController.js',
         '../ng/material/materialDrawerController.js',
         '../ng/material/materialTabsController.js',
-        '../ng/plugins/pluginSelect2Controller.js',
-        '../ng/plugins/pluginSwiperController.js',
+        '../ng/plugins/plugin-select2.controller.js',
+        '../ng/plugins/plugin-swiper.controller.js',
+        '../ng/plugins/plugin-tinymce.controller.js',
     ], 'docs/js/app.ng.js');
 
     mix.sass([
@@ -133,8 +134,8 @@ elixir(function(mix) {
         '../../../vendor/select2/select2-3.5.4-placecomplete/jquery.placecomplete.js', // [stephjang] placecomplete
         '../../../vendor/jquery-raty/raty-2.7.1/lib/jquery.raty.js', // [wbotelhos] raty
         '../../../vendor/jquery-mask-plugin/jquery-mask-plugin-1.14.11/dist/jquery.mask.js', // [igorescobar] jQuery-Mask-Plugin
-        '../../../vendor/tinymce/tinymce-4.6.4/community/tinymce.min.js', // [tinymce] tinymce
-        '../../../vendor/tinymce/tinymce-4.6.4/community/jquery.tinymce.min.js', // [tinymce] tinymce
+        '../../../vendor/tinymce/tinymce-4.6.4/js/tinymce/tinymce.js', // [tinymce] tinymce
+        '../../../vendor/tinymce/tinymce-4.6.4/js/tinymce/jquery.tinymce.min.js', // [tinymce] jQuery tinymce
 
         // Datatables
         '../../../vendor/datatables/datatables-1.10.15/media/js/jquery.dataTables.min.js', // [DataTables] Datatables + Bootstrap
@@ -150,5 +151,6 @@ elixir(function(mix) {
         '../../../resources/assets/js/velocity.min.js',
         '../../../resources/assets/js/sideNav.js',
         '../../../resources/assets/js/tabs.js',
+
 	], 'docs/dist/js/bootles.min.js');
 });
