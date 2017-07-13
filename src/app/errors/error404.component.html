@@ -1,0 +1,7 @@
+<h4 *ngIf="auth.isAuthenticated()">
+  404 Error - Page Not Found Auth <a routerLink="/profile">profile area</a>.
+</h4>
+
+<h4 *ngIf="!auth.isAuthenticated()">
+  404 Error - Page Not Found Guest <a (click)="auth.login()">Log In</a> to continue.
+</h4>
