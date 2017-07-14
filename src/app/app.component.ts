@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from './auth/auth.service';
+// import { Navbar } from './global/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',

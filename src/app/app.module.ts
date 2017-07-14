@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { Error404Component } from './errors/error404.component';
+import { NavbarComponent } from './global/navbar/navbar.component';
 
 import { ROUTES } from './app.routes';
 
@@ -23,6 +24,7 @@ import { CallbackComponent } from './callback/callback.component';
   ],
   declarations: [
     AppComponent,
+    NavbarComponent,
     Error404Component,
     HomeComponent,
     ProfileComponent,
