@@ -55,7 +55,6 @@ elixir(function(mix) {
     ], 'docs/js/app.ng.js');
 
     mix.sass([
-        'fonts.scss',
         '../../../vendor/bootstrap/bootstrap-3.3.7/dist/css/bootstrap.css',
 		'../../../vendor/bootstrap-social/bootstrap-social-5.1.1/bootstrap-social.css', // [lipis] bootstrap-social
 		'../../../vendor/bootstrap-material-design/bootstrap-material-design-0.3.0/dist/css/ripples.css',
