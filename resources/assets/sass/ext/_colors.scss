@@ -1124,6 +1124,8 @@ $color-grey-700: #616161 !default;
 $color-grey-800: #424242 !default;
 $color-grey-900: #212121 !default;
 
+$color-whiteSmoke: #f5f5f5 !default;
+
 //** Button
 $btn-grey-color:              #fff !default;
 $btn-grey-bg:                 $color-grey !default;
@@ -1224,6 +1226,11 @@ $navbar-default-toggle-border-color:                 transparent !default;
 
 //** Label
 $label-default-bg:            $gray-light !default;
+
+//** Card
+$card-default-text:                 $gray-dark !default;
+$card-default-border:             #ddd !default;
+$card-default-heading-bg:      #fff !default;
 
 //** Panel
 $panel-default-text:                 $gray-dark !default;
