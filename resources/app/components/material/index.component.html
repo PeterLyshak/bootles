@@ -1,0 +1,70 @@
+<ng-include src="'app/components/global/header.component.html'"></ng-include>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb" ng-include src="'app/components/global/breadcrumb.component.html'" ng-switch on="pageName"></ul>
+    </div>
+
+    <div class="container">
+        <div ng-switch on="pageName">
+            <!-- Colors
+            =============================================== -->
+            <div ng-switch-when="colors">
+                <ng-include src="'app/components/material/colors.component.html'"></ng-include>
+            </div>
+
+            <!-- Drawer
+            =============================================== -->
+            <div ng-switch-when="drawer">
+                <ng-include src="'app/components/material/drawer.component.html'"></ng-include>
+            </div>
+
+            <!-- Offcanvas
+            =============================================== -->
+            <div ng-switch-when="offcanvas">
+                <ng-include src="'app/components/material/offcanvas.component.html'"></ng-include>
+            </div>
+
+            <!-- Cards
+            =============================================== -->
+            <div ng-switch-when="cards">
+                <ng-include src="'app/components/material/cards.component.html'"></ng-include>
+            </div>
+
+            <!-- Tabs
+            =============================================== -->
+            <div ng-switch-when="tabs">
+                <ng-include src="'app/components/material/tabs.component.html'"></ng-include>
+            </div>
+
+            <div ng-switch-default>
+                <ng-include src="'app/components/errors/404.component.html'"></ng-include>
+            </div>
+        </div>
+
+        <div id="source-modal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-hidden="true">
+                            ×
+                        </button>
+
+                        <h4 class="modal-title">
+                            Source Code
+                        </h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <pre></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-include src="'app/components/global/footer.component.html'"></ng-include>
+</main>

@@ -22,7 +22,7 @@ require('laravel-elixir-ngtemplatecache');
 
 elixir(function(mix) {
 
-    mix.ngTemplateCache('/**/*.html', 'docs/js', 'resources/assets/ng-templates', {
+    mix.ngTemplateCache('/**/*.html', 'docs/js', 'resources', {
         templateCache: {
             standalone: true
         },
@@ -34,24 +34,24 @@ elixir(function(mix) {
 
     // Mix ReactJS via Browserify
     mix.browserify([
-        '../ng/app.module.js',
-        '../ng/authService.js',
-        '../ng/app.run.js',
-        '../ng/routes.module.js',
-        '../ng/main/welcomeController.js',
-        '../ng/main/loginController.js',
-        '../ng/main/bootstrapController.js',
-        '../ng/main/materialController.js',
-        '../ng/main/pluginsController.js',
-        '../ng/main/templatesController.js',
-        '../ng/bootstrap/bootstrapNavbarFullController.js',
-        '../ng/bootstrap/bootstrapTabController.js',
-        '../ng/material/materialColorsController.js',
-        '../ng/material/materialDrawerController.js',
-        '../ng/material/materialTabsController.js',
-        '../ng/plugins/plugin-select2.controller.js',
-        '../ng/plugins/plugin-swiper.controller.js',
-        '../ng/plugins/plugin-tinymce.controller.js',
+        '../../../resources/app/app.module.js',
+        '../../../resources/app/utils/auth.service.js',
+        '../../../resources/app/app.run.js',
+        '../../../resources/app/routes.module.js',
+        '../../../resources/app/components/index/index.component.js',
+        '../../../resources/app/components/auth/login.component.js',
+        '../../../resources/app/components/bootstrap/index.component.js',
+        '../../../resources/app/components/bootstrap/navbar.component.js',
+        '../../../resources/app/components/bootstrap/nav-tabs.component.js',
+        '../../../resources/app/components/material/index.component.js',
+        '../../../resources/app/components/material/colors.component.js',
+        '../../../resources/app/components/material/drawer.component.js',
+        '../../../resources/app/components/material/tabs.component.js',
+        '../../../resources/app/components/plugins/index.component.js',
+        '../../../resources/app/components/plugins/select2.component.js',
+        '../../../resources/app/components/plugins/swiper.component.js',
+        '../../../resources/app/components/plugins/tinymce.component.js',
+        '../../../resources/app/components/templates/index.component.js',
     ], 'docs/js/app.ng.js');
 
     mix.sass([
@@ -69,7 +69,7 @@ elixir(function(mix) {
 		'../../../vendor/select2/select2-3.5.4/select2.css', // [select2] select2
 		'../../../vendor/select2-bootstrap/select2-bootstrap-css-1.4.6/select2-bootstrap.css', // [t0m] select2-bootstrap-css
 		'../../../vendor/datatables/datatables-1.10.15/media/css/jquery.dataTables.css', // [DataTables] DataTables
-        'bootles-ext.scss',
+        '../../../resources/app/utils/sass/bootles-ext.scss',
     ], 'docs/dist/css/bootles.min.css');
 
     // Mix jQuery core and plugins
@@ -142,14 +142,14 @@ elixir(function(mix) {
         // '../../../vendor/datatables/datatables-1.10.15/custom/datatables.js', // [DataTables] Datatables + Bootstrap
 
         // Bootles
-        '../../../resources/assets/js/drawer.js',
+        '../../../resources/app/utils/helpers/drawer.js',
         // '../../../vendor/materialize/materialize-src-v0.98.2/js/bin/materialize.custom.js',
-        '../../../resources/assets/js/global.js',
-        '../../../resources/assets/js/hammer.min.js',
-        '../../../resources/assets/js/jquery.hammer.js',
-        '../../../resources/assets/js/velocity.min.js',
-        '../../../resources/assets/js/sideNav.js',
-        '../../../resources/assets/js/tabs.js',
+        '../../../resources/app/utils/helpers/global.js',
+        '../../../resources/app/utils/helpers/hammer.min.js',
+        '../../../resources/app/utils/helpers/jquery.hammer.js',
+        '../../../resources/app/utils/helpers/velocity.min.js',
+        '../../../resources/app/utils/helpers/sideNav.js',
+        '../../../resources/app/utils/helpers/tabs.js',
 
 	], 'docs/dist/js/bootles.min.js');
 });

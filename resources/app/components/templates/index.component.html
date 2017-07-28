@@ -1,0 +1,55 @@
+<ng-include src="'app/components/templates/global/Navbar.html'"></ng-include>
+
+<div ng-switch on="pageName">
+    <!-- Index
+    =============================================== -->
+    <div ng-switch-when="splash">
+        <ng-include src="'app/components/templates/index/Index.html'"></ng-include>
+    </div>
+
+    <!-- Register
+    =============================================== -->
+    <div ng-switch-when="register">
+        <ng-include src="'app/components/templates/auth/Register.html'"></ng-include>
+    </div>
+
+    <!-- Login
+    =============================================== -->
+    <div ng-switch-when="login">
+        <ng-include src="'app/components/templates/auth/Login.html'"></ng-include>
+    </div>
+
+    <!-- About
+    =============================================== -->
+    <div ng-switch-when="about">
+        <ng-include src="'app/components/templates/index/About.html'"></ng-include>
+    </div>
+
+    <!-- Settings
+    =============================================== -->
+    <div ng-switch-when="settings">
+        <ng-include src="'app/components/templates/settings/Settings.html'"></ng-include>
+    </div>
+
+    <!-- Profile
+    =============================================== -->
+    <div ng-switch-when="profile">
+        <ng-include src="'app/components/templates/profile/Profile.html'"></ng-include>
+    </div>
+
+    <!-- Home
+    =============================================== -->
+    <div ng-switch-when="home">
+        <ng-include src="'app/components/templates/index/Home.html'"></ng-include>
+    </div>
+
+    <!-- Listing Composer
+    =============================================== -->
+    <div ng-switch-when="listing-composer">
+        <ng-include src="'app/components/templates/listings/ListingComposer.html'"></ng-include>
+    </div>
+
+    <div ng-switch-default>
+        <ng-include src="'app/components/errors/error-404.component.html'"></ng-include>
+    </div>
+</div>

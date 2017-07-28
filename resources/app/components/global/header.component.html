@@ -1,0 +1,294 @@
+<header class="navbar-wrapper">
+    <nav class="navbar navbar-static-top navbar-cyan navbar-lg">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand text-cursive" href="#/">Bootles</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" ng-switch on="pageModule">
+                    <li class="hidden-xs {{ (pageModule == 'bootstrap') ? 'hidden' : ''}}">
+                        <a href="#/bootstrap">Bootstrap</a>
+                    </li>
+                    
+                    <li class="dropdown {{ (pageModule == 'bootstrap') ? 'active' : ''}}" ng-switch-when="bootstrap">
+                        <a 
+                            href="javascript:void(0);"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Bootstrap <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="{{ (pageName == 'buttons') ? 'active' : ''}}">
+                                <a href="#/bootstrap/buttons">Buttons</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'typography') ? 'active' : ''}}">
+                                <a href="#/bootstrap/typography">Typography</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'table') ? 'active' : ''}}">
+                                <a href="#/bootstrap/table">Table</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'form') ? 'active' : ''}}">
+                                <a href="#/bootstrap/form">Form</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'containers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/containers">Containers</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'well') ? 'active' : ''}}">
+                                <a href="#/bootstrap/well">Well</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'helpers') ? 'active' : ''}}">
+                                <a href="#/bootstrap/helpers">Helpers</a>
+                            </li>
+                            
+                            <li class="divider"></li>
+                            
+                            <li class="{{ (pageName == 'navbar') ? 'active' : ''}}">
+                                <a href="#/bootstrap/navbar">Navbar</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'nav') ? 'active' : ''}}">
+                                <a href="#/bootstrap/nav">Navs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'tabs') ? 'active' : ''}}">
+                                <a href="#/bootstrap/tabs">Tabs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'breadcrumbs') ? 'active' : ''}}">
+                                <a href="#/bootstrap/breadcrumbs">Breadcrumbs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'indicators') ? 'active' : ''}}">
+                                <a href="#/bootstrap/indicators">Indicators</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'pagination') ? 'active' : ''}}">
+                                <a href="#/bootstrap/pagination">Pagination</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'progress') ? 'active' : ''}}">
+                                <a href="#/bootstrap/progress">Progress Bars</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'media') ? 'active' : ''}}">
+                                <a href="#/bootstrap/media">Media</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'list-group') ? 'active' : ''}}">
+                                <a href="#/bootstrap/list-group">List Group</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'dialog') ? 'active' : ''}}">
+                                <a href="#/bootstrap/dialog">Dialogs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown {{ (pageModule == 'material') ? 'active' : ''}}">
+                        <a 
+                            href="javascript:void(0);"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Material
+                            <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="{{ (pageName == 'colors') ? 'active' : ''}}">
+                                <a href="#/material/colors">Colors</a>
+                            </li>
+                            
+							<li class="{{ (pageName == 'mui-form') ? 'active' : ''}}">
+                                <a href="#/material/form">Form</a>
+                            </li>
+							
+                            <li class="{{ (pageName == 'snackbar') ? 'active' : ''}}">
+                                <a href="#/material/snackbar">Snackbar</a>
+                            </li>
+                            
+                            <li role="separator" class="divider"></li>
+                            
+                            <li class="dropdown-header">
+                                Containers
+                            </li>
+                            
+                            <li class="{{ (pageName == 'cards') ? 'active' : ''}}">
+                                <a href="#/material/cards">Cards</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'tabs') ? 'active' : ''}}">
+                                <a href="#/material/tabs">Tabs</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'drawer') ? 'active' : ''}}">
+                                <a href="#/material/drawer">Drawer</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'offcanvas') ? 'active' : ''}}">
+                                <a href="#/material/offcanvas">Offcanvas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown {{ (pageModule == 'plugins') ? 'active' : ''}}">
+                        <a 
+                            href="javascript:void(0);"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Plugins
+                            <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">
+                                Form
+                            </li>
+                            
+                            <li class="{{ (pageName == 'bootstrap-slider') ? 'active' : ''}}">
+                                <a href="#/plugins/bootstrap-slider">Bootstrap Slider</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'jquery-spinner') ? 'active' : ''}}">
+                                <a href="#/plugins/jquery-spinner">jQuery Spinner</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'jquery-mask') ? 'active' : ''}}">
+                                <a href="#/plugins/jquery-mask">jQuery Mask</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'raty') ? 'active' : ''}}">
+                                <a href="#/plugins/raty">Raty</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'select2') ? 'active' : ''}}">
+                                <a href="#/plugins/select2">Select2</a>
+                            </li>
+                            
+                            <li role="separator" class="divider"></li>
+                            
+                            <li class="dropdown-header">
+                                Presentation
+                            </li>
+                            
+                            <li class="{{ (pageName == 'swiper') ? 'active' : ''}}">
+                                <a href="#/plugins/swiper">Swiper</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'tinymce') ? 'active' : ''}}">
+                                <a href="#/plugins/tinymce">TinyMCE</a>
+                            </li>
+                            
+                            <li class="{{ (pageName == 'fixto') ? 'active' : ''}}">
+                                <a href="#/plugins/fixto">FixTo</a>
+                            </li>
+                            
+                            <li role="separator" class="divider"></li>
+                            
+                            <li class="dropdown-header">
+                                Table
+                            </li>
+                            
+                            <li class="{{ (pageName == 'datatables') ? 'active' : ''}}">
+                                <a href="#/plugins/datatables">Datatables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="hidden-xs {{ (pageModule == 'templates') ? 'active' : ''}}">
+                        <a href="#/templates">Templates</a>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-if="!isAuthenticated" class="{{ (pageName == 'login') ? 'active' : ''}}">
+                        <a href="#/login">
+                            Log in
+                        </a>
+                    </li>
+                    
+                    <li ng-if="isAuthenticated">
+                        <a href="javascript:;" ng-click="vm.authService.logout()">
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right" ng-switch on="pageModule">
+                    <li class="dropdown" ng-switch-when="templates">
+                        <a href class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Templates <span class="caret"></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li class="{{ (pageName == 'starter') ? 'active' : ''}}">
+                                <a href="#/templates/starter">Starter</a>
+                            </li>
+                            <li class="{{ (pageName == 'jumbotron') ? 'active' : ''}}">
+                                <a href="#/templates/jumbotron">Jumbotron</a>
+                            </li>
+                            <li class="{{ (pageName == 'cover') ? 'active' : ''}}">
+                                <a href="#/templates/cover">Cover</a>
+                            </li>
+                            <li class="{{ (pageName == 'carousel') ? 'active' : ''}}">
+                                <a href="#/templates/carousel">Carousel</a>
+                            </li>
+                            <li class="{{ (pageName == 'marketing') ? 'active' : ''}}">
+                                <a href="#/templates/marketing">Marketing</a>
+                            </li>
+                            <li class="{{ (pageName == 'blog') ? 'active' : ''}}">
+                                <a href="#/templates/blog">Blog</a>
+                            </li>
+                            <li class="{{ (pageName == 'dashboard') ? 'active' : ''}}">
+                                <a href="#/templates/dashboard">Dashboard</a>
+                            </li>
+                            <li class="{{ (pageName == 'login') ? 'active' : ''}}">
+                                <a href="#/templates/login">Login</a>
+                            </li>
+                            
+                            <li role="separator" class="divider"></li>
+                            
+                            <li><a href="?scrollto=navbar">Action</a></li>
+                            <li><a href="?scrollto">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+            

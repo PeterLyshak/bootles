@@ -1,0 +1,35 @@
+<ng-include src="'app/components/global/header.component.html'"></ng-include>
+
+<main>
+    <div class="container">
+        <ul class="breadcrumb" ng-include src="'app/components/global/breadcrumb.component.html'" ng-switch on="pageName"></ul>
+    </div>
+
+    <div ng-switch on="pageName">
+
+        <!-- Select2
+        =============================================== -->
+        <div ng-switch-when="select2">
+            <ng-include src="'app/components/plugins/select2.component.html'"></ng-include>
+        </div>
+
+        <!-- Swiper
+        =============================================== -->
+        <div ng-switch-when="swiper">
+            <ng-include src="'app/components/plugins/swiper.component.html'"></ng-include>
+        </div>
+
+        <!-- TinyMCE
+        =============================================== -->
+        <div ng-switch-when="tinymce">
+            <ng-include src="'app/components/plugins/tinymce.component.html'"></ng-include>
+        </div>
+
+        <div ng-switch-default>
+            <ng-include src="'app/components/errors/error-404.component.html'"></ng-include>
+        </div>
+
+    </div>
+
+    <ng-include src="'app/components/global/footer.component.html'"></ng-include>
+</main>
